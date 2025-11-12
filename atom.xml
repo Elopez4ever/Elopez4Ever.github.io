@@ -5,1075 +5,1588 @@
   <link href="https://mizuki.mysqil.com/" rel="alternate" type="text/html"/>
   <link href="https://mizuki.mysqil.com/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://mizuki.mysqil.com/</id>
-  <updated>2025-11-12T04:42:41.462Z</updated>
+  <updated>2025-11-12T07:09:42.958Z</updated>
   <language>zh_CN</language>
   <entry>
-    <title>Markdown Tutorial</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-tutorial/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-tutorial/</id>
-    <published>2025-01-20T00:00:00.000Z</published>
-    <updated>2025-01-20T00:00:00.000Z</updated>
-    <summary>A simple example of a Markdown blog post.</summary>
-    <content type="html"><![CDATA[<h1>Markdown Tutorial</h1>
-<p>A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).</p>
-<ul>
-<li><a href="#block-elements">Block Elements</a>
-<ul>
-<li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
-<li><a href="#headers">Headers</a></li>
-<li><a href="#blockquotes">Blockquotes</a></li>
-<li><a href="#lists">Lists</a></li>
-<li><a href="#code-blocks">Code Blocks</a></li>
-<li><a href="#horizontal-rules">Horizontal Rules</a></li>
-<li><a href="#table">Table</a></li>
-</ul>
-</li>
-<li><a href="#span-elements">Span Elements</a>
-<ul>
-<li><a href="#links">Links</a></li>
-<li><a href="#emphasis">Emphasis</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#images">Images</a></li>
-<li><a href="#strikethrough">Strikethrough</a></li>
-</ul>
-</li>
-<li><a href="#miscellaneous">Miscellaneous</a>
-<ul>
-<li><a href="#automatic-links">Automatic Links</a></li>
-<li><a href="#backslash-escapes">Backslash Escapes</a></li>
-</ul>
-</li>
-<li><a href="#inline-html">Inline HTML</a></li>
-</ul>
-<h2>Block Elements</h2>
-<h3>Paragraphs and Line Breaks</h3>
-<h4>Paragraphs</h4>
-<p>HTML Tag: <code>&lt;p&gt;</code></p>
-<p>One or more blank lines. (A blank line is a line containing nothing but <strong>spaces</strong> or <strong>tabs</strong> is considered blank.)</p>
-<p>Code:</p>
-<pre><code>This will be
-inline.
-
-This is second paragraph.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>This will be
-inline.</p>
-<p>This is second paragraph.</p>
-<hr />
-<h4>Line Breaks</h4>
-<p>HTML Tag: <code>&lt;br /&gt;</code></p>
-<p>End a line with <strong>two or more spaces</strong>.</p>
-<p>Code:</p>
-<pre><code>This will be not
-inline.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>This will be not<br />
-inline.</p>
-<hr />
-<h3>Headers</h3>
-<p>Markdown supports two styles of headers, Setext and atx.</p>
-<h4>Setext</h4>
-<p>HTML Tags: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code></p>
-<p>"Underlined" using <strong>equal signs (=)</strong> as <code>&lt;h1&gt;</code> and <strong>dashes (-)</strong> as <code>&lt;h2&gt;</code> in any number.</p>
-<p>Code:</p>
-<pre><code>This is an H1
-=============
-This is an H2
--------------
-</code></pre>
-<p>Preview:</p>
-<hr />
-<h1>This is an H1</h1>
-<h2>This is an H2</h2>
-<hr />
-<h4>atx</h4>
-<p>HTML Tags: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></p>
-<p>Uses 1-6 <strong>hash characters (#)</strong> at the start of the line, corresponding to <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>.</p>
-<p>Code:</p>
-<pre><code># This is an H1
-## This is an H2
-###### This is an H6
-</code></pre>
-<p>Preview:</p>
-<hr />
-<h1>This is an H1</h1>
-<h2>This is an H2</h2>
-<h6>This is an H6</h6>
-<hr />
-<p>Optionally, you may "close" atx-style headers. The closing hashes <strong>don't need to match</strong> the number of hashes used to open the header.</p>
-<p>Code:</p>
-<pre><code># This is an H1 #
-## This is an H2 ##
-### This is an H3 ######
-</code></pre>
-<p>Preview:</p>
-<hr />
-<h1>This is an H1</h1>
-<h2>This is an H2</h2>
-<h3>This is an H3</h3>
-<hr />
-<h3>Blockquotes</h3>
-<p>HTML Tag: <code>&lt;blockquote&gt;</code></p>
-<p>Markdown uses email-style <strong>&gt;</strong> characters for blockquoting. It looks best if you hard wrap the text and put a &gt; before every line.</p>
-<p>Code:</p>
-<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&gt;
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-&gt; id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<blockquote>
-<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p>
-</blockquote>
-<hr />
-<p>Markdown allows you to be lazy and only put the &gt; before the first line of a hard-wrapped paragraph.</p>
-<p>Code:</p>
-<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<blockquote>
-<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-</blockquote>
-<blockquote>
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p>
-</blockquote>
-<hr />
-<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by adding additional levels of &gt;.</p>
-<p>Code:</p>
-<pre><code>&gt; This is the first level of quoting.
-&gt;
-&gt; &gt; This is nested blockquote.
-&gt;
-&gt; Back to the first level.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<blockquote>
-<p>This is the first level of quoting.</p>
-<blockquote>
-<p>This is nested blockquote.</p>
-</blockquote>
-<p>Back to the first level.</p>
-</blockquote>
-<hr />
-<p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks.</p>
-<p>Code:</p>
-<pre><code>&gt; ## This is a header.
-&gt;
-&gt; 1.   This is the first list item.
-&gt; 2.   This is the second list item.
-&gt;
-&gt; Here's some example code:
-&gt;
-&gt;     return shell_exec("echo $input | $markdown_script");
-</code></pre>
-<p>Preview:</p>
-<hr />
-<blockquote>
-<h2>This is a header.</h2>
+    <title>CSAPP 第八章 - 异常控制流</title>
+    <link href="https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</id>
+    <published>2025-11-05T00:00:00.000Z</published>
+    <updated>2025-11-05T00:00:00.000Z</updated>
+    <summary>深入理解异常控制流，包括异常、信号、进程切换和非本地跳转的机制</summary>
+    <content type="html"><![CDATA[<h1>第八章 异常控制流</h1>
+<h3>1. 什么是异常控制流</h3>
+<p>异常控制流是指<strong>程序运行过程中非顺序的控制流转移</strong>，由以下几种机制产生</p>
 <ol>
-<li>This is the first list item.</li>
-<li>This is the second list item.</li>
+<li><strong>异常：</strong>：由硬件或操作系统触发，控制用户进程跳转到内核</li>
 </ol>
-<p>Here's some example code:</p>
-<pre><code>return shell_exec("echo $input | $markdown_script");
-</code></pre>
-</blockquote>
-<hr />
-<h3>Lists</h3>
-<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
-<h4>Unordered</h4>
-<p>HTML Tag: <code>&lt;ul&gt;</code></p>
-<p>Unordered lists use <strong>asterisks (*)</strong>, <strong>pluses (+)</strong>, and <strong>hyphens (-)</strong>.</p>
-<p>Code:</p>
-<pre><code>*   Red
-*   Green
-*   Blue
-</code></pre>
-<p>Preview:</p>
-<hr />
-<ul>
-<li>Red</li>
-<li>Green</li>
-<li>Blue</li>
-</ul>
-<hr />
-<p>is equivalent to:</p>
-<p>Code:</p>
-<pre><code>+   Red
-+   Green
-+   Blue
-</code></pre>
-<p>and:</p>
-<p>Code:</p>
-<pre><code>-   Red
--   Green
--   Blue
-</code></pre>
-<h4>Ordered</h4>
-<p>HTML Tag: <code>&lt;ol&gt;</code></p>
-<p>Ordered lists use numbers followed by periods:</p>
-<p>Code:</p>
-<pre><code>1.  Bird
-2.  McHale
-3.  Parish
-</code></pre>
-<p>Preview:</p>
-<hr />
+<p>​		<strong>中断：</strong> 外部设备，异步触发</p>
+<p>​		**陷阱：**有意请求操作系统，同步触发</p>
+<p>​		**故障：**程序出错，可能可恢复，同步触发</p>
+<p>​		**终止：**程序出错，不可恢复，同步触发</p>
 <ol>
-<li>Bird</li>
-<li>McHale</li>
-<li>Parish</li>
+<li>**信号：**程序间的通信，异步事件通知</li>
+<li>**进程切换：**上下文切换</li>
+<li>**非本地跳转：**例如<code>setjump</code>/<code>longjump</code></li>
 </ol>
-<hr />
-<p>It's possible to trigger an ordered list by accident, by writing something like this:</p>
-<p>Code:</p>
-<pre><code>1986. What a great season.
-</code></pre>
-<p>Preview:</p>
-<hr />
+<h3>2. 进程</h3>
+<p>进程是正在运行的程序，拥有私有地址空间，包括：</p>
 <ol>
-<li>What a great season.</li>
+<li>文本段（代码）</li>
+<li>数据段（已初始化、未初始化）</li>
+<li>栈（函数调用栈）</li>
+<li>文件描述符表</li>
+<li>信号处理上下文</li>
 </ol>
-<hr />
-<p>You can <strong>backslash-escape (\)</strong> the period:</p>
-<p>Code:</p>
-<pre><code>1986\. What a great season.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>1986. What a great season.</p>
-<hr />
-<h4>Indented</h4>
-<h5>Blockquote</h5>
-<p>To put a blockquote within a list item, the blockquote's &gt; delimiters need to be indented:</p>
-<p>Code:</p>
-<pre><code>*   A list item with a blockquote:
+<p>创建进程：</p>
+<pre><code>pid_t pid = fork();  // 创建子进程，复制当前进程
 
-    &gt; This is a blockquote
-    &gt; inside a list item.
+// 返回值含义
+pid == 0   // 子进程
+pid &gt; 0    // 父进程，返回子进程PID
+pid &lt; 0    // 出错
 </code></pre>
-<p>Preview:</p>
-<hr />
-<ul>
+<h3>3. 程序替换</h3>
+<pre><code>int execve(const char *filename, const char *argv[], const char*envp[]);
+</code></pre>
+<p>用新程序替换当前进程的内存映像</p>
+<p>不会返回，除非出错</p>
+<p>保留：<strong>PID</strong>不变，文件描符不变，信号上下文保留</p>
+<h3>4. 回收子进程</h3>
+<pre><code>pid_t wait(int *status);
+pid_t wait_pid(pid_t pid, int *status, int options);
+</code></pre>
+<p>回收子进程，避免<strong>僵尸进程</strong></p>
+<p><code>waitpid</code>支持<strong>非阻塞（WNOHANG）<strong>和</strong>特定子进程</strong></p>
+<h3>5. 信号</h3>
+<p>信号是由内核或者其它进程发送给进程的“消息”，用于通知异步事件</p>
+<p>常见的信号：</p>
+<ol>
+<li><strong>SIGINT:</strong> 默认行为终止，来源于ctrl + C</li>
+<li></li>
+</ol>
+]]></content>
+    <author>
+      <name>Elopez</name>
+    </author>
+    <category term="计算机系统"></category>
+  </entry>
+  <entry>
+    <title>CSAPP 第七章 - 链接</title>
+    <link href="https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E9%93%BE%E6%8E%A5/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E9%93%BE%E6%8E%A5/</id>
+    <published>2025-10-28T00:00:00.000Z</published>
+    <updated>2025-10-28T00:00:00.000Z</updated>
+    <summary>深入学习链接过程，包括预处理、编译、汇编、链接的完整流程和目标文件格式</summary>
+    <content type="html"><![CDATA[<h1>第七章 链接</h1>
+<h2>1. 链接的基础与目标文件格式</h2>
+<h3>1.1.1 从源文件到可执行文件：预处理、编译、汇编、链接</h3>
+<p>当编写一个 C 程序时，最终目标是生成一个可执行文件，它包含多个步骤</p>
+<ol>
 <li>
-<p>A list item with a blockquote:</p>
-<blockquote>
-<p>This is a blockquote
-inside a list item.</p>
-</blockquote>
+<p>预处理 （Preprocessing）</p>
+<p>处理源代码中的宏定义、头文件等指令，生成 <strong>.i</strong> 后缀的文件，这个阶段输出的知识文本文件</p>
 </li>
-</ul>
-<hr />
-<h5>Code Block</h5>
-<p>To put a code block within a list item, the code block needs to be indented twice — <strong>8 spaces</strong> or <strong>two tabs</strong>:</p>
-<p>Code:</p>
-<pre><code>*   A list item with a code block:
-
-        &lt;code goes here&gt;
-</code></pre>
-<p>Preview:</p>
-<hr />
-<ul>
 <li>
-<p>A list item with a code block:</p>
-<pre><code>&lt;code goes here&gt;
-</code></pre>
+<p>编译（Compilation）</p>
+<p>将预处理后的文件转为汇编语言（<strong>.s</strong> 文件）</p>
+<p>这时候的文件已经是平台相关的汇编指令，但还没有被转换为机器码</p>
 </li>
-</ul>
-<hr />
-<h5>Nested List</h5>
-<p>Code:</p>
-<pre><code>* A
-  * A1
-  * A2
-* B
-* C
-</code></pre>
-<p>Preview:</p>
-<hr />
-<ul>
-<li>A
-<ul>
-<li>A1</li>
-<li>A2</li>
-</ul>
+<li>
+<p>汇编（Assembly）</p>
+<p>汇编阶段会将 <strong>.s</strong> 文件转化为机器码生成的可重定位文件（<strong>.o</strong> 文件）</p>
+<p>这个目标文件是一个二进制文件，但不能直接运行，它包含了一些程序的代码和一些未解决的符号</p>
 </li>
-<li>B</li>
-<li>C</li>
-</ul>
-<hr />
-<h3>Code Blocks</h3>
-<p>HTML Tag: <code>&lt;pre&gt;</code></p>
-<p>Indent every line of the block by at least <strong>4 spaces</strong> or <strong>1 tab</strong>.</p>
-<p>Code:</p>
-<pre><code>This is a normal paragraph:
+<li>
+<p><strong>链接（Linking）</strong></p>
+<p>链接阶段将多个目标文件（<strong>.o</strong> 文件）和必要的库文件（如静态库 <strong>.a</strong> 或动态库 <strong>.so</strong>）链接成一个完整的可执行文件。链接器会解决符号引用（如函数和变量的引用），并将它们重新映射到内存中的具体地址。最终输出的是一个可执行文件（如  <strong>a.out</strong>  或其他指定的名称）</p>
+</li>
+</ol>
+<h3>1.1.2 可执行和可链接格式（Executable and Linkable Format，ELF）</h3>
+<p>三类目标文件：</p>
+<ol>
+<li>可重定位目标文件（<strong>.o</strong>）</li>
+<li>可执行的目标文件（<strong>a.out</strong>）</li>
+<li>共享目标目标文件（<strong>.so</strong>）</li>
+</ol>
+<p>一个<strong>ELF</strong>文件通常包含以下几个部分：</p>
+<ol>
+<li>
+<p><strong>ELF Header</strong>：包含文件的基本信息，如文件类型，机器架构，版本等</p>
+<p><img src="https://mizuki.mysqil.com/_astro/header.DIUzuPY3_1kSImz.webp" alt="header" /></p>
+</li>
+<li>
+<p><strong>Section Header Table</strong>：记录了每个<strong>Section</strong>的起始偏移、大小信息、利用该信息可构建<strong>Section</strong>区域</p>
+</li>
+<li>
+<p><strong>Section</strong>：实际的代码和数据存储位置</p>
+</li>
+</ol>
+<p>常见的<strong>Section</strong></p>
+<ol>
+<li><strong>.text</strong>：存放程序的机器代码，所有函数的指令都会放在这个节中</li>
+<li><strong>.data</strong>：已初始化的全局变量和静态变量，它们的数据在启动时就已经存在</li>
+<li><strong>.bss</strong>：未初始化（或初始化为 <strong>0</strong> ）的全局变量和静态变量，有<strong>Section Header</strong>但不在<strong>Section</strong>占空间</li>
+<li><strong>.rodata</strong>：存放只读数据，例如 <strong>printf()</strong> 中输出的字符串、跳转表等</li>
+<li><strong>.symtab</strong>：函数和全局变量名</li>
+<li><strong>rel.text</strong>：可重定位代码</li>
+<li><strong>rel.data</strong>：可重定位数据</li>
+<li><strong>debug</strong>：调试</li>
+<li><strong>line</strong>：源代码行号和机器指令之间的映射</li>
+<li><strong>strtab</strong>：一个字符串表，程序中用到的符号的名字</li>
+</ol>
+<h3>1.1.3 符号表和符号类型</h3>
+<p>每个**.o<strong>文件中都有一个符号表（</strong>.symtab**），包含文件定义和引用的符号信息</p>
+<p><img src="https://mizuki.mysqil.com/_astro/symtab.Bc5s_FdT_ICYBj.webp" alt="symtab" /></p>
+<h4>三类符号：</h4>
+<ol>
+<li>全局符号：由该.o文件定义，可被其它文件引用的符号。如非静态的函数和全局变量</li>
+<li>外部符号：由该.o文件引用，但被其它文件定义的符号</li>
+<li>本地/局部符号：由该.o文件定义，且只能够被该.o文件引用的符号</li>
+</ol>
+<p>需要注意的是，程序中的局部变量由编译器管理，链接器不知道，因此它不是符号</p>
+<h4>链接器解析多重定义的全局符号</h4>
+<p>程序中的符号可以分为<strong>强符号</strong>和<strong>弱符号</strong></p>
+<ol>
+<li><strong>强符号</strong>：函数和初始化的全局/静态变量</li>
+<li><strong>弱符号</strong>：未初始化的全局/静态变量</li>
+</ol>
+<p>解析多重符号的时候，遵循以下规则：</p>
+<ol>
+<li><strong>不允许多个同名的强符号</strong>：每个强符号只能出现一次，否则链接器错误</li>
+<li><strong>若有一个强符号和多个弱符号同名，选择强符号</strong>：对弱符号的引用解析为强符号</li>
+<li><strong>若有多个弱符号同名，选择任意一个</strong></li>
+</ol>
+<p>例子1：</p>
+<pre><code>/** foo3.c **/ 
+#include &lt;stdio.h&gt;
+ void f();
+ int x=15213;
+ int main(){
+ 	f();
+ 	printf(“x=%d\n”,x)
+ 	return 0;
+ }
+</code></pre>
+<pre><code>/*bar3.c*/
+int x ;
 
-    This is a code block.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>This is a normal paragraph:</p>
-<pre><code>This is a code block.
-</code></pre>
-<hr />
-<p>A code block continues until it reaches a line that is not indented (or the end of the article).</p>
-<p>Within a code block, <strong><em>ampersands (&amp;)</em></strong> and angle <strong>brackets (&lt; and &gt;)</strong> are automatically converted into HTML entities.</p>
-<p>Code:</p>
-<pre><code>    &lt;div class="footer"&gt;
-        &amp;copy; 2004 Foo Corporation
-    &lt;/div&gt;
-</code></pre>
-<p>Preview:</p>
-<hr />
-<pre><code>&lt;div class="footer"&gt;
-    &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;
-</code></pre>
-<hr />
-<p>Following sections Fenced Code Blocks and Syntax Highlighting are extensions, you can use the other way to write the code block.</p>
-<h4>Fenced Code Blocks</h4>
-<p>Just wrap your code in <code>```</code> (as shown below) and you won't need to indent it by four spaces.</p>
-<p>Code:</p>
-<pre><code>Here's an example:
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>Here's an example:</p>
-<pre><code>function test() {
-  console.log("notice the blank line before this function?");
+void f(){
+	x = 15212 ;
 }
 </code></pre>
-<hr />
-<h4>Syntax Highlighting</h4>
-<p>In your fenced block, add an optional language identifier and we'll run it through syntax highlighting (<a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">Support Languages</a>).</p>
-<p>Code:</p>
-<pre><code>```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+<p>输出 <strong>x = 15212</strong></p>
+<p>例子2：</p>
+<pre><code>/** foo4.c **/ 
+#include &lt;stdio.h&gt;
+ void f();
+ int x;
+ int main(){
+ 	f();
+ 	printf(“x=%d\n”,x)
+ 	return 0;
+ }
 </code></pre>
-<p>Preview:</p>
-<hr />
-<pre><code>require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-</code></pre>
-<hr />
-<h3>Horizontal Rules</h3>
-<p>HTML Tag: <code>&lt;hr /&gt;</code>
-Places <strong>three or more hyphens (-), asterisks (*), or underscores (_)</strong> on a line by themselves. You may use spaces between the hyphens or asterisks.</p>
-<p>Code:</p>
-<pre><code>* * *
-***
-*****
-- - -
----------------------------------------
-___
-</code></pre>
-<p>Preview:</p>
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<h3>Table</h3>
-<p>HTML Tag: <code>&lt;table&gt;</code></p>
-<p>It's an extension.</p>
-<p>Separates column by <strong>pipe (|)</strong> and header by <strong>dashes (-)</strong>, and uses <strong>colon (:)</strong> for alignment.</p>
-<p>The outer <strong>pipes (|)</strong> and alignment are optional. There are <strong>3 delimiters</strong> each cell at least for separating header.</p>
-<p>Code:</p>
-<pre><code>| Left | Center | Right |
-|:-----|:------:|------:|
-|aaa   |bbb     |ccc    |
-|ddd   |eee     |fff    |
+<pre><code>/* bar4.c*/
+int x ;
 
- A | B
----|---
-123|456
+void f(){
+	x = 15212 ;
+}
+</code></pre>
+<p>例子3：</p>
+<pre><code>/*foo5.c*/
+#include &lt;stdio.h&gt;
+void f();
 
+int x=15213, y=15212;
 
-A |B
---|--
-12|45
+int main(){
+	f();
+	printf(“address of x and y are %p , %p\n”,&amp;x,&amp;y);
+	printf(“x=0x%x y=0x%x \n”,x, y) ;
+	return 0;
+}
 </code></pre>
-<p>Preview:</p>
-<hr />
-<table>
-<thead>
-<tr>
-<th>Left</th>
-<th>Center</th>
-<th>Right</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>aaa</td>
-<td>bbb</td>
-<td>ccc</td>
-</tr>
-<tr>
-<td>ddd</td>
-<td>eee</td>
-<td>fff</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>123</td>
-<td>456</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>12</td>
-<td>45</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>Span Elements</h2>
-<h3>Links</h3>
-<p>HTML Tag: <code>&lt;a&gt;</code></p>
-<p>Markdown supports two style of links: inline and reference.</p>
-<h4>Inline</h4>
-<p>Inline link format like this: <code>[Link Text](URL "Title")</code></p>
-<p>Title is optional.</p>
-<p>Code:</p>
-<pre><code>This is [an example](http://example.com/ "Title") inline link.
+<pre><code> /*bar5.c*/
+double x ;
 
-[This link](http://example.net/) has no title attribute.
+void f(){
+	x = -0.0;
+}
 </code></pre>
-<p>Preview:</p>
-<hr />
-<p>This is <a href="http://example.com/">an example</a> inline link.</p>
-<p><a href="http://example.net/">This link</a> has no title attribute.</p>
-<hr />
-<p>If you're referring to a local resource on the same server, you can use relative paths:</p>
-<p>Code:</p>
-<pre><code>See my [About](/about/) page for details.
+<p><strong>double x</strong>的复制会覆盖内存中强符号int x 和 y 所在位置的值</p>
+<p>为了避免上述的麻烦，推荐</p>
+<ol>
+<li>使用<strong>static</strong></li>
+<li>定义了全局变量就初始化它</li>
+<li>引用了外部符号就使用<strong>extern</strong>标识</li>
+</ol>
+<h2>2. 链接器的工作机制：符号解析和重定位</h2>
+<h3>1.1.1 符号解析</h3>
+<p>符号解析时，链接器按照命令行中的输入顺序扫描.o文件和.a文件</p>
+<p>扫描过程中维护的3个集合</p>
+<ol>
+<li><strong>E</strong>：可重定位目标文件的集合（E中文件最终被合并为可执行文件）</li>
+<li><strong>U</strong>：未解析的符号的集合（引用但还没有定义的符号）</li>
+<li><strong>D</strong>：在之前的输入文件中已经定义的符号</li>
+</ol>
+<p>扫描结束后，如果U为空，合并E 的文件得到可执行目标文件。否则，发出链接错误</p>
+<p><strong>命令行中输入文件的顺序很重要，准则是：将库文件放在末尾</strong></p>
+<h3>1.1.1 重定位机制</h3>
+<h4>重定位是什么？</h4>
+<p>重定位就是在目标文件中，将“地址占位符”替换为“真实地址”</p>
+<h4>为什么需要重定位？</h4>
+<p>一个.o文件中，代码和数据都是以**相对地址（偏移）**来写的，没办法直接执行</p>
+<h4>重定位步骤</h4>
+<ol>
+<li>
+<p>符号定义重定位</p>
+<p>把所有.o文件中的段（.text、.data)拼起来，分配地址给符号</p>
+</li>
+<li>
+<p>符号引用重定位</p>
+<p>找出代码中对这些符号的“引用”，修改为真实地址</p>
+</li>
+</ol>
+<h4>重定位表如何记录这些引用？</h4>
+<pre><code>struct Elf64_Rela {
+    offset   // 这个引用在.text里的偏移
+    symbol   // 要引用的符号是哪个
+    type     // 是PC相对还是绝对地址, 相对地址R_X86_64_PC32，绝对地址R_X86_64_PLT32/32
+    addend   // 补偿偏移
+}
 </code></pre>
-<p>Preview:</p>
-<hr />
-<p>See my <a href="/about/">About</a> page for details.</p>
-<hr />
-<h4>Reference</h4>
-<p>You could predefine link references. Format like this: <code>[id]: URL "Title"</code></p>
-<p>Title is also optional. And the you refer the link, format like this: <code>[Link Text][id]</code></p>
-<p>Code:</p>
-<pre><code>[id]: http://example.com/  "Optional Title Here"
-This is [an example][id] reference-style link.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>This is <a href="http://example.com/">an example</a> reference-style link.</p>
-<hr />
-<p>That is:</p>
-<ul>
-<li>Square brackets containing the link identifier (<strong>not case sensitive</strong>, optionally indented from the left margin using up to three spaces);</li>
-<li>followed by a colon;</li>
-<li>followed by one or more spaces (or tabs);</li>
-<li>followed by the URL for the link;</li>
-<li>The link URL may, optionally, be surrounded by angle brackets.</li>
-<li>optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.</li>
-</ul>
-<p>The following three link definitions are equivalent:</p>
-<p>Code:</p>
-<pre><code>[foo]: http://example.com/  "Optional Title Here"
-[foo]: http://example.com/  'Optional Title Here'
-[foo]: http://example.com/  (Optional Title Here)
-[foo]: &lt;http://example.com/&gt;  "Optional Title Here"
-</code></pre>
-<p>Uses an empty set of square brackets, the link text itself is used as the name.</p>
-<p>Code:</p>
-<pre><code>[Google]: http://google.com/
-[Google][]
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><a href="http://google.com/">Google</a></p>
-<hr />
-<h3>Emphasis</h3>
-<p>HTML Tags: <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code></p>
-<p>Markdown treats <strong>asterisks (*)</strong> and <strong>underscores (_)</strong> as indicators of emphasis. <strong>One delimiter</strong> will be <code>&lt;em&gt;</code>; *<em>double delimiters</em> will be <code>&lt;strong&gt;</code>.</p>
-<p>Code:</p>
-<pre><code>*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><em>single asterisks</em></p>
-<p><em>single underscores</em></p>
-<p><strong>double asterisks</strong></p>
-<p><strong>double underscores</strong></p>
-<hr />
-<p>But if you surround an * or _ with spaces, it'll be treated as a literal asterisk or underscore.</p>
-<p>You can backslash escape it:</p>
-<p>Code:</p>
-<pre><code>\*this text is surrounded by literal asterisks\*
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>*this text is surrounded by literal asterisks*</p>
-<hr />
-<h3>Code</h3>
-<p>HTML Tag: <code>&lt;code&gt;</code></p>
-<p>Wraps it with <strong>backtick quotes (`)</strong>.</p>
-<p>Code:</p>
-<pre><code>Use the `printf()` function.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>Use the <code>printf()</code> function.</p>
-<hr />
-<p>To include a literal backtick character within a code span, you can use <strong>multiple backticks</strong> as the opening and closing delimiters:</p>
-<p>Code:</p>
-<pre><code>``There is a literal backtick (`) here.``
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><code>There is a literal backtick (`) here.</code></p>
-<hr />
-<p>The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:</p>
-<p>Code:</p>
-<pre><code>A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>A single backtick in a code span: <code>`</code></p>
-<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
-<hr />
-<h3>Images</h3>
-<p>HTML Tag: <code>&lt;img /&gt;</code></p>
-<p>Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.</p>
-<h4>Inline</h4>
-<p>Inline image syntax looks like this: <code>![Alt text](URL "Title")</code></p>
-<p>Title is optional.</p>
-<p>Code:</p>
-<pre><code>![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg "Optional title")
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><img src="https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp" alt="Alt text" /></p>
-<p><img src="https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp" alt="Alt text" title="Optional title" /></p>
-<hr />
-<p>That is:</p>
-<ul>
-<li>An exclamation mark: !;</li>
-<li>followed by a set of square brackets, containing the alt attribute text for the image;</li>
-<li>followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.</li>
-</ul>
-<h4>Reference</h4>
-<p>Reference-style image syntax looks like this: <code>![Alt text][id]</code></p>
-<p>Code:</p>
-<pre><code>[img id]: https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp  "Optional title attribute"
-![Alt text][img id]
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><img src="https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp" alt="Alt text" title="Optional title attribute" /></p>
-<hr />
-<h3>Strikethrough</h3>
-<p>HTML Tag: <code>&lt;del&gt;</code></p>
-<p>It's an extension.</p>
-<p>GFM adds syntax to strikethrough text.</p>
-<p>Code:</p>
-<pre><code>~~Mistaken text.~~
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><s>Mistaken text.</s></p>
-<hr />
-<h2>Miscellaneous</h2>
-<h3>Automatic Links</h3>
-<p>Markdown supports a shortcut style for creating "automatic" links for URLs and email addresses: simply surround the URL or email address with angle brackets.</p>
-<p>Code:</p>
-<pre><code>&lt;http://example.com/&gt;
-
-&lt;address@example.com&gt;
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p><a href="http://example.com/">http://example.com/</a></p>
-<p><a href="mailto:address@example.com">address@example.com</a></p>
-<hr />
-<p>GFM will autolink standard URLs.</p>
-<p>Code:</p>
-<pre><code>https://github.com/emn178/markdown
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>https://github.com/emn178/markdown</p>
-<hr />
-<h3>Backslash Escapes</h3>
-<p>Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown's formatting syntax.</p>
-<p>Code:</p>
-<pre><code>\*literal asterisks\*
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>*literal asterisks*</p>
-<hr />
-<p>Markdown provides backslash escapes for the following characters:</p>
-<p>Code:</p>
-<pre><code>\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
-</code></pre>
-<h2>Inline HTML</h2>
-<p>For any markup that is not covered by Markdown's syntax, you simply use HTML itself. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML; you just use the tags.</p>
-<p>Code:</p>
-<pre><code>This is a regular paragraph.
-
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Foo&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-This is another regular paragraph.
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>This is a regular paragraph.</p>
-<p>&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;Foo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</p>
-<p>This is another regular paragraph.</p>
-<hr />
-<p>Note that Markdown formatting syntax is <strong>not processed within block-level HTML tags</strong>.</p>
-<p>Unlike block-level HTML tags, Markdown syntax is <strong>processed within span-level tags</strong>.</p>
-<p>Code:</p>
-<pre><code>&lt;span&gt;**Work**&lt;/span&gt;
-
-&lt;div&gt;
-    **No Work**
-&lt;/div&gt;
-</code></pre>
-<p>Preview:</p>
-<hr />
-<p>&lt;span&gt;<strong>Work</strong>&lt;/span&gt;</p>
-<p>&lt;div&gt;
-<strong>No Work</strong>
-&lt;/div&gt;</p>
-<hr />
+<p>记录在.rel.text和.rel.data</p>
 ]]></content>
     <author>
       <name>Elopez</name>
     </author>
-    <category term="Examples"></category>
+    <category term="计算机系统"></category>
   </entry>
   <entry>
-    <title>Markdown Extended Features</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-extended/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-extended/</id>
-    <published>2024-05-01T00:00:00.000Z</published>
-    <updated>2024-11-29T00:00:00.000Z</updated>
-    <summary>Read more about Markdown features in Mizuki</summary>
-    <content type="html"><![CDATA[<h2>GitHub Repository Cards</h2>
-<p>You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.</p>
-<p>::github{repo="matsuzaka-yuki/Mizuki"}</p>
-<p>Create a GitHub repository card with the code <code>::github{repo="matsuzaka-yuki/Mizuki"}</code>.</p>
-<pre><code>::github{repo="matsuzaka-yuki/Mizuki"}
+    <title>CSAPP 第六章 - 存储器层次结构</title>
+    <link href="https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</id>
+    <published>2025-10-23T00:00:00.000Z</published>
+    <updated>2025-10-23T00:00:00.000Z</updated>
+    <summary>深入理解存储器层次结构，包括 RAM、ROM、磁盘、SSD 和缓存的工作原理</summary>
+    <content type="html"><![CDATA[<h1>第六章 存储器层次结构</h1>
+<h2>6.1 存储器</h2>
+<h3>6.1.1 存储器的分类</h3>
+<h3>6.1.2 随机访问存储器（Random Access Memory，RAM）</h3>
+<h4>StaticRAM（SRAM）</h4>
+<h4>DynamicRAM（DRAM）</h4>
+<h3>6.1.3 只读存储器（Read Only Memory，ROM）</h3>
+<h4>机械磁盘（Hard Disk Drive,  HDD）</h4>
+<h4>固态硬盘（Solid State Drive，SSD）</h4>
+<h3>6.1.4 层次性存储结构</h3>
+<p><img src="https://mizuki.mysqil.com/_astro/herachy.BehSnrY7_Z2g6UoM.webp" alt="herachy" /></p>
+<p><strong>从上至下：存储速度越来越慢、存储容量越来越大，单位价格越来越低</strong></p>
+<h2>6.2 局部性</h2>
+<p><strong>局部性原理（Principle of Locality）</strong>：程序倾向使用<strong>最近一段时间</strong>，<strong>距离其较近地址</strong>的指令和数据</p>
+<p><strong>时间局部性（Temporal Locality）</strong>：当前被访问的信息<strong>近期</strong>很可能还会被再次访问</p>
+<p><strong>空间局部性（Spatial Locality）</strong>：在最近的将来将用到的信息很可能在<strong>空间地址</strong>上是临近的</p>
+<h3>6.2.1 局部性示例</h3>
+<pre><code>sum = 0;
+for (i = 0; i &lt; n; i++)  
+	sum += a[i];
+return sum;
 </code></pre>
-<h2>Admonitions</h2>
-<p>Following types of admonitions are supported: <code>note</code> <code>tip</code> <code>important</code> <code>warning</code> <code>caution</code></p>
-<p>:::note
-Highlights information that users should take into account, even when skimming.
-:::</p>
-<p>:::tip
-Optional information to help a user be more successful.
-:::</p>
-<p>:::important
-Crucial information necessary for users to succeed.
-:::</p>
-<p>:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::</p>
-<p>:::caution
-Negative potential consequences of an action.
-:::</p>
-<h3>Basic Syntax</h3>
-<pre><code>:::note
-Highlights information that users should take into account, even when skimming.
-:::
+<p><strong>对数据的引用：</strong></p>
+<p>​	顺序访问数组元素（步长为1的引用模式）——<strong>空间局部性</strong></p>
+<p>​	变量<strong>sum</strong>在每次迭代循环中被引用一次——<strong>时间局部性</strong></p>
+<p><strong>对指令的引用：</strong></p>
+<p>​	顺序读取指令——<strong>空间局部性</strong></p>
+<p>​	重复循环执行for循环体——<strong>时间局部性</strong></p>
+<h3>6.2.2 对局部性的定性评价</h3>
+<p>关于数据<strong>a</strong>，分析下列函数的局部性好坏</p>
+<p>代码1：</p>
+<pre><code>int sum_array_rows(inta[M][N]){
+	int i, j, sum =0;
+	for (i = 0; i &lt; M; i++)  
+		for (j = 0; j &lt; N;j++)
+			sum += a[i][j];  
+	return sum;
+ }
+</code></pre>
+<p>代码2：</p>
+<pre><code>
 
-:::tip
-Optional information to help a user be more successful.
-:::
+
+int sum_array_cols(inta[M][N]){
+    int i, j, sum =0;
+	for (j = 0; j &lt; N; j++)  
+		for (i = 0; i &lt; M;i++)
+			sum += a[i][j];  
+    return sum;
+ }
 </code></pre>
-<h3>Custom Titles</h3>
-<p>The title of the admonition can be customized.</p>
-<p>:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::</p>
-<pre><code>:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
+<p><strong>行优先</strong>的访问顺序和C语言的<strong>行主页</strong>的内存布局一致，它有良好的空间局部性</p>
+<p>然后，我们继续来看看另外一个例子：</p>
+<p>修改循环的顺序，使得它以步长为<strong>1</strong>的引用模式扫描三维数组<strong>a</strong>（从而具有良好的局部性）？</p>
+<pre><code>int sum_array_3d(int a[M][N][P]){
+	int i, j, k, sum = 0;
+	for (i = 0; i &lt; M; i++)  
+		for (j = 0; j &lt; N; j++)
+ 			for (k = 0; k &lt; P; k++)
+				sum += a[k][i][j];
+	return sum;
+}
 </code></pre>
-<h3>GitHub Syntax</h3>
+<p>结果是显而易见的：</p>
+<pre><code>int sum_array_3d(int a[M][N][P]) {
+    int i, j, k, sum = 0;
+    for (i = 0; i &lt; M; i++)  
+        for (j = 0; j &lt; N; j++)
+            for (k = 0; k &lt; P; k++)  // P 是最内层维度，连续
+                sum += a[i][j][k];
+    return sum;
+}
+</code></pre>
+<h2>6.3 缓存（Cache）</h2>
+<p><img src="https://mizuki.mysqil.com/_astro/herachy_2.B3VPj4HU_ZuExB9.webp" alt="herachy_2" /></p>
+<p>存储器的基本思想：</p>
+<p>​	对于每个<strong>k</strong>，位于<strong>k</strong>层的更快更小存储设备作为位于<strong>k + 1</strong>层的更大更慢存储设备的<strong>缓存</strong></p>
+<h3>缓存（Cache）的基本概念</h3>
+<p><img src="https://mizuki.mysqil.com/_astro/cache.t2EkSn7M_1vMhnz.webp" alt="cache" /></p>
+<p><strong>缓存命中</strong>： 需要的数据块在缓存中找得到，无需访问下层存储器即可获得数据</p>
+<p><strong>缓存不命中</strong>：</p>
+<ol>
+<li><strong>冷（强制型）不命中</strong></li>
+</ol>
+<p>​	当缓存为空时，对任何数据的请求都会不命中，此类命中称为冷不命中</p>
+<ol>
+<li><strong>容量不命中</strong></li>
+</ol>
+<p>​	发生在当活跃集合（工作集合working set）的大小比缓存大</p>
+<p>​	简单地说，就是缓存不够大，，装不下要用的所有东西</p>
+<ol>
+<li><strong>冲突不命中</strong></li>
+</ol>
+<p>​	根据映射策略，大多数缓存将<strong>k + 1</strong>层的某个块限制放置在第<strong>k</strong>层块的一个很小的子集中</p>
+<p>​	缓存够大，但你访问的数据因为映射策略的问题，全都跑到一个小位置上互相冲突</p>
+<h2>6.4 高速缓存存储器</h2>
+<p><strong>高速缓存存储器</strong>是小型的、快速的基于SRAM的存储器，是在硬件中集中管理的</p>
+<p><img src="https://mizuki.mysqil.com/_astro/cpu.fQe69E-__1JvGbu.webp" alt="cpu" /></p>
+<p>那么就是出现了一个问题：信息从主存流向Cache中，如何进行定位呢？</p>
+<p>**地址映射：**CPU访问时，将贮存地址按照某种映射函数关系变成Cache的地址</p>
+<p>​	地址映射的方式：<strong>直接映射、组相联映射、全相连映射</strong></p>
+<h3>直接映射</h3>
+<h3>组相联映射</h3>
+<h3>全相联映射</h3>
+]]></content>
+    <author>
+      <name>Elopez</name>
+    </author>
+    <category term="计算机系统"></category>
+  </entry>
+  <entry>
+    <title>循环展开优化技术</title>
+    <link href="https://mizuki.mysqil.com/posts/csapp/%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/csapp/%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80/</id>
+    <published>2025-10-18T00:00:00.000Z</published>
+    <updated>2025-10-18T00:00:00.000Z</updated>
+    <summary>CSAPP 第五章循环展开优化技术详解，包括多变量处理和多累计变量的优化方法</summary>
+    <content type="html"><![CDATA[<p>n * n 的循环展开</p>
+<p>第一个 n : 表示每次处理几个变量</p>
+<p>第二个 n : 表示几个累计变量</p>
+<p>原始函数</p>
+<pre><code>void combine() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    for (i = 0; i &lt; length; i++) 
+        t = t * d[i];
+    *dest = t;
+}
+</code></pre>
+<p>4 * 1 路循环, 每次循环处理四个元素, 保存在一个累计变量</p>
+<pre><code>void combine41() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    for (i = 0; i &lt; length - 4; i += 4) {
+        t = t * d[i];
+        t = t * d[i + 1];
+        t = t * d[i + 2];
+        t = t * d[i + 3];
+    }
+    
+    for (; i &lt; length; i++)
+        t *= d[i];
+    
+    *dest = t;
+}
+</code></pre>
+<p>4 * 4 路循环, 每次循环处理 4 个元素, 保存在 4 个累计变量</p>
+<pre><code>void combine44() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    data_t t1 = 1;
+    data_t t2 = 1;
+    data_t t3 = 1;
+    data_t t4 = 1;
+    for (i = 0; i &lt; length - 4; i+= 4) {
+        t1 = t1 * d[i];
+        t2 = t2 * d[i + 1];
+        t3 = t3 * d[i + 2];
+        t4 = t4 * d[i + 3];
+    }
+    
+    t = t1 * t2 * t3 * t4;
+    
+    for (; i &lt; length; i++)
+        t *= d[i];
+    
+    *dest = t;
+}
+</code></pre>
+]]></content>
+    <author>
+      <name>Elopez</name>
+    </author>
+    <category term="计算机系统"></category>
+  </entry>
+  <entry>
+    <title>CSAPP 第五章 - 优化程序性能</title>
+    <link href="https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</id>
+    <published>2025-10-15T00:00:00.000Z</published>
+    <updated>2025-10-15T00:00:00.000Z</updated>
+    <summary>深入学习程序性能优化技术，包括代码优化级别、代码移动、循环展开等核心优化方法</summary>
+    <content type="html"><![CDATA[<h1>第五章 优化程序性能(1)</h1>
+<h2>本章概述</h2>
+<h3>代码优化级别</h3>
+<ol>
+<li>算法 + 数据结构（选择一组适当的算法和数据结构）</li>
+<li>代码级别优化（编写执行高效的代码）</li>
+<li>机器级优化（针对运算量大的计算，分为多个子任务，子任务利用多核/多处理器并行计算）</li>
+</ol>
+<h3>普遍有用的代码级优化方法</h3>
+<p>核心思想：减少/消除不必要的工作（函数调用、重复运算、条件测试、内存引用等）</p>
+<h4>代码移动</h4>
+<p>若计算总是产生相同的结果，可将其从循环中移出，减少计算执行的频率</p>
+<pre><code>void set_row(double *a, double *b, long i, long n){
+	long j;
+	for (j = 0; j &lt; n; j++)
+		a[n * i + j] = b[j];
+}
+</code></pre>
+<p>优化为：</p>
+<pre><code>void set_row(double *a, double *b, long i, long n){
+	long j;
+    int ni = n * i;
+	for (j = 0; j &lt; n; j++)
+		a[ni + j] = b[j];
+}
+</code></pre>
+<h4>复杂运算简化</h4>
+<p>核心思想：用更简单的方法替换昂贵的操作（使用移位、加，替换乘法和除法）</p>
+<p>1.乘法转为移位</p>
+<pre><code>16 * x ——&gt; x &lt;&lt; 4
+</code></pre>
+<p>2.识别乘积的顺序（乘法转为加法）</p>
+<pre><code>for (i = 0; i &lt; n; i++) {
+	int ni = n * i;
+	for (j = 0; j &lt; n; j++) {
+		a[ni + j] = b[j];
+	}
+}
+</code></pre>
+<p>优化为：</p>
+<pre><code>int ni = 0;
+for (i = 0; i &lt; n; i++) {
+	for (j = 0; j &lt; n; j++) {
+		a[ni + j] = b[j];
+	}
+	ni += n;
+}
+</code></pre>
+<h4>共享公用子表达式</h4>
+<p>核心思想：重用表达式的一部分</p>
+<pre><code>/* Sum neighbors of i,j */
+up =    val[(i-1)*n + j ];
+down =  val[(i+1)*n + j ];
+left =  val[i*n + j-1 ];
+right = val[i*n + j+1];
+sum = up + down + left + right;
+</code></pre>
+<p>优化为：</p>
+<pre><code>long inj = i*n + j;
+up = val[inj -  n];
+down = val[inj + n];
+left = val[inj - 1];
+right = val[inj + 1];
+sum = up + down + left + right;
+</code></pre>
+<h2>5.1 编译器优化代码</h2>
+<h3>编译器优化代码的特点</h3>
+<p>1.编译器能力强大：能够优化程序员写的程序</p>
+<p>2.编译器不是万能的：可能导致与程序员意图不一致的结果</p>
+<p>3.编译器优化会优先保证正确性</p>
+<p>4.因此，编译器的优化处理时保守的，而不是激进的</p>
+<h3>编译器优化的局限</h3>
+<h4>内存别名引用</h4>
+<p>如下优化后的代码，可能与优化前代码不一致的结果，编译器必须假设所有的情况，限制了可能的优化策略</p>
+<pre><code>//优化前的代码
+void twiddle1(long *xp,long *yp){
+ *xp +=*yp;
+ *xp +=*yp; 
+}
+</code></pre>
+<pre><code>//优化后的代码
+void twiddle2(long *xp,long *yp){
+ *xp += 2*(*yp);
+ }
+</code></pre>
+<p>当<strong>xp</strong>和<strong>yp</strong>指向同一个地址的时候，优化前的代码，<strong>xp</strong>的值会变为原来的四倍；优化后的代码，<strong>xp</strong>值会变为原来的三倍</p>
+<p>另外一个例子：如果<strong>p</strong>，<strong>q</strong>指向同一个内存位置，<strong>t1</strong> = <strong>1000</strong>，否则为<strong>3000</strong></p>
+<pre><code>x = 1000, y = 3000
+*q = y     //3000
+*p = x     //1000
+t1 = *q    //t1 = ? 
+</code></pre>
+<h4>函数调用</h4>
+<p>当一个函数**f( )**的调用涉及全局变量的时候，例如如下例子：</p>
+<pre><code>long counter = 0;
+long f(){
+ return counter++;
+}
+//优化前的代码
+long func1(){
+ return f() + f() + f() + f();
+}
+//如果将func1()优化为func2()
+long func2(){
+ return 4*f();
+ }
+</code></pre>
+<p><strong>func1</strong>的返回值：<strong>4</strong>， <strong>func2</strong>的返回值：<strong>1</strong></p>
+<p>因此，编译器不会将<strong>func1</strong>优化为<strong>func2</strong>。为了提高性能，可以将<strong>f</strong>声明为<strong>inline</strong>内联函数。</p>
+<p>内联函数在编译时，编译器会在调用的地方展开，没有函数调用建立栈帧的开销，程序运行会更快。</p>
+<p>需要注意的是，内联函数只适合一些经常被调用的少量代码。<strong>GCC</strong>只会尝试在单个文件中定义的内联函数。</p>
+<pre><code>long func1in(){
+	long t = counter++;
+	t += counter++;
+	t +=counter++;
+	t += counter ++;
+	return t;
+}
+</code></pre>
+<pre><code>long func1opt(){
+	long t = 4 * counter + 6;
+	counter += 4;
+	return t;
+}
+</code></pre>
+<h3>优化的关键</h3>
+<p>1.优化的关键在于程序员</p>
+<p>2.编译器优化能力强，但过度依赖编译器会带来意外与错误</p>
+<p>3.编译器优化只是辅助工作</p>
+<p>4.程序员值得花费更多精力写程序，使编译器能够将之转换为更有效的机器代码</p>
+<p>5.程序员观察编译器在不同优化级别的结果，以提高自己的优化水平</p>
+<h2>5.2 表示程序性能</h2>
+<p>1.运行时间：一个元素完成功能所运行的时间</p>
+<p>2.元素周期数（<strong>Cycles Per Element, CPE</strong>）：运行时间/时钟周期</p>
+<p>3.时钟周期：CPU完成一个基本动作的时间（对应一个电平信号宽度）</p>
+<p>那么，一个时钟周期有多长呢？</p>
+<p>一个标有“4GHz” 的处理器，一个时钟周期的时长为：0.25 * 10&lt;sup&gt;-9&lt;/sup&gt; = 0.25 ns</p>
+<p>通常来说，一个加法操作会消耗<strong>1</strong>到<strong>2</strong>个时钟周期；乘法操作会消耗<strong>3</strong>到<strong>5</strong>个时钟周期，但可能会根据不同的处理器架构而有所不同。</p>
+<h2>5.3 程序示例</h2>
+<p>下面，我们将通过一个具体的例子，使用各种方法，对其进行优化。</p>
 <blockquote>
-<p>[!TIP]
-<a href="https://github.com/orgs/community/discussions/16925">The GitHub syntax</a> is also supported.</p>
+<p>[!IMPORTANT]</p>
+<p>现在有如图所示的数据结构：存储数组长度和指向数组的指针</p>
+<p>我们需要度量代码对于（int、long）和（float、double）的性能</p>
 </blockquote>
-<pre><code>&gt; [!NOTE]
-&gt; The GitHub syntax is also supported.
+<p><img src="https://mizuki.mysqil.com/_astro/vector.BGbutyCC_Z24z6op.webp" alt="vector" /></p>
+<p>定义结构体：</p>
+<pre><code>typedef struct{
+    long len;
+    data_t *data; // 基本元素的数据类型
+}vec_rec, *vec_ptr;
 
-&gt; [!TIP]
-&gt; The GitHub syntax is also supported.
+typedef long data_t; // 基本元素的数据类型
 </code></pre>
-<h3>Spoiler</h3>
-<p>You can add spoilers to your text. The text also supports <strong>Markdown</strong> syntax.</p>
-<p>The content :spoiler[is hidden <strong>ayyy</strong>]!</p>
-<pre><code>The content :spoiler[is hidden **ayyy**]!</code></pre>
-]]></content>
-    <author>
-      <name>Elopez</name>
-    </author>
-    <category term="Examples"></category>
-  </entry>
-  <entry>
-    <title>Simple Guides for Mizuki</title>
-    <link href="https://mizuki.mysqil.com/posts/guide/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/guide/</id>
-    <published>2024-04-01T00:00:00.000Z</published>
-    <updated>2024-04-01T00:00:00.000Z</updated>
-    <summary>How to use this blog template.</summary>
-    <content type="html"><![CDATA[<p>This blog template is built with <a href="https://astro.build/">Astro</a>. For the things that are not mentioned in this guide, you may find the answers in the <a href="https://docs.astro.build/">Astro Docs</a>.</p>
-<h2>Front-matter of Posts</h2>
-<pre><code>---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
+<p>创建一个vec_ptr并返回：</p>
+<pre><code>vec_ptr new_vec(long len){
+	vec_ptr result = (vec_ptr)malloc(sizeof(vec_rec));
+	data_t *data = NULL;
+    if (!result) return; // 如果分配失败, 直接返回
+    if (len &gt; 0){
+        // 动态分配数组calloc, 指定data_t大小的len个空间
+        // 数组中初始值都为0
+        data = (data_t*)calloc(len, sizeof(data_t));
+        if (!data){ // 分配失败, 释放结构体
+            free((void *)result);
+            return NULL:
+        }
+    }
+    result-&gt;data = data; // 分配成功, 让指针指向数组
+    return result;
+}
+</code></pre>
+<p>访问向量元素：</p>
+<pre><code>int get_vec_element(vec_ptr v, long index, data_t *dest){
+    if (index &lt; 0 || index &gt;= v-&gt;length) return 0; // 边界检查, 不符合要求返回0
+    *dest = v-&gt;data[index]; // 将找到的值赋给dest
+    return 1; // 查询成功, 返回1
+}
+</code></pre>
+<p>确定向量长度：</p>
+<pre><code>long vec_length(vec_ptr v){
+	return v-&gt;length;
+}
+</code></pre>
+<h3>代码优化</h3>
+<p>示例功能：使用某种运算，将向量中的所有元素合并一个值</p>
+<pre><code>// 对向量元素求和
+#define IDENT 0
+#define OP +
+
+// 对向量元素求乘积
+#define IDENT 1
+#define OP *
+</code></pre>
+<h4>合并运算的初始实现</h4>
+<pre><code>void combine1(vec_ptr v, data_t *dest){
+	long i;
+	*dest = IDENT;
+	for (int i = 0; i &lt; vec_length(v); i++){
+		data_t val;
+		get_vec_element(v, i, &amp;val); // 将取得的值赋给val
+		*dest = *dest OP val; // 进行运算
+	}
+}
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>Attribute</th>
-<th>Description</th>
+<th>函数</th>
+<th>方法</th>
+<th>整数</th>
+<th>浮点数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>title</code></td>
-<td>The title of the post.</td>
+<td></td>
+<td></td>
+<td>+            *</td>
+<td>+            *</td>
 </tr>
 <tr>
-<td><code>published</code></td>
-<td>The date the post was published.</td>
+<td>combine1</td>
+<td>未优化</td>
+<td>22.68    20.02</td>
+<td>19.98  20.18</td>
 </tr>
 <tr>
-<td><code>pinned</code></td>
-<td>Whether this post is pinned to the top of the post list.</td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td>A short description of the post. Displayed on index page.</td>
-</tr>
-<tr>
-<td><code>image</code></td>
-<td>The cover image path of the post.&lt;br/&gt;1. Start with <code>http://</code> or <code>https://</code>: Use web image&lt;br/&gt;2. Start with <code>/</code>: For image in <code>public</code> dir&lt;br/&gt;3. With none of the prefixes: Relative to the markdown file</td>
-</tr>
-<tr>
-<td><code>tags</code></td>
-<td>The tags of the post.</td>
-</tr>
-<tr>
-<td><code>category</code></td>
-<td>The category of the post.</td>
-</tr>
-<tr>
-<td><code>licenseName</code></td>
-<td>The license name for the post content.</td>
-</tr>
-<tr>
-<td><code>author</code></td>
-<td>The author of the post.</td>
-</tr>
-<tr>
-<td><code>sourceLink</code></td>
-<td>The source link or reference for the post content.</td>
-</tr>
-<tr>
-<td><code>draft</code></td>
-<td>If this post is still a draft, which won't be displayed.</td>
+<td>combine1</td>
+<td><strong>-O1</strong></td>
+<td>10.12    10.12</td>
+<td>10.17  11.14</td>
 </tr>
 </tbody>
 </table>
-<h2>Where to Place the Post Files</h2>
-<p>Your post files should be placed in <code>src/content/posts/</code> directory. You can also create sub-directories to better organize your posts and assets.</p>
-<pre><code>src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
+<p>在未进行任何代码优化的时候，只是依靠编译器的优化，性能就可以提升一倍</p>
+<h4>优化一：消除循环的低效率</h4>
+<p>在初始实现的代码中，每次循环都要进行函数调用，但向量的长度不会随着循环的进行而改变。因此，只需要计算一次向量长度即可。</p>
+<pre><code>void combine2(vec_ptr v, data_t *dest){
+    long i;
+    long length = vec_length(v); // 只调用一次vec_length(v), 数据存储在length中
+    *dest = IDENT;
+    for(i = 0; i &lt; length; i++){
+        data_t val;
+        get_vec_elemrnt(v, i, &amp;val);
+        *dest = *dest OP val;
+    }
+}
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>方法</th>
+<th>整数</th>
+<th>浮点数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>+            *</td>
+<td>+            *</td>
+</tr>
+<tr>
+<td>combine1</td>
+<td><strong>-O1</strong></td>
+<td>22.68    20.02</td>
+<td>19.98  20.18</td>
+</tr>
+<tr>
+<td>combine2</td>
+<td>移动<strong>vec_length</strong></td>
+<td>10.12    10.12</td>
+<td>10.17  11.14</td>
+</tr>
+</tbody>
+</table>
+<p>编译器通过一些基本的优化改善了<strong>combine1</strong>的性能，但未解决更深层次的性能瓶颈，即重复调用<strong>vec_length(v)</strong></p>
+<p>那么，编译器为什么不能将**vec_length(v)**从循环出调用呢？</p>
+<p>1.函数可能有副作用。例如，每次调用都改变全局变量/状态</p>
+<p>2.对于给定的参数，函数可能返回不同的值。如果函数依赖外部变量或者循环中改变的变量，它每次的返回值可能会有所不同。因此，编译器无法确定将**vec_length(v)**移除循环的正确性</p>
+<p>3.在代码中,**vec_length(v)<strong>可能与其它函数交互，导致</strong>vec_length(v)**需要在每次循环中重新计算，而不是提前计算一次</p>
+<p>对于编译器：</p>
+<p>1.函数调用被视为<em>黑盒</em></p>
+<p>2.编译器只会尝试在函数附近进行弱优化</p>
+<p>解决办法：</p>
+<p>1.使用<strong>inline</strong>内联函数</p>
+<p>2.程序员自己做代码移动</p>
+<h4>优化二：减少过程调用</h4>
+<p>我们修改<strong>get_vec_element</strong>，无需边界检查，直接获取<strong>data</strong>数组</p>
+<pre><code>// 直接获取data数组
+data_t* get_vec_start(vec_ptr v){
+    return v-&gt;data;
+}
+
+void combine3(vec_ptr v, data_t *dest){
+	long i;
+	long length = vec_length(v);
+	data_t *data = get_vec_start(v);
+	*dest= IDENT;
+	for (i= 0; i&lt;length; i++){
+		*dest= *dest OP data[i];
+	}
+ }
+</code></pre>
+<p>缺点是破坏了程序的模块性。我们并不知道他的元素到底是以数组存储还是链表之类的存储</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>方法</th>
+<th>整数</th>
+<th>浮点数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>+            *</td>
+<td>+            *</td>
+</tr>
+<tr>
+<td>combine2</td>
+<td>移动<strong>vec_lemgth</strong></td>
+<td>7.02    9.03</td>
+<td>9.02  11.03</td>
+</tr>
+<tr>
+<td>combine3</td>
+<td>直接访问<strong>data</strong></td>
+<td>7.17    9.02</td>
+<td>9.02  11.03</td>
+</tr>
+</tbody>
+</table>
+<p>性能没有明显的提升，整体求和的性能还略有下降。说明是循环的其他操作形成了瓶颈。</p>
+<h4>优化三：消除不必要的内存引用</h4>
+<p>注意到，代码每次循环都更新<em><strong>dest</strong>。即每一次都要从内存读取数据，执行</em><em>OP</em>*操作后写回内存</p>
+<pre><code>void combine4(vec_ptr v, data_t *dest){
+ 	long i;
+ 	long length = vec_length(v);
+	data_t *data = get_vec_start(v);
+	data_t acc = IDENT;
+	for (i = 0; i &lt;length; i++){
+		acc = acc OP data[i];
+	}
+	*dest = acc;
+}
+</code></pre>
+<p>现在，每次迭代的内存操作从两次读取和一次写减少到只需要一次读</p>
+<p>我们将总和临时存储在读写速度更高的寄存器，最后一起写入内存</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>方法</th>
+<th>整数</th>
+<th>浮点数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>+            *</td>
+<td>+            *</td>
+</tr>
+<tr>
+<td>combine2</td>
+<td>移动<strong>vec_length</strong></td>
+<td>7.02    9.03</td>
+<td>9.02  11.03</td>
+</tr>
+<tr>
+<td>combine4</td>
+<td>直接访问数据</td>
+<td>1.27    3.01</td>
+<td>3.01  5.01</td>
+</tr>
+</tbody>
+</table>
+<p>那么，编译器为什么不能自动将combine3优化为combine4？</p>
+<p>是因为，之前提到的<strong>内存别名引用</strong></p>
+<p>例如，在v-&gt;data=[2，3，5]的时候，我们将向量<strong>v</strong>的最后一个元素与存放结果的目标之间创建了一个别名，然后再进行累乘的操作：</p>
+<pre><code> combine3(V, get_vec_start(V)+2);
+ combine4(V, get_vec_start(V)+2);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>初始值</th>
+<th>循环之前</th>
+<th>i = 0</th>
+<th>i = 1</th>
+<th>i = 2</th>
+<th>最后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>combine3</td>
+<td>[2，3，5]</td>
+<td>[2，3，1]</td>
+<td>[2，3，2]</td>
+<td>[2，3，6]</td>
+<td>[2，3，36]</td>
+<td>[2，3，36]</td>
+</tr>
+<tr>
+<td>combine4</td>
+<td>[2，3，5]</td>
+<td>[2，3，5]</td>
+<td>[2，3，5]</td>
+<td>[2，3，5]</td>
+<td>[2，3，5]</td>
+<td>[2，3，30]</td>
+</tr>
+</tbody>
+</table>
+<p>编译器无法判断函数在上面情况下被调用，以及程序员的本意是什么</p>
+<p>编译combine3时，保守的方法是不断的读和写内存</p>
+<p>编程时，编写对编译器友好的代码</p>
+<h2>5.4 理解现代处理器</h2>
+<p>在上述的优化中。Combine2、3、4的优化均不依赖机器的特性</p>
+<p>若要进一步优化，就必须了解计算机系统结构与处理器知识</p>
+<p>理解计算机的流水线结构和处理器的工作方式对进一步的优化非常重要，尤其是 <strong>指令流水线</strong></p>
+<p>代码级上，看似是一次执行一条指令。实际上，硬件可以并行执行多个指令</p>
+<p><img src="https://mizuki.mysqil.com/_astro/line.CyF5g4-B_fV0hy.webp" alt="line" /></p>
+<h3>超标量处理器</h3>
+<ol>
+<li>
+<p><strong>超标量</strong>：每个时钟周期可以乱序执行多个操作（执行顺序和代码顺序不一致）</p>
+</li>
+<li>
+<p>大多数现代CPU都是超标量处理器</p>
+</li>
+<li>
+<p>超标量处理器分为两个部分：<strong>指令控制单元(Instruction Control Unit，ICU) <strong>和</strong>执行单元（Execution Unit，EU）</strong></p>
+</li>
+</ol>
+<p><img src="https://mizuki.mysqil.com/_astro/CPU.BH9Gbo15_2b1qcv.webp" alt="CPU" /></p>
+<h4>指令控制单元</h4>
+<ol>
+<li>
+<p>从指令Cache中读取指令，指令译码将指令转换成一组基本操作（微操作），每个操作都完成简单的操作。</p>
+</li>
+<li>
+<p>取值通常采用预取的方式，即当前执行的这条指令很早之前就取址，使其有足够的时间译码。</p>
+</li>
+<li>
+<p>取值控制包含预测分支功能：</p>
+<p>(1) 分支预测、投机执行：不管条件是否正确就执行，但结果不放入寄存器者内存</p>
+<p>(2) 预测错误会带来额外的性能开销</p>
+</li>
+<li>
+<p>退役单元：记录正在进行的处理，并确保它遵循机器级程序的顺序语义</p>
+</li>
+<li>
+<p>指令信息被放置在一个先进先出的队列中，出队的情况：</p>
+<p>(1) 指令操作完成，且引起这条指令的分支点也都被预测认为正确，所有对程序寄存器的更新都可被实际执行了。</p>
+<p>(2) 引起该指令的某个分支点预测错误，该指令会被清空，丢弃所有计算出来的结果</p>
+</li>
+<li>
+<p>任何程序寄存器的更新都只会在指令退役时发生</p>
+</li>
+</ol>
+<h4>执行单元</h4>
+<p>执行单元接收来自取值单元的操作，并将操作分配到一组<strong>功能单元</strong>中</p>
+<ol>
+<li>加载/存储单元：读/写内存（单元有个加法器算地址）</li>
+<li>算数运算单元：能够执行不同的操作</li>
+<li>分支单元：确定预测是否正确。若错误，EU丢弃分支后的计算结果，并将信号发给取值控制，说预测错误，并指出正确分支。</li>
+</ol>
+<h5>功能单元：以Haswell架构的CPU为例</h5>
+<p><img src="https://mizuki.mysqil.com/_astro/FU.DbLxOE7w_Z275xLj.webp" alt="FU" /></p>
+<h5>功能单元的性能</h5>
+<ol>
+<li>
+<p><strong>延迟</strong>：完成功能所需要的总时间，表明执行实际操作需要的时钟总周期数</p>
+</li>
+<li>
+<p><strong>发射时间</strong>：两个连续同类型的运算之间的需要的最小时间，即两次运算之间间隔的最小周期数</p>
+</li>
+<li>
+<p><strong>吞吐量</strong>：单位时间内执行的操作数量</p>
+<p>​		计算：若有多个功能单元，如<strong>C</strong>个，发射时间为<strong>I</strong>，吞吐量为<strong>C / I</strong></p>
+</li>
+<li>
+<p><strong>容量</strong>：能执行该运算的功能单元的数量，表明同时能发射多少个这样的操作</p>
+</li>
+</ol>
+<p>Haswell参考机的功能单元的性能：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/Haswell.DMnZkFYx_vVtuS.webp" alt="Haswell" /></p>
+<p>以combine函数为例，我们用CPE值两个基本界限来描述这种影响</p>
+<p><img src="https://mizuki.mysqil.com/_astro/compare.ByL8esTY_2gcRfB.webp" alt="compare" /></p>
+<ol>
+<li><strong>延迟界限</strong>：给出了<strong>任何必须按照严格顺序完成合并运算的函数所需的</strong>最小CPE值</li>
+<li><strong>吞吐量值</strong>：给出了<strong>CPE</strong>的最小界限</li>
+<li>除了整数加法外，这些测量值与处理器的延迟界限是一样的，它表明这些函数的性能是由所执行的求和或者乘积计算所主宰的，但<strong>仍然大于吞吐量界限，所以可以继续优化</strong></li>
+</ol>
+<h5>combine4：串行计算的方法</h5>
+<pre><code>for (i = 0; i &lt; length; i++) {
+	acc = acc OP data[i];
+}
+</code></pre>
+<ol>
+<li>
+<p><strong>顺序依赖性的性能</strong>：由<strong>OP</strong>的延迟决定</p>
+</li>
+<li>
+<p><strong>CPE</strong>：</p>
+<p>​	n个元素的乘积或者和，需要<strong>L * n + K</strong>个时钟周期</p>
+<p>​	<strong>L</strong>是合并运算的延迟，<strong>K</strong>表示调用函数和初始化以及终止循环的开销</p>
+<p>​	<strong>CPE等于延迟界限L</strong></p>
+</li>
+</ol>
+<h4>处理器操作的抽象模型</h4>
+<p>程序的**数据流（data-flow）**表示：分析机器及程序性能的工具</p>
+<p>以图形化的表示方法，展示了不同操作之间<strong>数据相关</strong>是如何限制它们的执行顺序的</p>
+<p>这些限制形成了数据流图中的<strong>关键路径</strong>，是执行一组机器指令所需时钟周期的一个下界</p>
+<h5>从机器代码到数据流图</h5>
+<pre><code>void combine4(vec_ptr v, data_t  *dest)
+ {  ……
+ data_t acc = 1;
+ for (i = 0; i &lt; length; i++){
+ acc = acc * data[i];
+ }
+ *dest = acc;
+ }
+</code></pre>
+<p><strong>combine4</strong>的汇编代码为：</p>
+<pre><code>data_t=double, OP=*
+acc in %xmmo0, data+i in %rdx, length in %rax
+
+.L25
+	vmulsd (%rdx), %xmm0, %xmm0	// 乘法操作
+	addq  $8, %rdx 	// 指向下一个数据元素
+	cmpq %rax, %rdx	// 比较i &lt; length
+	jne .L25	//如果i &lt; length, 跳转至.L25
+</code></pre>
+<p>其中，<strong>%rdx</strong>指向当前元素的地址，<strong>%rax</strong>指向数组的长度，<strong>%xmmo</strong>指向<strong>acc</strong></p>
+<p>由此可得到数据流图：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/stream_1.BDs9DLsk_1g55Ej.webp" alt="stream_1" /></p>
+<p>对数据流图进行修改，上方寄存器只有<strong>只读寄存器</strong>和<strong>循环寄存器</strong>，下方寄存器只有<strong>只写寄存器</strong>和<strong>循环寄存器</strong></p>
+<p>​	<strong>只读</strong>：只用作源值（作为数据也可以作为地址），但在循环中不会被修改</p>
+<p>​	<strong>只写</strong>：作为数据传送操作的的目的（本例无只写寄存器）</p>
+<p>​	<strong>局部</strong>：在循环内部被修改和使用，但在迭代与迭代之间不相关 （条件寄存器）</p>
+<p>​	<strong>循环</strong>：既作为源值，又作为目的，一次迭代中产生的值会在另一次迭代中用到（<strong>%rdx, %xmm0</strong>）</p>
+<p>同时出现在上方和下方的寄存器为循环寄存器，我们<strong>删除寄存器以外的寄存器，并删除不在循环寄存器之间的操作</strong>，得到简化的数据流图</p>
+<p><img src="https://mizuki.mysqil.com/_astro/stream_2.skNP6Hpy_Z6RiA5.webp" alt="stream_2" /></p>
+<p>然后，我们再将数据流图循环展开：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/stream_3.COhQxFBa_Z1ShQT5.webp" alt="stream_3" /></p>
+<p>由此，我们得到了两条相关链</p>
+<ol>
+<li>mul操作修改的acc</li>
+<li>add操作修改的data + i</li>
+</ol>
+<p>假设浮点乘法延迟为五个周期，整数假发延迟为一个时钟周期，那么：</p>
+<p><strong>左边的数据相关链会称为关键路径，浮点乘法器成为了制约资源</strong></p>
+<p>换言之，在<strong>combine4</strong>中，指针移动的消耗相对较少，而<strong>乘法操作</strong>成为了性能瓶颈</p>
+<h4>循环展开一：减少关键路径的循环次数</h4>
+<p>循环展开是一种程序变换，通过增加每次迭代计算的元素的数量，减少循环迭代次数</p>
+<p>它可以从两个方面提升程序的性能：</p>
+<ol>
+<li>减少了不直接有助于程序结果的操作数量，如循环所以计算，分支条件</li>
+<li>提供了一些方法，可以进一步变化代码，减少整个计算中关键路径上的操作</li>
+</ol>
+<p>对<strong>combine4</strong>进行<strong>2 * 1</strong>循环展开</p>
+<pre><code>void combine5(vec_ptr v, data_t  *dest) // 循环每次处理数组中的两个元素
+ {
+  long i;
+  long length = vec_length(v);
+  long limit = length -1;
+  data_t *data = get_vec_start(v);
+  data_t acc = IDENT
+  for (i = 0; i &lt; limit; i+=2){
+    acc = (acc OP data[i]) OP data[i+1];
+  }
+  for(;i&lt;length;i++)
+  acc = acc OP data[i];
+  *dest = acc;
+ }
+</code></pre>
+<p>循环展开的效果：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/compare_2.Bixe-So3_7yTGW.webp" alt="compare_2" /></p>
+<ol>
+<li><strong>整数加法达到延迟界限</strong>：减少了循环的开销</li>
+<li><strong>其它操作没能改进</strong>：<strong>数据的顺序依赖限制了性能的提升</strong>。</li>
+</ol>
+<h4>提高并行性</h4>
+<h5>循环展开二：实现程序并行</h5>
+<p>分析<strong>combine5</strong>的性能瓶颈：</p>
+<ol>
+<li>将累计值放在一个单独的变量<strong>acc</strong>中，使其在前面的计算完成之前，都不能计算<strong>acc</strong>的新值</li>
+<li>无法充分利用硬件资源（如流水线、多个算数运算单元等）</li>
+</ol>
+<p>解决办法：</p>
+<ol>
+<li>将一组合并运算<strong>分割成两个或更多的部分</strong>，并在最后合并结果来提高 性能</li>
+<li>前提：运算是可结合和可交换的</li>
+<li>整数加法、乘法满足交换和结合律，浮点数加法、乘法不满足</li>
+</ol>
+<p>使用两个变量分别计算奇元素和偶元素的累加结果（<strong>2 * 2</strong>循环展开）：</p>
+<pre><code>void combine6(vec_ptr v, data_t  *dest)
+ {
+  long i;
+  long length = vec_length(v);
+  long limit = length -1;
+  data_t *data = get_vec_start(v);
+  data_t acc0 = IDENT;
+  data_t acc1 = IDENT;
+  for (i = 0; i &lt; limit; i+=2){
+    acc0 = acc0 OP data[i];   //偶元素
+    acc1 = acc1 OP data[i+1]; //奇元素
+  }
+  for(;i&lt;length;i++)
+ 	acc0 = acc0 OP data[i];
+  *dest = acc0 OP acc1;
+ }
+</code></pre>
+<p>新的汇编代码：</p>
+<pre><code># i in %rdx, limit in %rbp, acc0 in %xmm0,acc1 in %xmm1 data address in %rax
+ .L35
+   vmulsd (%rax, %rdx,8), %xmm0, %xmm0
+   vmulsd 8(%rax, %rdx,8), %xmm1, %xmm1	// 可见这里多使用了一个寄存器
+   addq $2, %rdx
+   cmpq %rdx, %rbp
+   jg  .L35
+</code></pre>
+<ol>
+<li>同样有两个<strong>vmulsd</strong>运算，但这些指令被编译成读写不同的寄存器，且**%xmm0、%xmm1<strong>之间没有</strong>数据相关**。</li>
+<li>处理器不再需要等待前一个加法或乘法操作完成，即可开始新的操作</li>
+</ol>
+<p><img src="https://mizuki.mysqil.com/_astro/compare_3.CC-Cdnxw_LrNjo.webp" alt="compare_3" /></p>
+<p>所有的情况都得到了改进，打破了<strong>延迟界限</strong></p>
+<p><strong>k * k</strong>循环：将循环展开<strong>k</strong>次，以及并行累计<strong>k</strong>个值（<strong>k</strong>个<strong>for</strong>循环，每个循环<strong>k</strong>个<strong>acc</strong>）</p>
+<p>当<strong>k</strong>足够大，程序在所有情况下几乎都能达到吞吐量界限</p>
+<p><img src="https://mizuki.mysqil.com/_astro/compare_4.DXtLrxLr_2dGDzz.webp" alt="compare_4" /></p>
+<h5>重新结合变换</h5>
+<p>改变合并执行的方式，以提高程序的性能（<strong>2 * 1a</strong>循环展开）</p>
+<pre><code>void combine7(vec_ptr v, data_t  *dest){
+	…………
+	data_t acc = IDENT
+	for (i = 0; i &lt; limit; i += 2){
+    	acc = acc OP (data[i] OP data[i + 1]);
+	…………
+}
+</code></pre>
+<h4>一些限制因素</h4>
+<ol>
+<li>数据流图中的关键路径指明了执行该程序所需时间的下界</li>
+</ol>
+<p>​	若程序中某条关键数据相关链，链上所有的延迟之和等于<strong>T</strong>，则程序至少需要<strong>T</strong>个周期</p>
+<ol>
+<li>功能单元的吞吐量界限也是程序执行时间的一个下界</li>
+</ol>
+<p>​	程序共需要<strong>N</strong>个某种运算的计算，而处理器只有<strong>C</strong>个能执行这个操作的 功能单元，且功能单元的发射时间为<strong>I</strong></p>
+<p>​	则程序的执行时间至少为<strong>N*I/C</strong>个周期</p>
+<h5>寄存器溢出Spilling</h5>
+<ol>
+<li>
+<p><strong>X86-64</strong>有<strong>16个</strong>整数寄存器，<strong>16</strong>个<strong>ymm</strong>寄存器保存浮点数</p>
+</li>
+<li>
+<p>若程序的并行度<strong>P</strong>超过了可用寄存器的数量，会导致寄存器溢出</p>
+</li>
+<li>
+<p>将临时值存放在内存，运行时在堆栈上分配空间</p>
+</li>
+<li>
+<p>程序必须从<strong>内存</strong>中读取两个数值：累计变量的值和**data[i]**的值</p>
+</li>
+<li>
+<p>计算完成后再将结果保存回<strong>内存</strong>中</p>
+</li>
+<li>
+<p><strong>内存</strong>的访问效率远低于<strong>寄存器</strong></p>
+</li>
+</ol>
+<h5>分支预测和错误处罚</h5>
+<h4>理解内存性能</h4>
+<h5>加载的性能</h5>
+<h5>存储的性能</h5>
+<h5>写读相关</h5>
+<h4>应用：性能提高的技术</h4>
+<h4>确认和消除性能瓶颈</h4>
+<h2>5.5 章节小结</h2>
 ]]></content>
     <author>
       <name>Elopez</name>
     </author>
-    <category term="Guides"></category>
+    <category term="计算机系统"></category>
   </entry>
   <entry>
-    <title>Markdown Mermaid</title>
-    <link href="https://mizuki.mysqil.com/posts/markdown-mermaid/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/markdown-mermaid/</id>
-    <published>2023-10-01T00:00:00.000Z</published>
-    <updated>2023-10-01T00:00:00.000Z</updated>
-    <summary>A simple example of a Markdown blog post with Mermaid.</summary>
-    <content type="html"><![CDATA[<h1>Complete Guide to Markdown with Mermaid Diagrams</h1>
-<p>This article demonstrates how to create various complex diagrams using Mermaid in Markdown documents, including flowcharts, sequence diagrams, Gantt charts, class diagrams, and state diagrams.</p>
-<h2>Flowchart Example</h2>
-<p>Flowcharts are excellent for representing processes or algorithm steps.</p>
-<pre><code>graph TD
-    A[Start] --&gt; B{Condition Check}
-    B --&gt;|Yes| C[Process Step 1]
-    B --&gt;|No| D[Process Step 2]
-    C --&gt; E[Subprocess]
-    D --&gt; E
-    subgraph E [Subprocess Details]
-        E1[Substep 1] --&gt; E2[Substep 2]
-        E2 --&gt; E3[Substep 3]
-    end
-    E --&gt; F{Another Decision}
-    F --&gt;|Option 1| G[Result 1]
-    F --&gt;|Option 2| H[Result 2]
-    F --&gt;|Option 3| I[Result 3]
-    G --&gt; J[End]
-    H --&gt; J
-    I --&gt; J
+    <title>Linux 文件权限</title>
+    <link href="https://mizuki.mysqil.com/posts/linux/6_permissions/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/linux/6_permissions/</id>
+    <published>2025-10-02T00:00:00.000Z</published>
+    <updated>2025-10-02T00:00:00.000Z</updated>
+    <summary>Linux Journey - 学习文件权限管理、chmod 命令和权限模式</summary>
+    <content type="html"><![CDATA[<h1>权限</h1>
+<h2>1. 文件权限</h2>
+<p>在 Linux/Unix 系统中，每个文件和文件夹都包含一组<strong>权限设置</strong>，用来决定谁可以访问和操作它。</p>
+<p>对于这部分的具体内容，我们已经在用户管理中的用户与用户组详细介绍了</p>
+<p>如果，你完全看得懂下面的内容，那么请继续阅读即可，否则，就应该去复习了</p>
+<pre><code>drwxr-xr-x 2 elo operator 4096 Dec  1 11:45 /home/elo
 </code></pre>
-<h2>Sequence Diagram Example</h2>
-<p>Sequence diagrams show interactions between objects over time.</p>
-<pre><code>sequenceDiagram
-    participant User
-    participant WebApp
-    participant Server
-    participant Database
-
-    User-&gt;&gt;WebApp: Submit Login Request
-    WebApp-&gt;&gt;Server: Send Auth Request
-    Server-&gt;&gt;Database: Query User Credentials
-    Database--&gt;&gt;Server: Return User Data
-    Server--&gt;&gt;WebApp: Return Auth Result
-    
-    alt Auth Successful
-        WebApp-&gt;&gt;User: Show Welcome Page
-        WebApp-&gt;&gt;Server: Request User Data
-        Server-&gt;&gt;Database: Get User Preferences
-        Database--&gt;&gt;Server: Return Preferences
-        Server--&gt;&gt;WebApp: Return User Data
-        WebApp-&gt;&gt;User: Load Personalized Interface
-    else Auth Failed
-        WebApp-&gt;&gt;User: Show Error Message
-        WebApp-&gt;&gt;User: Prompt Re-entry
-    end
+<h2>2. 修改权限</h2>
+<p>我们可以使用 <code>chmod</code> 修改文件权限，<code>chmod</code> 是 <strong>change mode</strong>的缩写，其中<strong>mode</strong>指的就是“文件权限模式”</p>
+<p>我们知道，权限有用户的权限、组的权限和其他人的权限，有两种方法可以修改它们：</p>
+<p><strong>如果你只希望修改一部分的权限：</strong></p>
+<p>比如只给用户加执行权限，或者只给组加写权限），最推荐的还是<strong>用符号法</strong>，因为它可以“叠加”或“去除”某项权限，而不会影响其它权限。</p>
+<p>例如：</p>
+<pre><code>chmod u+x file    给用户增加执行权限
+chmod g-w file    去掉组的写权限
+chmod o+r file   给其他人增加阅读的权限
 </code></pre>
-<h2>Gantt Chart Example</h2>
-<p>Gantt charts are perfect for displaying project schedules and timelines.</p>
-<pre><code>gantt
-    title Website Development Project Timeline
-    dateFormat  YYYY-MM-DD
-    axisFormat  %m/%d
-    
-    section Design Phase
-    Requirements Analysis      :a1, 2023-10-01, 7d
-    UI Design                 :a2, after a1, 10d
-    Prototype Creation        :a3, after a2, 5d
-    
-    section Development Phase
-    Frontend Development      :b1, 2023-10-20, 15d
-    Backend Development       :b2, after a2, 18d
-    Database Design           :b3, after a1, 12d
-    
-    section Testing Phase
-    Unit Testing              :c1, after b1, 8d
-    Integration Testing       :c2, after b2, 10d
-    User Acceptance Testing   :c3, after c2, 7d
-    
-    section Deployment
-    Production Deployment     :d1, after c3, 3d
-    Launch                    :milestone, after d1, 0d
+<p>这样的写法是顾名思义的，只要认识，并且会使用如下的符号就可以了</p>
+<ol>
+<li>
+<p><code> u</code>：用户（user/owner）</p>
+</li>
+<li>
+<p><code> g</code>：组（group）</p>
+</li>
+<li>
+<p><code>o</code>：其他人（others）</p>
+</li>
+<li>
+<p><code> a</code>：所有人（all）</p>
+</li>
+<li>
+<p><code> +</code>：添加权限</p>
+</li>
+<li>
+<p><code>-</code>：去除权限</p>
+</li>
+</ol>
+<p><strong>如果你希望同时修改所有权限：</strong></p>
+<p>一次性指定所有三组权限，那么推荐的还是<strong>数字法</strong></p>
+<p>例如：</p>
+<pre><code>chmod 755 file
+chmod 644 file 
 </code></pre>
-<h2>Class Diagram Example</h2>
-<p>Class diagrams show the static structure of a system, including classes, attributes, methods, and their relationships.</p>
-<pre><code>classDiagram
-    class User {
-        +String username
-        +String password
-        +String email
-        +Boolean active
-        +login()
-        +logout()
-        +updateProfile()
-    }
-    
-    class Article {
-        +String title
-        +String content
-        +Date publishDate
-        +Boolean published
-        +publish()
-        +edit()
-        +delete()
-    }
-    
-    class Comment {
-        +String content
-        +Date commentDate
-        +addComment()
-        +deleteComment()
-    }
-    
-    class Category {
-        +String name
-        +String description
-        +addArticle()
-        +removeArticle()
-    }
-    
-    User "1" -- "*" Article : writes
-    User "1" -- "*" Comment : posts
-    Article "1" -- "*" Comment : has
-    Article "1" -- "*" Category : belongs to
+<p>相比于符号法，数字法就没有那么顾名思义了，下面，让我们具体介绍其中的规则：</p>
+<ol>
+<li>每种权限是一个数字: r = 4, w = 2, x = 1</li>
+<li>三个数字，例如上面的 <code>755</code>，<code>644</code>，从前往后分别代表<strong>用户、组、其它</strong></li>
+<li>其中的每个数字，组合权限用加法，例如：<code>rwx = 4+2+1 = 7</code>，那么意味着它拥有读取，修改和执行的权限</li>
+</ol>
+<p>所以我们就可以对如上的例子进行解释，例如 <code>chmod 755 file</code>，那意味着给用户设置读写和执行的权限，给组和其他人设置读和执行的权限</p>
+<p>随便改权限有可能让敏感文件被所有人修改，如果你在修改权限，请清楚这一点</p>
+<h3>3. 所有权权限</h3>
+<p>除了可以修改文件的权限之外，你还可以修改文件的<strong>所有者（用户）和用户组</strong>。</p>
+<h4>修改文件的所有者（用户）</h4>
+<pre><code>$ sudo chown elo myfile
 </code></pre>
-<h2>State Diagram Example</h2>
-<p>State diagrams show the sequence of states an object goes through during its life cycle.</p>
-<pre><code>stateDiagram-v2
-    [*] --&gt; Draft
-    
-    Draft --&gt; UnderReview : submit
-    UnderReview --&gt; Draft : reject
-    UnderReview --&gt; Approved : approve
-    Approved --&gt; Published : publish
-    Published --&gt; Archived : archive
-    Published --&gt; Draft : retract
-    
-    state Published {
-        [*] --&gt; Active
-        Active --&gt; Hidden : temporarily hide
-        Hidden --&gt; Active : restore
-        Active --&gt; [*]
-        Hidden --&gt; [*]
-    }
-    
-    Archived --&gt; [*]
+<p>可以使用 <code>chown</code>（change owner）来修改文件的所有者。</p>
+<p><strong>注意：只有 root 用户才能更改文件的所有者。普通用户不能把文件的所有者改成别人。</strong></p>
+<h4>修改文件的组</h4>
+<pre><code>$ sudo chgrp operator myfile
 </code></pre>
-<h2>Pie Chart Example</h2>
-<p>Pie charts are ideal for displaying proportions and percentage data.</p>
-<pre><code>pie title Website Traffic Sources Analysis
-    "Search Engines" : 45.6
-    "Direct Access" : 30.1
-    "Social Media" : 15.3
-    "Referral Links" : 6.4
-    "Other Sources" : 2.6
+<p>可以使用 <code>chgrp</code>（change group）来修改文件的所属组。</p>
+<p><strong>文件的拥有者本人和 root 用户都可以更改文件的组</strong>（前提是目标组也是该用户所属的组）。</p>
+<h4>同时修改所有者和组</h4>
+<pre><code>$ sudo chown elo:operator myfile
 </code></pre>
-<h2>Conclusion</h2>
-<p>Mermaid is a powerful tool for creating various types of diagrams in Markdown documents. This article demonstrated how to use flowcharts, sequence diagrams, Gantt charts, class diagrams, state diagrams, and pie charts. These diagrams can help you express complex concepts, processes, and data structures more clearly.</p>
-<p>To use Mermaid, simply specify the mermaid language in a code block and describe the diagram using concise text syntax. Mermaid will automatically convert these descriptions into beautiful visual diagrams.</p>
-<p>Try using Mermaid diagrams in your next technical blog post or project documentation - they will make your content more professional and easier to understand!</p>
+<p>在用户名后加冒号（:）和组名，可以<strong>同时修改文件的拥有者和组</strong>。</p>
+<h2>4. umask</h2>
+<p><code>umask</code>，全称是 <strong>user file creation mask</strong>，意思是<strong>用户文件创建权限掩码“</strong></p>
+<p>它<strong>决定了新建文件或目录时，默认“去掉”哪些权限</strong>。</p>
+<p>前面我们学习了数字法修改权限，在 Linux 中，**新建文件的”理论最大权限“**一般是：</p>
+<ul>
+<li>
+<p>文件：666（rw-rw-rw-，所有人读写）</p>
+</li>
+<li>
+<p>目录：777（rwxrwxrwx，所有人读写执行）</p>
+</li>
+</ul>
+<p>但是，当我们实际创建文件和目录的时候，权限通常不会那么开放，例如，你创建一个文件的时候，默认不希望其他人可以读写它，那么就可以套用一个"umask"，在创建文件的时候，自动取消部分权限</p>
+<p>例如，我们可以将 umask 设置为 <code>022</code>，那么：</p>
+<ul>
+<li>
+<p>文件的最大权限是 666</p>
+<p>666 - 022 = <strong>644</strong>（rw-r--r--）</p>
+<p>所以新建文件默认只有自己可读写，组和其他人只能读</p>
+</li>
+<li>
+<p>目录的最大权限是 777</p>
+<p>777 - 022 = <strong>755</strong>（rwxr-xr-x）</p>
+<p>新建目录自己可读写执行，组和其他人只能读和执行（可以进入目录）</p>
+</li>
+</ul>
+<h2>5. SetuidS</h2>
+<p>在用户管理的最后一个部分，我们提到了可以使用 <code>passwd</code> 命令修改密码</p>
+<p>作为一个普通用户，你当然可以使用 <code>passwd</code> 命令修改自己的密码。但是密码，正如我们所知，密码是存储在 <code>/etc/shadow</code> 中的，然而这个文件是不支持一个普通用户去修改的，所以你到底可不可以修改自己的密码呢？</p>
+<p>我先来引入一个简单的例子：</p>
 ]]></content>
     <author>
       <name>Elopez</name>
     </author>
-    <category term="Examples"></category>
+    <category term="Linux"></category>
   </entry>
   <entry>
-    <title>Include Video in the Posts</title>
-    <link href="https://mizuki.mysqil.com/posts/video/" rel="alternate" type="text/html"/>
-    <id>https://mizuki.mysqil.com/posts/video/</id>
-    <published>2022-08-01T00:00:00.000Z</published>
-    <updated>2022-08-01T00:00:00.000Z</updated>
-    <summary>This post demonstrates how to include embedded video in a blog post.</summary>
-    <content type="html"><![CDATA[<p>Just copy the embed code from YouTube or other platforms, and paste it in the markdown file.</p>
-<pre><code>---
-title: Include Video in the Post
-published: 2023-10-19
-// ...
----
-
-&lt;iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_" title="YouTube video player" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    <title>Linux 用户管理</title>
+    <link href="https://mizuki.mysqil.com/posts/linux/5_user_management/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/linux/5_user_management/</id>
+    <published>2025-09-25T00:00:00.000Z</published>
+    <updated>2025-09-25T00:00:00.000Z</updated>
+    <summary>Linux Journey - 学习用户与用户组管理、UID/GID 和权限控制</summary>
+    <content type="html"><![CDATA[<h1>用户管理</h1>
+<h2>1. 用户与用户组（Users and Groups）</h2>
+<p>在任何传统的操作系统中，都会存在“用户”和“用户组”的概念，它们存在的唯一目的就是<strong>进行访问控制和权限管理</strong></p>
+<p>当系统运行一个进程，它是以该进程所属的用户的身份运行的。文件的访问权限和所有权也是基于用户身份判断的。你当然不希望 Elo 随意访问 Mo 的文件，反之亦然</p>
+<p>每个用户都有一个专属的主目录，用于存储用户的个人文件，通常位于：</p>
+<pre><code>/home/example_username
 </code></pre>
-<h2>YouTube</h2>
-<p>&lt;iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;</p>
-<h2>Bilibili</h2>
-<p>&lt;iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &amp;autoplay=0&gt; &lt;/iframe&gt;</p>
+<p>不同的 Linux 发行版中，路径位置可能略有不同</p>
+<p>所以，系统是如何识别用户的？</p>
+<p>系统使用 <strong>UID（用户 ID）</strong> 来识别每一个用户</p>
+<ul>
+<li>用户名只是为了方便人类使用和记忆</li>
+<li>但是系统内部的识别是依靠 UID</li>
+</ul>
+<p>同样地，系统使用 <strong>GID（组 ID）</strong> 来识别用户组</p>
+<ul>
+<li>用户组是一组用户的集合</li>
+<li>系统可以为一个组统一设置权限</li>
+<li>所有属于这个组的用户都继承这个权限</li>
+</ul>
+<p><strong>除了人类用户以外，还有系统用户</strong></p>
+<p>在 Linux 中，除了你创建的普通用户以外，还有一些特殊的用户存在于系统中，这些用户通常是**系统进程（daemon）**的运行身份，它们保持系统在后台稳定运行</p>
+<p>所有用户中，最重要的系统用户是 <code>root</code>，也叫超级用户（superuser）</p>
+<ul>
+<li><code>root</code> 是系统中权限最大的用户，可以访问任何文件，启动或终止任何进程</li>
+<li>正因为 <code>root</code> 权限无限，所以<strong>不建议长期使用 root 身份操作系统</strong>，如果操作失误，可能会破坏整个系统</li>
+</ul>
+<p>如果需要以 <code>root</code> 权限运行某个命令，在拥有使用 <code>sudo</code> 的权限的情况下，可以使用：</p>
+<pre><code>sudo example_command
+</code></pre>
+<p><code>sudo</code> 是 <strong>superuser do</strong> 的缩写，意思是“以超级用户执行操作”</p>
+<p>还记得 <code>ls -la</code> 吗？ 通过 <code>-l</code> , 我们可以查看更多的信息，现在我们使用此命令来查看 <code>/etc/shadow</code></p>
+<p>也许你会看到这样的输出：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/ls_shadow.CiRL-iMJ_1n8JrP.webp" alt="ls_shadow" /></p>
+<p>它们的意思是：</p>
+<pre><code>权限		 硬链接数	所有者	  所属组	大小    修改日期	   文件名
+-rw-r-----   1      root    shadow  1048  6月 13 22:53 /etc/shadow
+</code></pre>
+<p>目前的阶段，我们所关心的部分是权限、所有者和所属组三个部分</p>
+<p>对于权限部分，可以分为四个部分：</p>
+<pre><code>文件类型	所有者权限	所属组权限   其他人权限
+-			rw-			r--			---
+</code></pre>
+<ol>
+<li>文件类型 <code>-</code> ：意思是普通文件，如果是 <code>d</code>，则代表一个目录</li>
+<li>权限一共10位：<strong>1类型 + 3 × 权限段</strong></li>
+<li>对文件的意义：<code>r</code> = 读，<code>w</code> = 写，<code>x</code> = 执行</li>
+</ol>
+<p>因此，对于 <code>/etc/shadow</code> 的权限解读，可以被理解为：</p>
+<ol>
+<li>该文件为普通文件</li>
+<li>如果访问者是 <code>root</code>（文件所有者），则拥有对该文件的 读取和写入权限</li>
+<li>如果是所属于 <code>shadow</code> 组的用户，则拥有读的权限</li>
+<li>如果都不属于，则属于其他人，没有任何权限</li>
+</ol>
+<p>如果文件类型是<code>d</code>，那么<code>r</code>代表列出目录下的文件名（<code>ls</code>）的权限、<code>w</code> 代表创建/删除/重命名文件的权限、<code>x</code> 代表进入目录（<code>cd</code>），访问目录里的内容的权限</p>
+<p>当用户访问文件时，系统会按顺序判断用户身份是否为<strong>所有者 → 所属组成员 → 其他人</strong>，一旦匹配，就使用对应权限，不再继续判断</p>
+<p>但是，<code>root</code> 可以无视上述的权限访问顺序</p>
+<h2>2. root</h2>
+<p>前面已经够学习过获取超级用户权限的方法：使用 <code>sudo</code> 命令</p>
+<p>除此之外，你也可以使用 <code>su</code> 命令来运行超级用户身份运行命令</p>
+<p><code>su</code> 是  “substitute user” 的缩写，表示切换用户</p>
+<p>如果你不指定用户名，它会默认切换到 <code>root</code>  用户</p>
+<pre><code>$ su
+</code></pre>
+<p>如果你知道目标用户的密码，你就可以通过 <code>su example_username</code> 切换到任何用户</p>
+<p>这种方法有一些缺点：</p>
+<ul>
+<li>一旦切换为了 <code>root</code>，后面执行的每一个命令都有最高权限，稍有疏忽可能会导致严重问题</li>
+<li>使用 <code>su</code> 切换后执行的操作，不会记录在 <code>sudo</code> 的日志内，<strong>无法具体追踪谁做了什么修改</strong></li>
+</ul>
+<p>因为，使用 <code>sudo</code> ，是更安全、更规范的方式</p>
+<p><strong>那么，系统如何找到谁可以使用 <code>sudo</code> ？</strong></p>
+<p>它通过一个配置文件管理：</p>
+<pre><code>/etc/sudoers
+</code></pre>
+<p>该文件列出了哪些用户可以使用 sudo 命令，并指定了它们执行那些命令、是否需要密码的规则</p>
+<p>你当然可以直接使用 <code>sudo nano /etc/sudoers</code> 来编辑配置文件</p>
+<p>但你<strong>更应该使用 <code>visudo</code> 来编辑它</strong></p>
+<pre><code>sudo visudo
+</code></pre>
+<p>当你使用 <code>visudo</code> 打开的时候，实际上编辑的是 <code>etc/sudoers.tmp</code>，只有在保存并验证成功的时候它才会</p>
+<pre><code>mv /etc/sudoers.tmp /etc/sudoers
+</code></pre>
+<p>如果你在编辑的过程中犯了错误，会显示错误信息，然后告诉你具体的选项，就像是这样：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/visudo.DzHAGHo0_1WkY6C.webp" alt="visudo" /></p>
+<p>如果使用 <code>sudo nano /etc/sudoers</code> 的话，直接修改原本的文件，如果发生错误，系统会<strong>拒绝所有 sudo 操作</strong></p>
+<h2>3. /etc/password</h2>
+<p>既然系统使用 UID 来标识用户，那么用户和 UID 的映射关系存储在哪里呢？</p>
+<p>使用如下命令：</p>
+<pre><code>$ cat /etc/passwd
+</code></pre>
+<p>可以得到这样的结果：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/passwd.DUYh2JOI_Z1CXrh0.webp" alt="passwd" /></p>
+<p>我们取第一行单独分析：</p>
+<pre><code>用户名    密码字段   用户ID    组ID    GECOS      用户主目录      默认shell
+root	:	x	:	0	:	0	:	root	:	/root	:	/bin/bash
+</code></pre>
+<p>补充解释：</p>
+<ol>
+<li>密码字段 <code>x</code> 标识密码实际存储在 <code>/etc/shadow</code> 中，<code>/etc/passwd</code> 仅做占位和兼容（防止用户直接看到密码 hash）</li>
+<li>root 用户的 UID 总是 0，普通用户从 1000 或 500 开始</li>
+<li>root 的主组也是 0 ，可以在 <code>etc/group</code> 文件中查找组名和组 ID</li>
+<li>GECOS 段，名字的由来是历史问题。它是存放用户备注信息的标准字段，一般很少使用。但是如果使用的话，可能会是如下的样子，通常用逗号分隔：</li>
+</ol>
+<pre><code>jack:x:1001:1001:Jack Ma,Room 303,555-1234,555-5678,Alibaba:/home/jack:/bin/bash
+</code></pre>
+<ol>
+<li>用户主目录，即登陆后所在目录</li>
+<li>用户登陆以后可以使用的 shell，如 <code>/bin/bash</code>，如果是 <code>/usr/sbin/nologin</code> ，代表该账户不能登陆系统</li>
+</ol>
+<p>什么叫<strong>无法登陆账户</strong>？</p>
+<p>”无法登陆“一般指的是不能通过常规方式（如终端，ssh，su，login命令）获得shell环境</p>
+<p>有两种实现方式：</p>
+<ol>
+<li>Shell 字段被设置为 <code>/usr/sbin/nologin</code></li>
+<li><code>/etc/shadow</code> 里的密码字段是 <code>*</code>、<code>!</code> 或 <code>!*</code></li>
+</ol>
+<p>可以禁止密码登录系统服务账号，也可以禁止部分普通用户</p>
+<p>**不推荐直接修改该文件，**以及后文提到的种种文件，<strong>强烈建议用专门的命令行工具</strong>（如 <code>useradd</code>、<code>userdel</code> 等）来管理用户账户，既安全又可靠，我们将会在最后介绍</p>
 ]]></content>
     <author>
       <name>Elopez</name>
     </author>
-    <category term="Examples"></category>
+    <category term="Linux"></category>
+  </entry>
+  <entry>
+    <title>Linux 命令行基础</title>
+    <link href="https://mizuki.mysqil.com/posts/linux/2_command_line/" rel="alternate" type="text/html"/>
+    <id>https://mizuki.mysqil.com/posts/linux/2_command_line/</id>
+    <published>2025-09-20T00:00:00.000Z</published>
+    <updated>2025-09-20T00:00:00.000Z</updated>
+    <summary>Linux Journey - 学习 Shell 基础、命令行操作和常用命令</summary>
+    <content type="html"><![CDATA[<h1>命令行</h1>
+<h2>1. The Shell</h2>
+<p>什么是 Shell ? Shell 本质上是一个程序，从键盘接收命令，然后发送给操作系统执行。</p>
+<p>像一些图形用户界面的 “Terminal” 或 “Console" 这样的程序，它们实际上是用来启动一个 shell 的工具</p>
+<p>接下来，我们将使用 <strong>bash shell</strong> （Bourne Again shell）</p>
+<p>还有其它的 shell，但是我们不会涉及</p>
+<p><strong>Shell 提示符</strong></p>
+<p>Shell 提示符（shell prompt）可能会有所不同，但通常会遵守以下格式：</p>
+<pre><code>username@hostname:current_directory
+</code></pre>
+<p>例如：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/shell_prompt.BVg8XQAj_1lou4s.webp" alt="shell_prompt" /></p>
+<p>请注意提示符最后的 <code>$</code>符号</p>
+<p>不同的 shell 会使用不同的提示符，但以 bash shell 为例，普通用户的提示符号通常是<code>$</code></p>
+<p>在你输入命令的时候，不需要输入这个符号，它只是用于标识提示符的而已</p>
+<p><strong>第一条命令：echo</strong></p>
+<p><code>echo</code>  回声，顾名思义，**原样显示（回声在）**终端上</p>
+<p><img src="https://mizuki.mysqil.com/_astro/echo.D9noP4xY_1TW3Af.webp" alt="echo" /></p>
+<p>同样地，我们可以试试<code> date</code>（日期，显示当前的日期和时间），和 <code>whoami</code>（我是谁，显示当前用户名），看看会输出什么？</p>
+<p><img src="https://mizuki.mysqil.com/_astro/date_whoami.RVBfeueo_Z1Bedfc.webp" alt="date_whoami" /></p>
+<h2>2. pwd (Print Working Directory)</h2>
+<p>在 Linux 中，<strong>一切皆文件</strong></p>
+<p>所有的文件都被组织在一个<strong>分层的目录树（hierarchical directory tree）中，这个目录的结构的起点叫做根目录（root directory）</strong>，用一个斜杠 <code>/</code> 来表示</p>
+<p>根目录下面可以包含很多的文件夹和文件，而每个文件夹里又可以继续包含更多的文件夹和文件，就像一颗倒挂的树</p>
+<pre><code>/
+|-- bin
+|   |-- file1
+|   |-- file2
+|-- etc
+|   |-- file3
+|   `-- directory1
+|       |-- file4
+|       `-- file5
+|-- home
+|-- var
+
+</code></pre>
+<p>这个结构的意思是：</p>
+<ul>
+<li><code>/</code> 是根目录</li>
+<li><code>/bin</code> 的目录下有 <code>file1</code> 和 <code>file2</code></li>
+<li><code>/etc</code> 下有 <code>file3</code> 和一个子目录 <code>directory1</code>，这个子目录中还有 <code>file4</code> 和 <code>file5</code></li>
+<li><code>/home</code>、<code>/var</code> 也是根目录下的文件夹</li>
+</ul>
+<p>其中，这些文件和目录的名字称之为<strong>路径</strong></p>
+<p>例如，如果你有一个名为 <code>home</code> 的文件夹，里面有一个子文件夹叫做 <code>elo</code>，而在 <code>elo</code> 里面又有一个子文件夹叫做 <code>Movies</code>，那么这个路径会长这样：</p>
+<pre><code>/home/elo/Movies
+</code></pre>
+<p>如果我们希望在文件系统中来去自如，我们首先就需要知道<strong>当前所在的目录位置</strong>，可以使用 <code>pwd</code> 命令</p>
+<p>例如：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/pwd.CQfVvYCh_Z1tDiS.webp" alt="pwd" /></p>
+<h2>3. cd (Change Directory)</h2>
+<p>现在你已经知道“我在哪了”，现在我们试试看如何在<strong>文件系统中“走动”</strong></p>
+<p>记住，我们在文件系统的“导航”是通过“路径”来实现的。而路径有两种方式：</p>
+<p><strong>1. 绝对路径（Absolute Path）</strong></p>
+<ul>
+<li>从<strong>根目录开始</strong>写出的完整路径</li>
+<li>根目录就像树的根，所有路径都从这里开始</li>
+<li>只要路径以 <code>/</code> 开头，那就是绝对路径</li>
+</ul>
+<p>例如：</p>
+<pre><code>$ cd /home/elo/Desktop
+</code></pre>
+<p>意思是：进入根目录 <code>/</code> → 然后进入 <code>home</code> → 然后进入 <code>elo</code> → 然后进入 <code>Desktop</code></p>
+<p><strong>2. 相对路径（Relative Path）</strong></p>
+<ul>
+<li>这是<strong>相对于你当前所在目录</strong>来写的路径</li>
+<li>不需要从 <code>/</code> 开始，而是从当前位置出发</li>
+</ul>
+<p>如果你已经在：</p>
+<pre><code>/home/elo/Documents
+</code></pre>
+<p>你想进入这个目录里的子目录叫做 <code>taxes</code>，你不需要写完整路径 <code>/home/elo/Documents/taxes</code>，你只要写：</p>
+<pre><code>$ cd taxes
+</code></pre>
+<p>对于以上两种路径，例如，为了到达 <code>/home/elo/test/a/b</code> 这个文件夹内，如果我们想使用绝对路径：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/absolute_path.D7K2bmn3_1Mz9NP.webp" alt="absolute_path" /></p>
+<p>假设我们已经在 <code>/home/elo/test/a</code>，那么直接使用如下命令：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/relative_path.CAe3tg6m_Z18YTaY.webp" alt="relative_path" /></p>
+<p>不过，总是使用相对路径和绝对路径也是很累的，仍然有些快捷路径可以帮助我们导航：</p>
+<ul>
+<li><code>.</code>：当前目录</li>
+<li><code>..</code>：上一级目录</li>
+<li><code>~</code>：用户主目录</li>
+<li><code>-</code>：上次访问过的目录</li>
+</ul>
+<pre><code>$ cd .  # 留在当前目录
+$ cd ..	# 回到上一级目录
+$ cd ~  # 回到主目录(比如/home/elo)
+$ cd -  # 回到一个你刚才去过的目录
+</code></pre>
+<p><img src="https://mizuki.mysqil.com/_astro/shortcut.Ch680ZIU_TS1Ur.webp" alt="shortcut" /></p>
+<h2>4. ls(List Directory)</h2>
+<p>现在我们已经在知道如何再文件系统中移动了，可是，<strong>我们如何知道当前目录下有哪些东西呢？</strong></p>
+<p>我们可以使用一个很有用的命令： <code>ls</code></p>
+<p>默认情况下，它会列出<strong>当前目录</strong>下的目录和文件夹</p>
+<pre><code>$ ls
+</code></pre>
+<p>如果想查看<strong>某个特定目录</strong>里的内容，也可以在后面加上路径：</p>
+<pre><code>$ ls /home/elo
+</code></pre>
+<p><strong>命令参数（Command Options / Flags）</strong></p>
+<p>在 Linux 中，很多命令可以通过添加**参数（也叫选项、flag)**来扩展或改变行为，例如：</p>
+<pre><code>$ ls -l
+</code></pre>
+<p>这些字母告诉命令要”怎么做“，或者”做的更详细“</p>
+<p>例如刚刚的示例命令，<code>l</code> 代表  <strong>long format（长格式）</strong>，它会显示每个文件的详细信息</p>
+<p>包括权限、链接数、拥有者，用户组，大小，时间戳，文件名</p>
+<p>另外，在 linux 中，不是所有文件都是默认可见的，<strong>以 <code>.</code> 开头的文件都是”隐藏文件“</strong></p>
+<p>如果希望查看隐藏文件，可以使用 <code>-a</code>（a 代表 all）</p>
+<p><img src="https://mizuki.mysqil.com/_astro/ls.CIAqCg_Y_Z2hzmQp.webp" alt="ls_1" /></p>
+<h2>5. touch</h2>
+<p>现在学习如何创建文件，可以使用如下简单的方法：</p>
+<pre><code>$ touch filename
+</code></pre>
+<p>该命令会创建一个名为 <code>filename</code> 的空文件（如果该文件不存在的话）。</p>
+<p>创建文件后，可以使用 <code>ls -l</code> 查看文件的详细信息，在这些信息中，我们更关注的是它的<strong>时间戳</strong>（即最后修改时间）</p>
+<p>事实上，<code>touch</code> 的本意是“轻轻触碰一下文件”，<strong>不会修改文件的内容</strong>，它原本的用途是<strong>更新文件的时间戳</strong>。</p>
+<p>但当指定的文件不存在时，<code>touch</code> 会<strong>自动创建一个新的空文件</strong>，所以也常被用来创建文件。</p>
+<p><img src="https://mizuki.mysqil.com/_astro/touch.DvkpqqRf_2eI3EH.webp" alt="touch" /></p>
+<h2>6. file</h2>
+<p>与我们所熟悉的 Windows 系统不同，Windows 系统通过文件扩展名来判断文件的类型</p>
+<p>在 Linux 系统中，文件名只是一个<strong>字符串标签</strong>，Linux 主要通过<strong>文件的具体内容</strong>来判断类型</p>
+<p>我们可以使用 <code>file</code> 命令来查看文件究竟是何种类型</p>
+<pre><code>$ file filename
+</code></pre>
+<p>这很简单，但是在此我更想解释一下 Linux 系统识别文件的机制</p>
+<p><img src="https://mizuki.mysqil.com/_astro/touch.DvkpqqRf_2eI3EH.webp" alt="touch" /></p>
+<p><strong>魔术数（magic number）识别机制</strong></p>
+<p>在 Linux 中，判断一个文件类型并不是只看扩展名，而是通过检查文件内容的前几个字节</p>
+<p>这些字节叫做 <strong>魔术数</strong>，它们是某种文件格式在开头的标志。
+例如：</p>
+<ul>
+<li>PNG 文件以 <code>89 50 4E 47</code> 开头（对应 <code>.PNG</code>）</li>
+<li>JPG 文件以 <code>FF D8 FF</code> 开头</li>
+<li>PDF 文件以 <code>%PDF</code>（<code>25 50 44 46</code>）开头</li>
+</ul>
+<p>这些魔术数是由文件格式规范定义的，具有唯一性。</p>
+<p><img src="https://mizuki.mysqil.com/_astro/fake.C0DMU8Kz_1A5s3w.webp" alt="fake" /></p>
+<p>例如图中这个例子，虽然我们创建了一个名为 <code>fake.png</code> 的文件，使用 <code>file</code> 命令查看的时候，显示的类型却是一个 <strong>ASCII 字符编码的</strong> 纯文本</p>
+<p>事实上，文件扩展名 <code>.jpg</code>、<code>.png</code>、<code>.txt</code> 在 Linux 中不是强制规定的，只是给人类看的</p>
+<p>Linux 真正识别的是<strong>文件头部内容</strong>，即之前所说的魔术数</p>
+<p><img src="https://mizuki.mysqil.com/_astro/content.C80qIsCM_4QTjz.webp" alt="content" /></p>
+<p>使用特殊的命令查看该文件以后，可以得到 <code>fake.png</code> 的具体内容，它的开头是：</p>
+<pre><code>00000000  54 68 69 73 20 69 73 20  6e 6f 74 20 72 65 61 6c  |This is not real|
+</code></pre>
+<p>这些字节没有任何魔术数结构，所以系统判断为 ASCII 编码的纯文本</p>
+<p>当我们查看一个真正的 png 文件的时候，会看到这样的形式：</p>
+<p><img src="https://mizuki.mysqil.com/_astro/png.CS0p0Svp_Z9PpCL.webp" alt="png" /></p>
+<p>该 png 文件的开头是：</p>
+<pre><code>00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
+</code></pre>
+<p>其中的 <code>89 50 4E 47</code> 是标准的 PNG 魔术数，后续的 <code>IHDR</code> 是图像头块，这是所有 PNG 必备结构</p>
+<p>那么，是否存在一种情况，文本文件第一排的内容恰好和 PNG 文件的开头内容重合？</p>
+<p><img src="https://mizuki.mysqil.com/_astro/fake_png.DF9JcoFR_FKfpx.webp" alt="fake_png" /></p>
+<p>可以看到它被识别为了 PNG，尽管我们知道它实际上不是</p>
+<p>当 Linux 识别一个文件的时候，识别流程如下：</p>
+<ol>
+<li>
+<p><strong>优先检查魔术数（Magic Number）</strong>：
+<code>file</code> 首先会读取文件的前几个字节，查找是否匹配已知文件格式的魔术数（如 PNG、PDF、ZIP 等）。如果魔术数匹配，并且后续结构合理，立即判定为对应的格式文件。</p>
+</li>
+<li>
+<p><strong>结构校验</strong>：
+如果魔术数匹配但文件结构异常（如缺失关键块），<code>file</code> 可能不会确认格式，而是退回为 <code>data</code> 类型，表示“无法识别但可能是二进制”。</p>
+</li>
+<li>
+<p><strong>未命中魔术数时执行内容分析</strong>：
+如果没有识别出魔术数，<code>file</code> 会检查文件是否只包含可打印字符（ASCII 或 UTF-8）、是否有换行符、是否存在乱码等特征，以判断是否为文本文件，如 <code>ASCII text</code>、<code>UTF-8 Unicode text</code> 等。</p>
+</li>
+<li>
+<p><strong>最终默认类型为 <code>data</code></strong>：
+若既没有魔术数，也无法判定为文本，<code>file</code> 会将该文件归类为 <code>data</code>，表示其为原始的二进制或未知内容。</p>
+</li>
+</ol>
+<p>对着顺序再次查看之前的内容，就可以清晰的了解 Linux 是如何识别文件类型的了</p>
+]]></content>
+    <author>
+      <name>Elopez</name>
+    </author>
+    <category term="Linux"></category>
   </entry>
 </feed>

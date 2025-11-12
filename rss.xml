@@ -1,1005 +1,1479 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Elo Home</title><description>my website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown Tutorial</title><link>https://mizuki.mysqil.com/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-tutorial/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Markdown Tutorial&lt;/h1&gt;
-&lt;p&gt;A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#block-elements&quot;&gt;Block Elements&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#paragraphs-and-line-breaks&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#headers&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#blockquotes&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#lists&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#code-blocks&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#horizontal-rules&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#table&quot;&gt;Table&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#span-elements&quot;&gt;Span Elements&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#links&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#emphasis&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#images&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#strikethrough&quot;&gt;Strikethrough&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#miscellaneous&quot;&gt;Miscellaneous&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#automatic-links&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#backslash-escapes&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#inline-html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Block Elements&lt;/h2&gt;
-&lt;h3&gt;Paragraphs and Line Breaks&lt;/h3&gt;
-&lt;h4&gt;Paragraphs&lt;/h4&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;One or more blank lines. (A blank line is a line containing nothing but &lt;strong&gt;spaces&lt;/strong&gt; or &lt;strong&gt;tabs&lt;/strong&gt; is considered blank.)&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This will be
-inline.
-
-This is second paragraph.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This will be
-inline.&lt;/p&gt;
-&lt;p&gt;This is second paragraph.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h4&gt;Line Breaks&lt;/h4&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;End a line with &lt;strong&gt;two or more spaces&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This will be not
-inline.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This will be not&lt;br /&gt;
-inline.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Headers&lt;/h3&gt;
-&lt;p&gt;Markdown supports two styles of headers, Setext and atx.&lt;/p&gt;
-&lt;h4&gt;Setext&lt;/h4&gt;
-&lt;p&gt;HTML Tags: &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&quot;Underlined&quot; using &lt;strong&gt;equal signs (=)&lt;/strong&gt; as &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; and &lt;strong&gt;dashes (-)&lt;/strong&gt; as &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; in any number.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is an H1
-=============
-This is an H2
--------------
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1&gt;This is an H1&lt;/h1&gt;
-&lt;h2&gt;This is an H2&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;h4&gt;atx&lt;/h4&gt;
-&lt;p&gt;HTML Tags: &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h4&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h5&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Uses 1-6 &lt;strong&gt;hash characters (#)&lt;/strong&gt; at the start of the line, corresponding to &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; - &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# This is an H1
-## This is an H2
-###### This is an H6
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1&gt;This is an H1&lt;/h1&gt;
-&lt;h2&gt;This is an H2&lt;/h2&gt;
-&lt;h6&gt;This is an H6&lt;/h6&gt;
-&lt;hr /&gt;
-&lt;p&gt;Optionally, you may &quot;close&quot; atx-style headers. The closing hashes &lt;strong&gt;don&apos;t need to match&lt;/strong&gt; the number of hashes used to open the header.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# This is an H1 #
-## This is an H2 ##
-### This is an H3 ######
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1&gt;This is an H1&lt;/h1&gt;
-&lt;h2&gt;This is an H2&lt;/h2&gt;
-&lt;h3&gt;This is an H3&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Blockquotes&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Markdown uses email-style &lt;strong&gt;&amp;gt;&lt;/strong&gt; characters for blockquoting. It looks best if you hard wrap the text and put a &amp;gt; before every line.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&amp;gt;
-&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-&amp;gt; id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Markdown allows you to be lazy and only put the &amp;gt; before the first line of a hard-wrapped paragraph.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by adding additional levels of &amp;gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
-&amp;gt;
-&amp;gt; &amp;gt; This is nested blockquote.
-&amp;gt;
-&amp;gt; Back to the first level.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is nested blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Back to the first level.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Blockquotes can contain other Markdown elements, including headers, lists, and code blocks.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; ## This is a header.
-&amp;gt;
-&amp;gt; 1.   This is the first list item.
-&amp;gt; 2.   This is the second list item.
-&amp;gt;
-&amp;gt; Here&apos;s some example code:
-&amp;gt;
-&amp;gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;h2&gt;This is a header.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Elo Home</title><description>my website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>CSAPP 第八章 - 异常控制流</title><link>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</guid><description>深入理解异常控制流，包括异常、信号、进程切换和非本地跳转的机制</description><pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;第八章 异常控制流&lt;/h1&gt;
+&lt;h3&gt;1. 什么是异常控制流&lt;/h3&gt;
+&lt;p&gt;异常控制流是指&lt;strong&gt;程序运行过程中非顺序的控制流转移&lt;/strong&gt;，由以下几种机制产生&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;This is the first list item.&lt;/li&gt;
-&lt;li&gt;This is the second list item.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常：&lt;/strong&gt;：由硬件或操作系统触发，控制用户进程跳转到内核&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Here&apos;s some example code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;return shell_exec(&quot;echo $input | $markdown_script&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Lists&lt;/h3&gt;
-&lt;p&gt;Markdown supports ordered (numbered) and unordered (bulleted) lists.&lt;/p&gt;
-&lt;h4&gt;Unordered&lt;/h4&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Unordered lists use &lt;strong&gt;asterisks (*)&lt;/strong&gt;, &lt;strong&gt;pluses (+)&lt;/strong&gt;, and &lt;strong&gt;hyphens (-)&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;*   Red
-*   Green
-*   Blue
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;is equivalent to:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;+   Red
-+   Green
-+   Blue
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;-   Red
--   Green
--   Blue
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Ordered&lt;/h4&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Ordered lists use numbers followed by periods:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1.  Bird
-2.  McHale
-3.  Parish
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
+&lt;p&gt;​		&lt;strong&gt;中断：&lt;/strong&gt; 外部设备，异步触发&lt;/p&gt;
+&lt;p&gt;​		**陷阱：**有意请求操作系统，同步触发&lt;/p&gt;
+&lt;p&gt;​		**故障：**程序出错，可能可恢复，同步触发&lt;/p&gt;
+&lt;p&gt;​		**终止：**程序出错，不可恢复，同步触发&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;McHale&lt;/li&gt;
-&lt;li&gt;Parish&lt;/li&gt;
+&lt;li&gt;**信号：**程序间的通信，异步事件通知&lt;/li&gt;
+&lt;li&gt;**进程切换：**上下文切换&lt;/li&gt;
+&lt;li&gt;**非本地跳转：**例如&lt;code&gt;setjump&lt;/code&gt;/&lt;code&gt;longjump&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr /&gt;
-&lt;p&gt;It&apos;s possible to trigger an ordered list by accident, by writing something like this:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1986. What a great season.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
+&lt;h3&gt;2. 进程&lt;/h3&gt;
+&lt;p&gt;进程是正在运行的程序，拥有私有地址空间，包括：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;What a great season.&lt;/li&gt;
+&lt;li&gt;文本段（代码）&lt;/li&gt;
+&lt;li&gt;数据段（已初始化、未初始化）&lt;/li&gt;
+&lt;li&gt;栈（函数调用栈）&lt;/li&gt;
+&lt;li&gt;文件描述符表&lt;/li&gt;
+&lt;li&gt;信号处理上下文&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr /&gt;
-&lt;p&gt;You can &lt;strong&gt;backslash-escape (\)&lt;/strong&gt; the period:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1986\. What a great season.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;1986. What a great season.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h4&gt;Indented&lt;/h4&gt;
-&lt;h5&gt;Blockquote&lt;/h5&gt;
-&lt;p&gt;To put a blockquote within a list item, the blockquote&apos;s &amp;gt; delimiters need to be indented:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;*   A list item with a blockquote:
+&lt;p&gt;创建进程：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pid_t pid = fork();  // 创建子进程，复制当前进程
 
-    &amp;gt; This is a blockquote
-    &amp;gt; inside a list item.
+// 返回值含义
+pid == 0   // 子进程
+pid &amp;gt; 0    // 父进程，返回子进程PID
+pid &amp;lt; 0    // 出错
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
+&lt;h3&gt;3. 程序替换&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;int execve(const char *filename, const char *argv[], const char*envp[]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;用新程序替换当前进程的内存映像&lt;/p&gt;
+&lt;p&gt;不会返回，除非出错&lt;/p&gt;
+&lt;p&gt;保留：&lt;strong&gt;PID&lt;/strong&gt;不变，文件描符不变，信号上下文保留&lt;/p&gt;
+&lt;h3&gt;4. 回收子进程&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;pid_t wait(int *status);
+pid_t wait_pid(pid_t pid, int *status, int options);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;回收子进程，避免&lt;strong&gt;僵尸进程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;waitpid&lt;/code&gt;支持&lt;strong&gt;非阻塞（WNOHANG）&lt;strong&gt;和&lt;/strong&gt;特定子进程&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;5. 信号&lt;/h3&gt;
+&lt;p&gt;信号是由内核或者其它进程发送给进程的“消息”，用于通知异步事件&lt;/p&gt;
+&lt;p&gt;常见的信号：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;SIGINT:&lt;/strong&gt; 默认行为终止，来源于ctrl + C&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded></item><item><title>CSAPP 第七章 - 链接</title><link>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E9%93%BE%E6%8E%A5/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E9%93%BE%E6%8E%A5/</guid><description>深入学习链接过程，包括预处理、编译、汇编、链接的完整流程和目标文件格式</description><pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;第七章 链接&lt;/h1&gt;
+&lt;h2&gt;1. 链接的基础与目标文件格式&lt;/h2&gt;
+&lt;h3&gt;1.1.1 从源文件到可执行文件：预处理、编译、汇编、链接&lt;/h3&gt;
+&lt;p&gt;当编写一个 C 程序时，最终目标是生成一个可执行文件，它包含多个步骤&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a blockquote
-inside a list item.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;预处理 （Preprocessing）&lt;/p&gt;
+&lt;p&gt;处理源代码中的宏定义、头文件等指令，生成 &lt;strong&gt;.i&lt;/strong&gt; 后缀的文件，这个阶段输出的知识文本文件&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h5&gt;Code Block&lt;/h5&gt;
-&lt;p&gt;To put a code block within a list item, the code block needs to be indented twice — &lt;strong&gt;8 spaces&lt;/strong&gt; or &lt;strong&gt;two tabs&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;*   A list item with a code block:
-
-        &amp;lt;code goes here&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;A list item with a code block:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;code goes here&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;编译（Compilation）&lt;/p&gt;
+&lt;p&gt;将预处理后的文件转为汇编语言（&lt;strong&gt;.s&lt;/strong&gt; 文件）&lt;/p&gt;
+&lt;p&gt;这时候的文件已经是平台相关的汇编指令，但还没有被转换为机器码&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h5&gt;Nested List&lt;/h5&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* A
-  * A1
-  * A2
-* B
-* C
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-&lt;li&gt;A
-&lt;ul&gt;
-&lt;li&gt;A1&lt;/li&gt;
-&lt;li&gt;A2&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;汇编（Assembly）&lt;/p&gt;
+&lt;p&gt;汇编阶段会将 &lt;strong&gt;.s&lt;/strong&gt; 文件转化为机器码生成的可重定位文件（&lt;strong&gt;.o&lt;/strong&gt; 文件）&lt;/p&gt;
+&lt;p&gt;这个目标文件是一个二进制文件，但不能直接运行，它包含了一些程序的代码和一些未解决的符号&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;B&lt;/li&gt;
-&lt;li&gt;C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Code Blocks&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Indent every line of the block by at least &lt;strong&gt;4 spaces&lt;/strong&gt; or &lt;strong&gt;1 tab&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is a normal paragraph:
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;链接（Linking）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;链接阶段将多个目标文件（&lt;strong&gt;.o&lt;/strong&gt; 文件）和必要的库文件（如静态库 &lt;strong&gt;.a&lt;/strong&gt; 或动态库 &lt;strong&gt;.so&lt;/strong&gt;）链接成一个完整的可执行文件。链接器会解决符号引用（如函数和变量的引用），并将它们重新映射到内存中的具体地址。最终输出的是一个可执行文件（如  &lt;strong&gt;a.out&lt;/strong&gt;  或其他指定的名称）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;1.1.2 可执行和可链接格式（Executable and Linkable Format，ELF）&lt;/h3&gt;
+&lt;p&gt;三类目标文件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可重定位目标文件（&lt;strong&gt;.o&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;可执行的目标文件（&lt;strong&gt;a.out&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;共享目标目标文件（&lt;strong&gt;.so&lt;/strong&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一个&lt;strong&gt;ELF&lt;/strong&gt;文件通常包含以下几个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ELF Header&lt;/strong&gt;：包含文件的基本信息，如文件类型，机器架构，版本等&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/header.DIUzuPY3_1kSImz.webp&quot; alt=&quot;header&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Section Header Table&lt;/strong&gt;：记录了每个&lt;strong&gt;Section&lt;/strong&gt;的起始偏移、大小信息、利用该信息可构建&lt;strong&gt;Section&lt;/strong&gt;区域&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Section&lt;/strong&gt;：实际的代码和数据存储位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;常见的&lt;strong&gt;Section&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;.text&lt;/strong&gt;：存放程序的机器代码，所有函数的指令都会放在这个节中&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.data&lt;/strong&gt;：已初始化的全局变量和静态变量，它们的数据在启动时就已经存在&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.bss&lt;/strong&gt;：未初始化（或初始化为 &lt;strong&gt;0&lt;/strong&gt; ）的全局变量和静态变量，有&lt;strong&gt;Section Header&lt;/strong&gt;但不在&lt;strong&gt;Section&lt;/strong&gt;占空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.rodata&lt;/strong&gt;：存放只读数据，例如 &lt;strong&gt;printf()&lt;/strong&gt; 中输出的字符串、跳转表等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.symtab&lt;/strong&gt;：函数和全局变量名&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rel.text&lt;/strong&gt;：可重定位代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rel.data&lt;/strong&gt;：可重定位数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;debug&lt;/strong&gt;：调试&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;line&lt;/strong&gt;：源代码行号和机器指令之间的映射&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;strtab&lt;/strong&gt;：一个字符串表，程序中用到的符号的名字&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;1.1.3 符号表和符号类型&lt;/h3&gt;
+&lt;p&gt;每个**.o&lt;strong&gt;文件中都有一个符号表（&lt;/strong&gt;.symtab**），包含文件定义和引用的符号信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/symtab.Bc5s_FdT_ICYBj.webp&quot; alt=&quot;symtab&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;三类符号：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;全局符号：由该.o文件定义，可被其它文件引用的符号。如非静态的函数和全局变量&lt;/li&gt;
+&lt;li&gt;外部符号：由该.o文件引用，但被其它文件定义的符号&lt;/li&gt;
+&lt;li&gt;本地/局部符号：由该.o文件定义，且只能够被该.o文件引用的符号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;需要注意的是，程序中的局部变量由编译器管理，链接器不知道，因此它不是符号&lt;/p&gt;
+&lt;h4&gt;链接器解析多重定义的全局符号&lt;/h4&gt;
+&lt;p&gt;程序中的符号可以分为&lt;strong&gt;强符号&lt;/strong&gt;和&lt;strong&gt;弱符号&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;强符号&lt;/strong&gt;：函数和初始化的全局/静态变量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;弱符号&lt;/strong&gt;：未初始化的全局/静态变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;解析多重符号的时候，遵循以下规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;不允许多个同名的强符号&lt;/strong&gt;：每个强符号只能出现一次，否则链接器错误&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;若有一个强符号和多个弱符号同名，选择强符号&lt;/strong&gt;：对弱符号的引用解析为强符号&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;若有多个弱符号同名，选择任意一个&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例子1：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/** foo3.c **/ 
+#include &amp;lt;stdio.h&amp;gt;
+ void f();
+ int x=15213;
+ int main(){
+ 	f();
+ 	printf(“x=%d\n”,x)
+ 	return 0;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;/*bar3.c*/
+int x ;
 
-    This is a code block.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is a code block.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;A code block continues until it reaches a line that is not indented (or the end of the article).&lt;/p&gt;
-&lt;p&gt;Within a code block, &lt;strong&gt;&lt;em&gt;ampersands (&amp;amp;)&lt;/em&gt;&lt;/strong&gt; and angle &lt;strong&gt;brackets (&amp;lt; and &amp;gt;)&lt;/strong&gt; are automatically converted into HTML entities.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&quot;footer&quot;&amp;gt;
-        &amp;amp;copy; 2004 Foo Corporation
-    &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
-    &amp;amp;copy; 2004 Foo Corporation
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;Following sections Fenced Code Blocks and Syntax Highlighting are extensions, you can use the other way to write the code block.&lt;/p&gt;
-&lt;h4&gt;Fenced Code Blocks&lt;/h4&gt;
-&lt;p&gt;Just wrap your code in &lt;code&gt;```&lt;/code&gt; (as shown below) and you won&apos;t need to indent it by four spaces.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Here&apos;s an example:
-
-```
-function test() {
-  console.log(&quot;notice the blank line before this function?&quot;);
-}
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Here&apos;s an example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;function test() {
-  console.log(&quot;notice the blank line before this function?&quot;);
+void f(){
+	x = 15212 ;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h4&gt;Syntax Highlighting&lt;/h4&gt;
-&lt;p&gt;In your fenced block, add an optional language identifier and we&apos;ll run it through syntax highlighting (&lt;a href=&quot;https://github.com/github/linguist/blob/master/lib/linguist/languages.yml&quot;&gt;Support Languages&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```ruby
-require &apos;redcarpet&apos;
-markdown = Redcarpet.new(&quot;Hello World!&quot;)
-puts markdown.to_html
-```
+&lt;p&gt;输出 &lt;strong&gt;x = 15212&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例子2：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/** foo4.c **/ 
+#include &amp;lt;stdio.h&amp;gt;
+ void f();
+ int x;
+ int main(){
+ 	f();
+ 	printf(“x=%d\n”,x)
+ 	return 0;
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;require &apos;redcarpet&apos;
-markdown = Redcarpet.new(&quot;Hello World!&quot;)
-puts markdown.to_html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Horizontal Rules&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;hr /&amp;gt;&lt;/code&gt;
-Places &lt;strong&gt;three or more hyphens (-), asterisks (*), or underscores (_)&lt;/strong&gt; on a line by themselves. You may use spaces between the hyphens or asterisks.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* * *
-***
-*****
-- - -
----------------------------------------
-___
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Table&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;It&apos;s an extension.&lt;/p&gt;
-&lt;p&gt;Separates column by &lt;strong&gt;pipe (|)&lt;/strong&gt; and header by &lt;strong&gt;dashes (-)&lt;/strong&gt;, and uses &lt;strong&gt;colon (:)&lt;/strong&gt; for alignment.&lt;/p&gt;
-&lt;p&gt;The outer &lt;strong&gt;pipes (|)&lt;/strong&gt; and alignment are optional. There are &lt;strong&gt;3 delimiters&lt;/strong&gt; each cell at least for separating header.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;| Left | Center | Right |
-|:-----|:------:|------:|
-|aaa   |bbb     |ccc    |
-|ddd   |eee     |fff    |
+&lt;pre&gt;&lt;code&gt;/* bar4.c*/
+int x ;
 
- A | B
----|---
-123|456
+void f(){
+	x = 15212 ;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;例子3：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*foo5.c*/
+#include &amp;lt;stdio.h&amp;gt;
+void f();
+
+int x=15213, y=15212;
+
+int main(){
+	f();
+	printf(“address of x and y are %p , %p\n”,&amp;amp;x,&amp;amp;y);
+	printf(“x=0x%x y=0x%x \n”,x, y) ;
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt; /*bar5.c*/
+double x ;
+
+void f(){
+	x = -0.0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;double x&lt;/strong&gt;的复制会覆盖内存中强符号int x 和 y 所在位置的值&lt;/p&gt;
+&lt;p&gt;为了避免上述的麻烦，推荐&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用&lt;strong&gt;static&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;定义了全局变量就初始化它&lt;/li&gt;
+&lt;li&gt;引用了外部符号就使用&lt;strong&gt;extern&lt;/strong&gt;标识&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;2. 链接器的工作机制：符号解析和重定位&lt;/h2&gt;
+&lt;h3&gt;1.1.1 符号解析&lt;/h3&gt;
+&lt;p&gt;符号解析时，链接器按照命令行中的输入顺序扫描.o文件和.a文件&lt;/p&gt;
+&lt;p&gt;扫描过程中维护的3个集合&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;E&lt;/strong&gt;：可重定位目标文件的集合（E中文件最终被合并为可执行文件）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;U&lt;/strong&gt;：未解析的符号的集合（引用但还没有定义的符号）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;：在之前的输入文件中已经定义的符号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;扫描结束后，如果U为空，合并E 的文件得到可执行目标文件。否则，发出链接错误&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;命令行中输入文件的顺序很重要，准则是：将库文件放在末尾&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;1.1.1 重定位机制&lt;/h3&gt;
+&lt;h4&gt;重定位是什么？&lt;/h4&gt;
+&lt;p&gt;重定位就是在目标文件中，将“地址占位符”替换为“真实地址”&lt;/p&gt;
+&lt;h4&gt;为什么需要重定位？&lt;/h4&gt;
+&lt;p&gt;一个.o文件中，代码和数据都是以**相对地址（偏移）**来写的，没办法直接执行&lt;/p&gt;
+&lt;h4&gt;重定位步骤&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;符号定义重定位&lt;/p&gt;
+&lt;p&gt;把所有.o文件中的段（.text、.data)拼起来，分配地址给符号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;符号引用重定位&lt;/p&gt;
+&lt;p&gt;找出代码中对这些符号的“引用”，修改为真实地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;重定位表如何记录这些引用？&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;struct Elf64_Rela {
+    offset   // 这个引用在.text里的偏移
+    symbol   // 要引用的符号是哪个
+    type     // 是PC相对还是绝对地址, 相对地址R_X86_64_PC32，绝对地址R_X86_64_PLT32/32
+    addend   // 补偿偏移
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;记录在.rel.text和.rel.data&lt;/p&gt;
+</content:encoded></item><item><title>CSAPP 第六章 - 存储器层次结构</title><link>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</guid><description>深入理解存储器层次结构，包括 RAM、ROM、磁盘、SSD 和缓存的工作原理</description><pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;第六章 存储器层次结构&lt;/h1&gt;
+&lt;h2&gt;6.1 存储器&lt;/h2&gt;
+&lt;h3&gt;6.1.1 存储器的分类&lt;/h3&gt;
+&lt;h3&gt;6.1.2 随机访问存储器（Random Access Memory，RAM）&lt;/h3&gt;
+&lt;h4&gt;StaticRAM（SRAM）&lt;/h4&gt;
+&lt;h4&gt;DynamicRAM（DRAM）&lt;/h4&gt;
+&lt;h3&gt;6.1.3 只读存储器（Read Only Memory，ROM）&lt;/h3&gt;
+&lt;h4&gt;机械磁盘（Hard Disk Drive,  HDD）&lt;/h4&gt;
+&lt;h4&gt;固态硬盘（Solid State Drive，SSD）&lt;/h4&gt;
+&lt;h3&gt;6.1.4 层次性存储结构&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/herachy.BehSnrY7_Z2g6UoM.webp&quot; alt=&quot;herachy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从上至下：存储速度越来越慢、存储容量越来越大，单位价格越来越低&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;6.2 局部性&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;局部性原理（Principle of Locality）&lt;/strong&gt;：程序倾向使用&lt;strong&gt;最近一段时间&lt;/strong&gt;，&lt;strong&gt;距离其较近地址&lt;/strong&gt;的指令和数据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;时间局部性（Temporal Locality）&lt;/strong&gt;：当前被访问的信息&lt;strong&gt;近期&lt;/strong&gt;很可能还会被再次访问&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;空间局部性（Spatial Locality）&lt;/strong&gt;：在最近的将来将用到的信息很可能在&lt;strong&gt;空间地址&lt;/strong&gt;上是临近的&lt;/p&gt;
+&lt;h3&gt;6.2.1 局部性示例&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sum = 0;
+for (i = 0; i &amp;lt; n; i++)  
+	sum += a[i];
+return sum;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;对数据的引用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	顺序访问数组元素（步长为1的引用模式）——&lt;strong&gt;空间局部性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	变量&lt;strong&gt;sum&lt;/strong&gt;在每次迭代循环中被引用一次——&lt;strong&gt;时间局部性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对指令的引用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	顺序读取指令——&lt;strong&gt;空间局部性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	重复循环执行for循环体——&lt;strong&gt;时间局部性&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;6.2.2 对局部性的定性评价&lt;/h3&gt;
+&lt;p&gt;关于数据&lt;strong&gt;a&lt;/strong&gt;，分析下列函数的局部性好坏&lt;/p&gt;
+&lt;p&gt;代码1：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int sum_array_rows(inta[M][N]){
+	int i, j, sum =0;
+	for (i = 0; i &amp;lt; M; i++)  
+		for (j = 0; j &amp;lt; N;j++)
+			sum += a[i][j];  
+	return sum;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;代码2：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
 
 
-A |B
---|--
-12|45
+int sum_array_cols(inta[M][N]){
+    int i, j, sum =0;
+	for (j = 0; j &amp;lt; N; j++)  
+		for (i = 0; i &amp;lt; M;i++)
+			sum += a[i][j];  
+    return sum;
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Left&lt;/th&gt;
-&lt;th&gt;Center&lt;/th&gt;
-&lt;th&gt;Right&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;aaa&lt;/td&gt;
-&lt;td&gt;bbb&lt;/td&gt;
-&lt;td&gt;ccc&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ddd&lt;/td&gt;
-&lt;td&gt;eee&lt;/td&gt;
-&lt;td&gt;fff&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;A&lt;/th&gt;
-&lt;th&gt;B&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;123&lt;/td&gt;
-&lt;td&gt;456&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;A&lt;/th&gt;
-&lt;th&gt;B&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;45&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Span Elements&lt;/h2&gt;
-&lt;h3&gt;Links&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Markdown supports two style of links: inline and reference.&lt;/p&gt;
-&lt;h4&gt;Inline&lt;/h4&gt;
-&lt;p&gt;Inline link format like this: &lt;code&gt;[Link Text](URL &quot;Title&quot;)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Title is optional.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
-
-[This link](http://example.net/) has no title attribute.
+&lt;p&gt;&lt;strong&gt;行优先&lt;/strong&gt;的访问顺序和C语言的&lt;strong&gt;行主页&lt;/strong&gt;的内存布局一致，它有良好的空间局部性&lt;/p&gt;
+&lt;p&gt;然后，我们继续来看看另外一个例子：&lt;/p&gt;
+&lt;p&gt;修改循环的顺序，使得它以步长为&lt;strong&gt;1&lt;/strong&gt;的引用模式扫描三维数组&lt;strong&gt;a&lt;/strong&gt;（从而具有良好的局部性）？&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int sum_array_3d(int a[M][N][P]){
+	int i, j, k, sum = 0;
+	for (i = 0; i &amp;lt; M; i++)  
+		for (j = 0; j &amp;lt; N; j++)
+ 			for (k = 0; k &amp;lt; P; k++)
+				sum += a[k][i][j];
+	return sum;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;If you&apos;re referring to a local resource on the same server, you can use relative paths:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;See my [About](/about/) page for details.
+&lt;p&gt;结果是显而易见的：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int sum_array_3d(int a[M][N][P]) {
+    int i, j, k, sum = 0;
+    for (i = 0; i &amp;lt; M; i++)  
+        for (j = 0; j &amp;lt; N; j++)
+            for (k = 0; k &amp;lt; P; k++)  // P 是最内层维度，连续
+                sum += a[i][j][k];
+    return sum;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;See my &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page for details.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h4&gt;Reference&lt;/h4&gt;
-&lt;p&gt;You could predefine link references. Format like this: &lt;code&gt;[id]: URL &quot;Title&quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Title is also optional. And the you refer the link, format like this: &lt;code&gt;[Link Text][id]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[id]: http://example.com/  &quot;Optional Title Here&quot;
-This is [an example][id] reference-style link.
+&lt;h2&gt;6.3 缓存（Cache）&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/herachy_2.B3VPj4HU_ZuExB9.webp&quot; alt=&quot;herachy_2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;存储器的基本思想：&lt;/p&gt;
+&lt;p&gt;​	对于每个&lt;strong&gt;k&lt;/strong&gt;，位于&lt;strong&gt;k&lt;/strong&gt;层的更快更小存储设备作为位于&lt;strong&gt;k + 1&lt;/strong&gt;层的更大更慢存储设备的&lt;strong&gt;缓存&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;缓存（Cache）的基本概念&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/cache.t2EkSn7M_1vMhnz.webp&quot; alt=&quot;cache&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缓存命中&lt;/strong&gt;： 需要的数据块在缓存中找得到，无需访问下层存储器即可获得数据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缓存不命中&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;冷（强制型）不命中&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​	当缓存为空时，对任何数据的请求都会不命中，此类命中称为冷不命中&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;容量不命中&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​	发生在当活跃集合（工作集合working set）的大小比缓存大&lt;/p&gt;
+&lt;p&gt;​	简单地说，就是缓存不够大，，装不下要用的所有东西&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;冲突不命中&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​	根据映射策略，大多数缓存将&lt;strong&gt;k + 1&lt;/strong&gt;层的某个块限制放置在第&lt;strong&gt;k&lt;/strong&gt;层块的一个很小的子集中&lt;/p&gt;
+&lt;p&gt;​	缓存够大，但你访问的数据因为映射策略的问题，全都跑到一个小位置上互相冲突&lt;/p&gt;
+&lt;h2&gt;6.4 高速缓存存储器&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;高速缓存存储器&lt;/strong&gt;是小型的、快速的基于SRAM的存储器，是在硬件中集中管理的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/cpu.fQe69E-__1JvGbu.webp&quot; alt=&quot;cpu&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;那么就是出现了一个问题：信息从主存流向Cache中，如何进行定位呢？&lt;/p&gt;
+&lt;p&gt;**地址映射：**CPU访问时，将贮存地址按照某种映射函数关系变成Cache的地址&lt;/p&gt;
+&lt;p&gt;​	地址映射的方式：&lt;strong&gt;直接映射、组相联映射、全相连映射&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;直接映射&lt;/h3&gt;
+&lt;h3&gt;组相联映射&lt;/h3&gt;
+&lt;h3&gt;全相联映射&lt;/h3&gt;
+</content:encoded></item><item><title>循环展开优化技术</title><link>https://mizuki.mysqil.com/posts/csapp/%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/csapp/%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80/</guid><description>CSAPP 第五章循环展开优化技术详解，包括多变量处理和多累计变量的优化方法</description><pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;n * n 的循环展开&lt;/p&gt;
+&lt;p&gt;第一个 n : 表示每次处理几个变量&lt;/p&gt;
+&lt;p&gt;第二个 n : 表示几个累计变量&lt;/p&gt;
+&lt;p&gt;原始函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    for (i = 0; i &amp;lt; length; i++) 
+        t = t * d[i];
+    *dest = t;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;That is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Square brackets containing the link identifier (&lt;strong&gt;not case sensitive&lt;/strong&gt;, optionally indented from the left margin using up to three spaces);&lt;/li&gt;
-&lt;li&gt;followed by a colon;&lt;/li&gt;
-&lt;li&gt;followed by one or more spaces (or tabs);&lt;/li&gt;
-&lt;li&gt;followed by the URL for the link;&lt;/li&gt;
-&lt;li&gt;The link URL may, optionally, be surrounded by angle brackets.&lt;/li&gt;
-&lt;li&gt;optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The following three link definitions are equivalent:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[foo]: http://example.com/  &quot;Optional Title Here&quot;
-[foo]: http://example.com/  &apos;Optional Title Here&apos;
-[foo]: http://example.com/  (Optional Title Here)
-[foo]: &amp;lt;http://example.com/&amp;gt;  &quot;Optional Title Here&quot;
+&lt;p&gt;4 * 1 路循环, 每次循环处理四个元素, 保存在一个累计变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine41() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    for (i = 0; i &amp;lt; length - 4; i += 4) {
+        t = t * d[i];
+        t = t * d[i + 1];
+        t = t * d[i + 2];
+        t = t * d[i + 3];
+    }
+    
+    for (; i &amp;lt; length; i++)
+        t *= d[i];
+    
+    *dest = t;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Uses an empty set of square brackets, the link text itself is used as the name.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[Google]: http://google.com/
-[Google][]
+&lt;p&gt;4 * 4 路循环, 每次循环处理 4 个元素, 保存在 4 个累计变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine44() {
+	long i;
+    long length = vec_length(v);
+    data_t *d = get_vec_start(v);
+    data_t t = 1;
+    data_t t1 = 1;
+    data_t t2 = 1;
+    data_t t3 = 1;
+    data_t t4 = 1;
+    for (i = 0; i &amp;lt; length - 4; i+= 4) {
+        t1 = t1 * d[i];
+        t2 = t2 * d[i + 1];
+        t3 = t3 * d[i + 2];
+        t4 = t4 * d[i + 3];
+    }
+    
+    t = t1 * t2 * t3 * t4;
+    
+    for (; i &amp;lt; length; i++)
+        t *= d[i];
+    
+    *dest = t;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href=&quot;http://google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Emphasis&lt;/h3&gt;
-&lt;p&gt;HTML Tags: &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Markdown treats &lt;strong&gt;asterisks (*)&lt;/strong&gt; and &lt;strong&gt;underscores (_)&lt;/strong&gt; as indicators of emphasis. &lt;strong&gt;One delimiter&lt;/strong&gt; will be &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;; *&lt;em&gt;double delimiters&lt;/em&gt; will be &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
+</content:encoded></item><item><title>CSAPP 第五章 - 优化程序性能</title><link>https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/csapp/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</guid><description>深入学习程序性能优化技术，包括代码优化级别、代码移动、循环展开等核心优化方法</description><pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;第五章 优化程序性能(1)&lt;/h1&gt;
+&lt;h2&gt;本章概述&lt;/h2&gt;
+&lt;h3&gt;代码优化级别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;算法 + 数据结构（选择一组适当的算法和数据结构）&lt;/li&gt;
+&lt;li&gt;代码级别优化（编写执行高效的代码）&lt;/li&gt;
+&lt;li&gt;机器级优化（针对运算量大的计算，分为多个子任务，子任务利用多核/多处理器并行计算）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;普遍有用的代码级优化方法&lt;/h3&gt;
+&lt;p&gt;核心思想：减少/消除不必要的工作（函数调用、重复运算、条件测试、内存引用等）&lt;/p&gt;
+&lt;h4&gt;代码移动&lt;/h4&gt;
+&lt;p&gt;若计算总是产生相同的结果，可将其从循环中移出，减少计算执行的频率&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void set_row(double *a, double *b, long i, long n){
+	long j;
+	for (j = 0; j &amp;lt; n; j++)
+		a[n * i + j] = b[j];
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;But if you surround an * or _ with spaces, it&apos;ll be treated as a literal asterisk or underscore.&lt;/p&gt;
-&lt;p&gt;You can backslash escape it:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;\*this text is surrounded by literal asterisks\*
+&lt;p&gt;优化为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void set_row(double *a, double *b, long i, long n){
+	long j;
+    int ni = n * i;
+	for (j = 0; j &amp;lt; n; j++)
+		a[ni + j] = b[j];
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;*this text is surrounded by literal asterisks*&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Code&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Wraps it with &lt;strong&gt;backtick quotes (`)&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Use the `printf()` function.
+&lt;h4&gt;复杂运算简化&lt;/h4&gt;
+&lt;p&gt;核心思想：用更简单的方法替换昂贵的操作（使用移位、加，替换乘法和除法）&lt;/p&gt;
+&lt;p&gt;1.乘法转为移位&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;16 * x ——&amp;gt; x &amp;lt;&amp;lt; 4
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;To include a literal backtick character within a code span, you can use &lt;strong&gt;multiple backticks&lt;/strong&gt; as the opening and closing delimiters:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;``There is a literal backtick (`) here.``
+&lt;p&gt;2.识别乘积的顺序（乘法转为加法）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for (i = 0; i &amp;lt; n; i++) {
+	int ni = n * i;
+	for (j = 0; j &amp;lt; n; j++) {
+		a[ni + j] = b[j];
+	}
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
+&lt;p&gt;优化为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int ni = 0;
+for (i = 0; i &amp;lt; n; i++) {
+	for (j = 0; j &amp;lt; n; j++) {
+		a[ni + j] = b[j];
+	}
+	ni += n;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Images&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.&lt;/p&gt;
-&lt;h4&gt;Inline&lt;/h4&gt;
-&lt;p&gt;Inline image syntax looks like this: &lt;code&gt;![Alt text](URL &quot;Title&quot;)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Title is optional.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+&lt;h4&gt;共享公用子表达式&lt;/h4&gt;
+&lt;p&gt;核心思想：重用表达式的一部分&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/* Sum neighbors of i,j */
+up =    val[(i-1)*n + j ];
+down =  val[(i+1)*n + j ];
+left =  val[i*n + j-1 ];
+right = val[i*n + j+1];
+sum = up + down + left + right;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp&quot; alt=&quot;Alt text&quot; title=&quot;Optional title&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;That is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An exclamation mark: !;&lt;/li&gt;
-&lt;li&gt;followed by a set of square brackets, containing the alt attribute text for the image;&lt;/li&gt;
-&lt;li&gt;followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Reference&lt;/h4&gt;
-&lt;p&gt;Reference-style image syntax looks like this: &lt;code&gt;![Alt text][id]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[img id]: https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp  &quot;Optional title attribute&quot;
-![Alt text][img id]
+&lt;p&gt;优化为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;long inj = i*n + j;
+up = val[inj -  n];
+down = val[inj + n];
+left = val[inj - 1];
+right = val[inj + 1];
+sum = up + down + left + right;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/08/20/5fszgXeOxmL3Wdv.webp&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Strikethrough&lt;/h3&gt;
-&lt;p&gt;HTML Tag: &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;It&apos;s an extension.&lt;/p&gt;
-&lt;p&gt;GFM adds syntax to strikethrough text.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;~~Mistaken text.~~
+&lt;h2&gt;5.1 编译器优化代码&lt;/h2&gt;
+&lt;h3&gt;编译器优化代码的特点&lt;/h3&gt;
+&lt;p&gt;1.编译器能力强大：能够优化程序员写的程序&lt;/p&gt;
+&lt;p&gt;2.编译器不是万能的：可能导致与程序员意图不一致的结果&lt;/p&gt;
+&lt;p&gt;3.编译器优化会优先保证正确性&lt;/p&gt;
+&lt;p&gt;4.因此，编译器的优化处理时保守的，而不是激进的&lt;/p&gt;
+&lt;h3&gt;编译器优化的局限&lt;/h3&gt;
+&lt;h4&gt;内存别名引用&lt;/h4&gt;
+&lt;p&gt;如下优化后的代码，可能与优化前代码不一致的结果，编译器必须假设所有的情况，限制了可能的优化策略&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//优化前的代码
+void twiddle1(long *xp,long *yp){
+ *xp +=*yp;
+ *xp +=*yp; 
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;s&gt;Mistaken text.&lt;/s&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Miscellaneous&lt;/h2&gt;
-&lt;h3&gt;Automatic Links&lt;/h3&gt;
-&lt;p&gt;Markdown supports a shortcut style for creating &quot;automatic&quot; links for URLs and email addresses: simply surround the URL or email address with angle brackets.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;http://example.com/&amp;gt;
-
-&amp;lt;address@example.com&amp;gt;
+&lt;pre&gt;&lt;code&gt;//优化后的代码
+void twiddle2(long *xp,long *yp){
+ *xp += 2*(*yp);
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;GFM will autolink standard URLs.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;https://github.com/emn178/markdown
+&lt;p&gt;当&lt;strong&gt;xp&lt;/strong&gt;和&lt;strong&gt;yp&lt;/strong&gt;指向同一个地址的时候，优化前的代码，&lt;strong&gt;xp&lt;/strong&gt;的值会变为原来的四倍；优化后的代码，&lt;strong&gt;xp&lt;/strong&gt;值会变为原来的三倍&lt;/p&gt;
+&lt;p&gt;另外一个例子：如果&lt;strong&gt;p&lt;/strong&gt;，&lt;strong&gt;q&lt;/strong&gt;指向同一个内存位置，&lt;strong&gt;t1&lt;/strong&gt; = &lt;strong&gt;1000&lt;/strong&gt;，否则为&lt;strong&gt;3000&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = 1000, y = 3000
+*q = y     //3000
+*p = x     //1000
+t1 = *q    //t1 = ? 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;https://github.com/emn178/markdown&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3&gt;Backslash Escapes&lt;/h3&gt;
-&lt;p&gt;Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown&apos;s formatting syntax.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;\*literal asterisks\*
+&lt;h4&gt;函数调用&lt;/h4&gt;
+&lt;p&gt;当一个函数**f( )**的调用涉及全局变量的时候，例如如下例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;long counter = 0;
+long f(){
+ return counter++;
+}
+//优化前的代码
+long func1(){
+ return f() + f() + f() + f();
+}
+//如果将func1()优化为func2()
+long func2(){
+ return 4*f();
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;*literal asterisks*&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Markdown provides backslash escapes for the following characters:&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
+&lt;p&gt;&lt;strong&gt;func1&lt;/strong&gt;的返回值：&lt;strong&gt;4&lt;/strong&gt;， &lt;strong&gt;func2&lt;/strong&gt;的返回值：&lt;strong&gt;1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此，编译器不会将&lt;strong&gt;func1&lt;/strong&gt;优化为&lt;strong&gt;func2&lt;/strong&gt;。为了提高性能，可以将&lt;strong&gt;f&lt;/strong&gt;声明为&lt;strong&gt;inline&lt;/strong&gt;内联函数。&lt;/p&gt;
+&lt;p&gt;内联函数在编译时，编译器会在调用的地方展开，没有函数调用建立栈帧的开销，程序运行会更快。&lt;/p&gt;
+&lt;p&gt;需要注意的是，内联函数只适合一些经常被调用的少量代码。&lt;strong&gt;GCC&lt;/strong&gt;只会尝试在单个文件中定义的内联函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;long func1in(){
+	long t = counter++;
+	t += counter++;
+	t +=counter++;
+	t += counter ++;
+	return t;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Inline HTML&lt;/h2&gt;
-&lt;p&gt;For any markup that is not covered by Markdown&apos;s syntax, you simply use HTML itself. There&apos;s no need to preface it or delimit it to indicate that you&apos;re switching from Markdown to HTML; you just use the tags.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is a regular paragraph.
-
-&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-
-This is another regular paragraph.
+&lt;pre&gt;&lt;code&gt;long func1opt(){
+	long t = 4 * counter + 6;
+	counter += 4;
+	return t;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This is a regular paragraph.&lt;/p&gt;
-&lt;p&gt;&amp;lt;table&amp;gt;
-&amp;lt;tr&amp;gt;
-&amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;&lt;/p&gt;
-&lt;p&gt;This is another regular paragraph.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Note that Markdown formatting syntax is &lt;strong&gt;not processed within block-level HTML tags&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Unlike block-level HTML tags, Markdown syntax is &lt;strong&gt;processed within span-level tags&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;span&amp;gt;**Work**&amp;lt;/span&amp;gt;
-
-&amp;lt;div&amp;gt;
-    **No Work**
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Preview:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&amp;lt;span&amp;gt;&lt;strong&gt;Work&lt;/strong&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
-&lt;p&gt;&amp;lt;div&amp;gt;
-&lt;strong&gt;No Work&lt;/strong&gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
-&lt;hr /&gt;
-</content:encoded></item><item><title>Markdown Extended Features</title><link>https://mizuki.mysqil.com/posts/markdown-extended/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-extended/</guid><description>Read more about Markdown features in Mizuki</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
-&lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
-&lt;p&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}&lt;/p&gt;
-&lt;p&gt;Create a GitHub repository card with the code &lt;code&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Admonitions&lt;/h2&gt;
-&lt;p&gt;Following types of admonitions are supported: &lt;code&gt;note&lt;/code&gt; &lt;code&gt;tip&lt;/code&gt; &lt;code&gt;important&lt;/code&gt; &lt;code&gt;warning&lt;/code&gt; &lt;code&gt;caution&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;:::note
-Highlights information that users should take into account, even when skimming.
-:::&lt;/p&gt;
-&lt;p&gt;:::tip
-Optional information to help a user be more successful.
-:::&lt;/p&gt;
-&lt;p&gt;:::important
-Crucial information necessary for users to succeed.
-:::&lt;/p&gt;
-&lt;p&gt;:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::&lt;/p&gt;
-&lt;p&gt;:::caution
-Negative potential consequences of an action.
-:::&lt;/p&gt;
-&lt;h3&gt;Basic Syntax&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Custom Titles&lt;/h3&gt;
-&lt;p&gt;The title of the admonition can be customized.&lt;/p&gt;
-&lt;p&gt;:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;GitHub Syntax&lt;/h3&gt;
+&lt;h3&gt;优化的关键&lt;/h3&gt;
+&lt;p&gt;1.优化的关键在于程序员&lt;/p&gt;
+&lt;p&gt;2.编译器优化能力强，但过度依赖编译器会带来意外与错误&lt;/p&gt;
+&lt;p&gt;3.编译器优化只是辅助工作&lt;/p&gt;
+&lt;p&gt;4.程序员值得花费更多精力写程序，使编译器能够将之转换为更有效的机器代码&lt;/p&gt;
+&lt;p&gt;5.程序员观察编译器在不同优化级别的结果，以提高自己的优化水平&lt;/p&gt;
+&lt;h2&gt;5.2 表示程序性能&lt;/h2&gt;
+&lt;p&gt;1.运行时间：一个元素完成功能所运行的时间&lt;/p&gt;
+&lt;p&gt;2.元素周期数（&lt;strong&gt;Cycles Per Element, CPE&lt;/strong&gt;）：运行时间/时钟周期&lt;/p&gt;
+&lt;p&gt;3.时钟周期：CPU完成一个基本动作的时间（对应一个电平信号宽度）&lt;/p&gt;
+&lt;p&gt;那么，一个时钟周期有多长呢？&lt;/p&gt;
+&lt;p&gt;一个标有“4GHz” 的处理器，一个时钟周期的时长为：0.25 * 10&amp;lt;sup&amp;gt;-9&amp;lt;/sup&amp;gt; = 0.25 ns&lt;/p&gt;
+&lt;p&gt;通常来说，一个加法操作会消耗&lt;strong&gt;1&lt;/strong&gt;到&lt;strong&gt;2&lt;/strong&gt;个时钟周期；乘法操作会消耗&lt;strong&gt;3&lt;/strong&gt;到&lt;strong&gt;5&lt;/strong&gt;个时钟周期，但可能会根据不同的处理器架构而有所不同。&lt;/p&gt;
+&lt;h2&gt;5.3 程序示例&lt;/h2&gt;
+&lt;p&gt;下面，我们将通过一个具体的例子，使用各种方法，对其进行优化。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-&lt;a href=&quot;https://github.com/orgs/community/discussions/16925&quot;&gt;The GitHub syntax&lt;/a&gt; is also supported.&lt;/p&gt;
+&lt;p&gt;[!IMPORTANT]&lt;/p&gt;
+&lt;p&gt;现在有如图所示的数据结构：存储数组长度和指向数组的指针&lt;/p&gt;
+&lt;p&gt;我们需要度量代码对于（int、long）和（float、double）的性能&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; [!NOTE]
-&amp;gt; The GitHub syntax is also supported.
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/vector.BGbutyCC_Z24z6op.webp&quot; alt=&quot;vector&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;定义结构体：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;typedef struct{
+    long len;
+    data_t *data; // 基本元素的数据类型
+}vec_rec, *vec_ptr;
 
-&amp;gt; [!TIP]
-&amp;gt; The GitHub syntax is also supported.
+typedef long data_t; // 基本元素的数据类型
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Spoiler&lt;/h3&gt;
-&lt;p&gt;You can add spoilers to your text. The text also supports &lt;strong&gt;Markdown&lt;/strong&gt; syntax.&lt;/p&gt;
-&lt;p&gt;The content :spoiler[is hidden &lt;strong&gt;ayyy&lt;/strong&gt;]!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;The content :spoiler[is hidden **ayyy**]!&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Simple Guides for Mizuki</title><link>https://mizuki.mysqil.com/posts/guide/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
+&lt;p&gt;创建一个vec_ptr并返回：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vec_ptr new_vec(long len){
+	vec_ptr result = (vec_ptr)malloc(sizeof(vec_rec));
+	data_t *data = NULL;
+    if (!result) return; // 如果分配失败, 直接返回
+    if (len &amp;gt; 0){
+        // 动态分配数组calloc, 指定data_t大小的len个空间
+        // 数组中初始值都为0
+        data = (data_t*)calloc(len, sizeof(data_t));
+        if (!data){ // 分配失败, 释放结构体
+            free((void *)result);
+            return NULL:
+        }
+    }
+    result-&amp;gt;data = data; // 分配成功, 让指针指向数组
+    return result;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;访问向量元素：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int get_vec_element(vec_ptr v, long index, data_t *dest){
+    if (index &amp;lt; 0 || index &amp;gt;= v-&amp;gt;length) return 0; // 边界检查, 不符合要求返回0
+    *dest = v-&amp;gt;data[index]; // 将找到的值赋给dest
+    return 1; // 查询成功, 返回1
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;确定向量长度：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;long vec_length(vec_ptr v){
+	return v-&amp;gt;length;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;代码优化&lt;/h3&gt;
+&lt;p&gt;示例功能：使用某种运算，将向量中的所有元素合并一个值&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// 对向量元素求和
+#define IDENT 0
+#define OP +
+
+// 对向量元素求乘积
+#define IDENT 1
+#define OP *
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;合并运算的初始实现&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;void combine1(vec_ptr v, data_t *dest){
+	long i;
+	*dest = IDENT;
+	for (int i = 0; i &amp;lt; vec_length(v); i++){
+		data_t val;
+		get_vec_element(v, i, &amp;amp;val); // 将取得的值赋给val
+		*dest = *dest OP val; // 进行运算
+	}
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Attribute&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;整数&lt;/th&gt;
+&lt;th&gt;浮点数&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The title of the post.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The date the post was published.&lt;/td&gt;
+&lt;td&gt;combine1&lt;/td&gt;
+&lt;td&gt;未优化&lt;/td&gt;
+&lt;td&gt;22.68    20.02&lt;/td&gt;
+&lt;td&gt;19.98  20.18&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;pinned&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Whether this post is pinned to the top of the post list.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;A short description of the post. Displayed on index page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The tags of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The category of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;licenseName&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The license name for the post content.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The author of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;sourceLink&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The source link or reference for the post content.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;If this post is still a draft, which won&apos;t be displayed.&lt;/td&gt;
+&lt;td&gt;combine1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-O1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10.12    10.12&lt;/td&gt;
+&lt;td&gt;10.17  11.14&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2&gt;Where to Place the Post Files&lt;/h2&gt;
-&lt;p&gt;Your post files should be placed in &lt;code&gt;src/content/posts/&lt;/code&gt; directory. You can also create sub-directories to better organize your posts and assets.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
+&lt;p&gt;在未进行任何代码优化的时候，只是依靠编译器的优化，性能就可以提升一倍&lt;/p&gt;
+&lt;h4&gt;优化一：消除循环的低效率&lt;/h4&gt;
+&lt;p&gt;在初始实现的代码中，每次循环都要进行函数调用，但向量的长度不会随着循环的进行而改变。因此，只需要计算一次向量长度即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine2(vec_ptr v, data_t *dest){
+    long i;
+    long length = vec_length(v); // 只调用一次vec_length(v), 数据存储在length中
+    *dest = IDENT;
+    for(i = 0; i &amp;lt; length; i++){
+        data_t val;
+        get_vec_elemrnt(v, i, &amp;amp;val);
+        *dest = *dest OP val;
+    }
+}
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Markdown Mermaid</title><link>https://mizuki.mysqil.com/posts/markdown-mermaid/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-mermaid/</guid><description>A simple example of a Markdown blog post with Mermaid.</description><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Complete Guide to Markdown with Mermaid Diagrams&lt;/h1&gt;
-&lt;p&gt;This article demonstrates how to create various complex diagrams using Mermaid in Markdown documents, including flowcharts, sequence diagrams, Gantt charts, class diagrams, and state diagrams.&lt;/p&gt;
-&lt;h2&gt;Flowchart Example&lt;/h2&gt;
-&lt;p&gt;Flowcharts are excellent for representing processes or algorithm steps.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;graph TD
-    A[Start] --&amp;gt; B{Condition Check}
-    B --&amp;gt;|Yes| C[Process Step 1]
-    B --&amp;gt;|No| D[Process Step 2]
-    C --&amp;gt; E[Subprocess]
-    D --&amp;gt; E
-    subgraph E [Subprocess Details]
-        E1[Substep 1] --&amp;gt; E2[Substep 2]
-        E2 --&amp;gt; E3[Substep 3]
-    end
-    E --&amp;gt; F{Another Decision}
-    F --&amp;gt;|Option 1| G[Result 1]
-    F --&amp;gt;|Option 2| H[Result 2]
-    F --&amp;gt;|Option 3| I[Result 3]
-    G --&amp;gt; J[End]
-    H --&amp;gt; J
-    I --&amp;gt; J
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Sequence Diagram Example&lt;/h2&gt;
-&lt;p&gt;Sequence diagrams show interactions between objects over time.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sequenceDiagram
-    participant User
-    participant WebApp
-    participant Server
-    participant Database
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;整数&lt;/th&gt;
+&lt;th&gt;浮点数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-O1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;22.68    20.02&lt;/td&gt;
+&lt;td&gt;19.98  20.18&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine2&lt;/td&gt;
+&lt;td&gt;移动&lt;strong&gt;vec_length&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10.12    10.12&lt;/td&gt;
+&lt;td&gt;10.17  11.14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;编译器通过一些基本的优化改善了&lt;strong&gt;combine1&lt;/strong&gt;的性能，但未解决更深层次的性能瓶颈，即重复调用&lt;strong&gt;vec_length(v)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那么，编译器为什么不能将**vec_length(v)**从循环出调用呢？&lt;/p&gt;
+&lt;p&gt;1.函数可能有副作用。例如，每次调用都改变全局变量/状态&lt;/p&gt;
+&lt;p&gt;2.对于给定的参数，函数可能返回不同的值。如果函数依赖外部变量或者循环中改变的变量，它每次的返回值可能会有所不同。因此，编译器无法确定将**vec_length(v)**移除循环的正确性&lt;/p&gt;
+&lt;p&gt;3.在代码中,**vec_length(v)&lt;strong&gt;可能与其它函数交互，导致&lt;/strong&gt;vec_length(v)**需要在每次循环中重新计算，而不是提前计算一次&lt;/p&gt;
+&lt;p&gt;对于编译器：&lt;/p&gt;
+&lt;p&gt;1.函数调用被视为&lt;em&gt;黑盒&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2.编译器只会尝试在函数附近进行弱优化&lt;/p&gt;
+&lt;p&gt;解决办法：&lt;/p&gt;
+&lt;p&gt;1.使用&lt;strong&gt;inline&lt;/strong&gt;内联函数&lt;/p&gt;
+&lt;p&gt;2.程序员自己做代码移动&lt;/p&gt;
+&lt;h4&gt;优化二：减少过程调用&lt;/h4&gt;
+&lt;p&gt;我们修改&lt;strong&gt;get_vec_element&lt;/strong&gt;，无需边界检查，直接获取&lt;strong&gt;data&lt;/strong&gt;数组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// 直接获取data数组
+data_t* get_vec_start(vec_ptr v){
+    return v-&amp;gt;data;
+}
 
-    User-&amp;gt;&amp;gt;WebApp: Submit Login Request
-    WebApp-&amp;gt;&amp;gt;Server: Send Auth Request
-    Server-&amp;gt;&amp;gt;Database: Query User Credentials
-    Database--&amp;gt;&amp;gt;Server: Return User Data
-    Server--&amp;gt;&amp;gt;WebApp: Return Auth Result
-    
-    alt Auth Successful
-        WebApp-&amp;gt;&amp;gt;User: Show Welcome Page
-        WebApp-&amp;gt;&amp;gt;Server: Request User Data
-        Server-&amp;gt;&amp;gt;Database: Get User Preferences
-        Database--&amp;gt;&amp;gt;Server: Return Preferences
-        Server--&amp;gt;&amp;gt;WebApp: Return User Data
-        WebApp-&amp;gt;&amp;gt;User: Load Personalized Interface
-    else Auth Failed
-        WebApp-&amp;gt;&amp;gt;User: Show Error Message
-        WebApp-&amp;gt;&amp;gt;User: Prompt Re-entry
-    end
+void combine3(vec_ptr v, data_t *dest){
+	long i;
+	long length = vec_length(v);
+	data_t *data = get_vec_start(v);
+	*dest= IDENT;
+	for (i= 0; i&amp;lt;length; i++){
+		*dest= *dest OP data[i];
+	}
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Gantt Chart Example&lt;/h2&gt;
-&lt;p&gt;Gantt charts are perfect for displaying project schedules and timelines.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;gantt
-    title Website Development Project Timeline
-    dateFormat  YYYY-MM-DD
-    axisFormat  %m/%d
-    
-    section Design Phase
-    Requirements Analysis      :a1, 2023-10-01, 7d
-    UI Design                 :a2, after a1, 10d
-    Prototype Creation        :a3, after a2, 5d
-    
-    section Development Phase
-    Frontend Development      :b1, 2023-10-20, 15d
-    Backend Development       :b2, after a2, 18d
-    Database Design           :b3, after a1, 12d
-    
-    section Testing Phase
-    Unit Testing              :c1, after b1, 8d
-    Integration Testing       :c2, after b2, 10d
-    User Acceptance Testing   :c3, after c2, 7d
-    
-    section Deployment
-    Production Deployment     :d1, after c3, 3d
-    Launch                    :milestone, after d1, 0d
+&lt;p&gt;缺点是破坏了程序的模块性。我们并不知道他的元素到底是以数组存储还是链表之类的存储&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;整数&lt;/th&gt;
+&lt;th&gt;浮点数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine2&lt;/td&gt;
+&lt;td&gt;移动&lt;strong&gt;vec_lemgth&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;7.02    9.03&lt;/td&gt;
+&lt;td&gt;9.02  11.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine3&lt;/td&gt;
+&lt;td&gt;直接访问&lt;strong&gt;data&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;7.17    9.02&lt;/td&gt;
+&lt;td&gt;9.02  11.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;性能没有明显的提升，整体求和的性能还略有下降。说明是循环的其他操作形成了瓶颈。&lt;/p&gt;
+&lt;h4&gt;优化三：消除不必要的内存引用&lt;/h4&gt;
+&lt;p&gt;注意到，代码每次循环都更新&lt;em&gt;&lt;strong&gt;dest&lt;/strong&gt;。即每一次都要从内存读取数据，执行&lt;/em&gt;&lt;em&gt;OP&lt;/em&gt;*操作后写回内存&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine4(vec_ptr v, data_t *dest){
+ 	long i;
+ 	long length = vec_length(v);
+	data_t *data = get_vec_start(v);
+	data_t acc = IDENT;
+	for (i = 0; i &amp;lt;length; i++){
+		acc = acc OP data[i];
+	}
+	*dest = acc;
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Class Diagram Example&lt;/h2&gt;
-&lt;p&gt;Class diagrams show the static structure of a system, including classes, attributes, methods, and their relationships.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;classDiagram
-    class User {
-        +String username
-        +String password
-        +String email
-        +Boolean active
-        +login()
-        +logout()
-        +updateProfile()
-    }
-    
-    class Article {
-        +String title
-        +String content
-        +Date publishDate
-        +Boolean published
-        +publish()
-        +edit()
-        +delete()
-    }
-    
-    class Comment {
-        +String content
-        +Date commentDate
-        +addComment()
-        +deleteComment()
-    }
-    
-    class Category {
-        +String name
-        +String description
-        +addArticle()
-        +removeArticle()
-    }
-    
-    User &quot;1&quot; -- &quot;*&quot; Article : writes
-    User &quot;1&quot; -- &quot;*&quot; Comment : posts
-    Article &quot;1&quot; -- &quot;*&quot; Comment : has
-    Article &quot;1&quot; -- &quot;*&quot; Category : belongs to
+&lt;p&gt;现在，每次迭代的内存操作从两次读取和一次写减少到只需要一次读&lt;/p&gt;
+&lt;p&gt;我们将总和临时存储在读写速度更高的寄存器，最后一起写入内存&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;整数&lt;/th&gt;
+&lt;th&gt;浮点数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;td&gt;+            *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine2&lt;/td&gt;
+&lt;td&gt;移动&lt;strong&gt;vec_length&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;7.02    9.03&lt;/td&gt;
+&lt;td&gt;9.02  11.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine4&lt;/td&gt;
+&lt;td&gt;直接访问数据&lt;/td&gt;
+&lt;td&gt;1.27    3.01&lt;/td&gt;
+&lt;td&gt;3.01  5.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;那么，编译器为什么不能自动将combine3优化为combine4？&lt;/p&gt;
+&lt;p&gt;是因为，之前提到的&lt;strong&gt;内存别名引用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如，在v-&amp;gt;data=[2，3，5]的时候，我们将向量&lt;strong&gt;v&lt;/strong&gt;的最后一个元素与存放结果的目标之间创建了一个别名，然后再进行累乘的操作：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; combine3(V, get_vec_start(V)+2);
+ combine4(V, get_vec_start(V)+2);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;State Diagram Example&lt;/h2&gt;
-&lt;p&gt;State diagrams show the sequence of states an object goes through during its life cycle.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;stateDiagram-v2
-    [*] --&amp;gt; Draft
-    
-    Draft --&amp;gt; UnderReview : submit
-    UnderReview --&amp;gt; Draft : reject
-    UnderReview --&amp;gt; Approved : approve
-    Approved --&amp;gt; Published : publish
-    Published --&amp;gt; Archived : archive
-    Published --&amp;gt; Draft : retract
-    
-    state Published {
-        [*] --&amp;gt; Active
-        Active --&amp;gt; Hidden : temporarily hide
-        Hidden --&amp;gt; Active : restore
-        Active --&amp;gt; [*]
-        Hidden --&amp;gt; [*]
-    }
-    
-    Archived --&amp;gt; [*]
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;初始值&lt;/th&gt;
+&lt;th&gt;循环之前&lt;/th&gt;
+&lt;th&gt;i = 0&lt;/th&gt;
+&lt;th&gt;i = 1&lt;/th&gt;
+&lt;th&gt;i = 2&lt;/th&gt;
+&lt;th&gt;最后&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;combine3&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，1]&lt;/td&gt;
+&lt;td&gt;[2，3，2]&lt;/td&gt;
+&lt;td&gt;[2，3，6]&lt;/td&gt;
+&lt;td&gt;[2，3，36]&lt;/td&gt;
+&lt;td&gt;[2，3，36]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;combine4&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，5]&lt;/td&gt;
+&lt;td&gt;[2，3，30]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;编译器无法判断函数在上面情况下被调用，以及程序员的本意是什么&lt;/p&gt;
+&lt;p&gt;编译combine3时，保守的方法是不断的读和写内存&lt;/p&gt;
+&lt;p&gt;编程时，编写对编译器友好的代码&lt;/p&gt;
+&lt;h2&gt;5.4 理解现代处理器&lt;/h2&gt;
+&lt;p&gt;在上述的优化中。Combine2、3、4的优化均不依赖机器的特性&lt;/p&gt;
+&lt;p&gt;若要进一步优化，就必须了解计算机系统结构与处理器知识&lt;/p&gt;
+&lt;p&gt;理解计算机的流水线结构和处理器的工作方式对进一步的优化非常重要，尤其是 &lt;strong&gt;指令流水线&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;代码级上，看似是一次执行一条指令。实际上，硬件可以并行执行多个指令&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/line.CyF5g4-B_fV0hy.webp&quot; alt=&quot;line&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;超标量处理器&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;超标量&lt;/strong&gt;：每个时钟周期可以乱序执行多个操作（执行顺序和代码顺序不一致）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大多数现代CPU都是超标量处理器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;超标量处理器分为两个部分：&lt;strong&gt;指令控制单元(Instruction Control Unit，ICU) &lt;strong&gt;和&lt;/strong&gt;执行单元（Execution Unit，EU）&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/CPU.BH9Gbo15_2b1qcv.webp&quot; alt=&quot;CPU&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;指令控制单元&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;从指令Cache中读取指令，指令译码将指令转换成一组基本操作（微操作），每个操作都完成简单的操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;取值通常采用预取的方式，即当前执行的这条指令很早之前就取址，使其有足够的时间译码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;取值控制包含预测分支功能：&lt;/p&gt;
+&lt;p&gt;(1) 分支预测、投机执行：不管条件是否正确就执行，但结果不放入寄存器者内存&lt;/p&gt;
+&lt;p&gt;(2) 预测错误会带来额外的性能开销&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;退役单元：记录正在进行的处理，并确保它遵循机器级程序的顺序语义&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指令信息被放置在一个先进先出的队列中，出队的情况：&lt;/p&gt;
+&lt;p&gt;(1) 指令操作完成，且引起这条指令的分支点也都被预测认为正确，所有对程序寄存器的更新都可被实际执行了。&lt;/p&gt;
+&lt;p&gt;(2) 引起该指令的某个分支点预测错误，该指令会被清空，丢弃所有计算出来的结果&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;任何程序寄存器的更新都只会在指令退役时发生&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;执行单元&lt;/h4&gt;
+&lt;p&gt;执行单元接收来自取值单元的操作，并将操作分配到一组&lt;strong&gt;功能单元&lt;/strong&gt;中&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;加载/存储单元：读/写内存（单元有个加法器算地址）&lt;/li&gt;
+&lt;li&gt;算数运算单元：能够执行不同的操作&lt;/li&gt;
+&lt;li&gt;分支单元：确定预测是否正确。若错误，EU丢弃分支后的计算结果，并将信号发给取值控制，说预测错误，并指出正确分支。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;功能单元：以Haswell架构的CPU为例&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/FU.DbLxOE7w_Z275xLj.webp&quot; alt=&quot;FU&quot; /&gt;&lt;/p&gt;
+&lt;h5&gt;功能单元的性能&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;延迟&lt;/strong&gt;：完成功能所需要的总时间，表明执行实际操作需要的时钟总周期数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;发射时间&lt;/strong&gt;：两个连续同类型的运算之间的需要的最小时间，即两次运算之间间隔的最小周期数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;吞吐量&lt;/strong&gt;：单位时间内执行的操作数量&lt;/p&gt;
+&lt;p&gt;​		计算：若有多个功能单元，如&lt;strong&gt;C&lt;/strong&gt;个，发射时间为&lt;strong&gt;I&lt;/strong&gt;，吞吐量为&lt;strong&gt;C / I&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;容量&lt;/strong&gt;：能执行该运算的功能单元的数量，表明同时能发射多少个这样的操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Haswell参考机的功能单元的性能：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/Haswell.DMnZkFYx_vVtuS.webp&quot; alt=&quot;Haswell&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;以combine函数为例，我们用CPE值两个基本界限来描述这种影响&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/compare.ByL8esTY_2gcRfB.webp&quot; alt=&quot;compare&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;延迟界限&lt;/strong&gt;：给出了&lt;strong&gt;任何必须按照严格顺序完成合并运算的函数所需的&lt;/strong&gt;最小CPE值&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;吞吐量值&lt;/strong&gt;：给出了&lt;strong&gt;CPE&lt;/strong&gt;的最小界限&lt;/li&gt;
+&lt;li&gt;除了整数加法外，这些测量值与处理器的延迟界限是一样的，它表明这些函数的性能是由所执行的求和或者乘积计算所主宰的，但&lt;strong&gt;仍然大于吞吐量界限，所以可以继续优化&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;combine4：串行计算的方法&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;for (i = 0; i &amp;lt; length; i++) {
+	acc = acc OP data[i];
+}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Pie Chart Example&lt;/h2&gt;
-&lt;p&gt;Pie charts are ideal for displaying proportions and percentage data.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pie title Website Traffic Sources Analysis
-    &quot;Search Engines&quot; : 45.6
-    &quot;Direct Access&quot; : 30.1
-    &quot;Social Media&quot; : 15.3
-    &quot;Referral Links&quot; : 6.4
-    &quot;Other Sources&quot; : 2.6
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;顺序依赖性的性能&lt;/strong&gt;：由&lt;strong&gt;OP&lt;/strong&gt;的延迟决定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CPE&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;​	n个元素的乘积或者和，需要&lt;strong&gt;L * n + K&lt;/strong&gt;个时钟周期&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;L&lt;/strong&gt;是合并运算的延迟，&lt;strong&gt;K&lt;/strong&gt;表示调用函数和初始化以及终止循环的开销&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;CPE等于延迟界限L&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;处理器操作的抽象模型&lt;/h4&gt;
+&lt;p&gt;程序的**数据流（data-flow）**表示：分析机器及程序性能的工具&lt;/p&gt;
+&lt;p&gt;以图形化的表示方法，展示了不同操作之间&lt;strong&gt;数据相关&lt;/strong&gt;是如何限制它们的执行顺序的&lt;/p&gt;
+&lt;p&gt;这些限制形成了数据流图中的&lt;strong&gt;关键路径&lt;/strong&gt;，是执行一组机器指令所需时钟周期的一个下界&lt;/p&gt;
+&lt;h5&gt;从机器代码到数据流图&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;void combine4(vec_ptr v, data_t  *dest)
+ {  ……
+ data_t acc = 1;
+ for (i = 0; i &amp;lt; length; i++){
+ acc = acc * data[i];
+ }
+ *dest = acc;
+ }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Mermaid is a powerful tool for creating various types of diagrams in Markdown documents. This article demonstrated how to use flowcharts, sequence diagrams, Gantt charts, class diagrams, state diagrams, and pie charts. These diagrams can help you express complex concepts, processes, and data structures more clearly.&lt;/p&gt;
-&lt;p&gt;To use Mermaid, simply specify the mermaid language in a code block and describe the diagram using concise text syntax. Mermaid will automatically convert these descriptions into beautiful visual diagrams.&lt;/p&gt;
-&lt;p&gt;Try using Mermaid diagrams in your next technical blog post or project documentation - they will make your content more professional and easier to understand!&lt;/p&gt;
-</content:encoded></item><item><title>Include Video in the Posts</title><link>https://mizuki.mysqil.com/posts/video/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/video/</guid><description>This post demonstrates how to include embedded video in a blog post.</description><pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Just copy the embed code from YouTube or other platforms, and paste it in the markdown file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: Include Video in the Post
-published: 2023-10-19
-// ...
----
+&lt;p&gt;&lt;strong&gt;combine4&lt;/strong&gt;的汇编代码为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;data_t=double, OP=*
+acc in %xmmo0, data+i in %rdx, length in %rax
 
-&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+.L25
+	vmulsd (%rdx), %xmm0, %xmm0	// 乘法操作
+	addq  $8, %rdx 	// 指向下一个数据元素
+	cmpq %rax, %rdx	// 比较i &amp;lt; length
+	jne .L25	//如果i &amp;lt; length, 跳转至.L25
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;YouTube&lt;/h2&gt;
-&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
-&lt;h2&gt;Bilibili&lt;/h2&gt;
-&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;amp;p=1&amp;amp;autoplay=0&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; &amp;amp;autoplay=0&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/p&gt;
+&lt;p&gt;其中，&lt;strong&gt;%rdx&lt;/strong&gt;指向当前元素的地址，&lt;strong&gt;%rax&lt;/strong&gt;指向数组的长度，&lt;strong&gt;%xmmo&lt;/strong&gt;指向&lt;strong&gt;acc&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由此可得到数据流图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/stream_1.BDs9DLsk_1g55Ej.webp&quot; alt=&quot;stream_1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;对数据流图进行修改，上方寄存器只有&lt;strong&gt;只读寄存器&lt;/strong&gt;和&lt;strong&gt;循环寄存器&lt;/strong&gt;，下方寄存器只有&lt;strong&gt;只写寄存器&lt;/strong&gt;和&lt;strong&gt;循环寄存器&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;只读&lt;/strong&gt;：只用作源值（作为数据也可以作为地址），但在循环中不会被修改&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;只写&lt;/strong&gt;：作为数据传送操作的的目的（本例无只写寄存器）&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;局部&lt;/strong&gt;：在循环内部被修改和使用，但在迭代与迭代之间不相关 （条件寄存器）&lt;/p&gt;
+&lt;p&gt;​	&lt;strong&gt;循环&lt;/strong&gt;：既作为源值，又作为目的，一次迭代中产生的值会在另一次迭代中用到（&lt;strong&gt;%rdx, %xmm0&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;同时出现在上方和下方的寄存器为循环寄存器，我们&lt;strong&gt;删除寄存器以外的寄存器，并删除不在循环寄存器之间的操作&lt;/strong&gt;，得到简化的数据流图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/stream_2.skNP6Hpy_Z6RiA5.webp&quot; alt=&quot;stream_2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;然后，我们再将数据流图循环展开：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/stream_3.COhQxFBa_Z1ShQT5.webp&quot; alt=&quot;stream_3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;由此，我们得到了两条相关链&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;mul操作修改的acc&lt;/li&gt;
+&lt;li&gt;add操作修改的data + i&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;假设浮点乘法延迟为五个周期，整数假发延迟为一个时钟周期，那么：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;左边的数据相关链会称为关键路径，浮点乘法器成为了制约资源&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;换言之，在&lt;strong&gt;combine4&lt;/strong&gt;中，指针移动的消耗相对较少，而&lt;strong&gt;乘法操作&lt;/strong&gt;成为了性能瓶颈&lt;/p&gt;
+&lt;h4&gt;循环展开一：减少关键路径的循环次数&lt;/h4&gt;
+&lt;p&gt;循环展开是一种程序变换，通过增加每次迭代计算的元素的数量，减少循环迭代次数&lt;/p&gt;
+&lt;p&gt;它可以从两个方面提升程序的性能：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;减少了不直接有助于程序结果的操作数量，如循环所以计算，分支条件&lt;/li&gt;
+&lt;li&gt;提供了一些方法，可以进一步变化代码，减少整个计算中关键路径上的操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对&lt;strong&gt;combine4&lt;/strong&gt;进行&lt;strong&gt;2 * 1&lt;/strong&gt;循环展开&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine5(vec_ptr v, data_t  *dest) // 循环每次处理数组中的两个元素
+ {
+  long i;
+  long length = vec_length(v);
+  long limit = length -1;
+  data_t *data = get_vec_start(v);
+  data_t acc = IDENT
+  for (i = 0; i &amp;lt; limit; i+=2){
+    acc = (acc OP data[i]) OP data[i+1];
+  }
+  for(;i&amp;lt;length;i++)
+  acc = acc OP data[i];
+  *dest = acc;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;循环展开的效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/compare_2.Bixe-So3_7yTGW.webp&quot; alt=&quot;compare_2&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;整数加法达到延迟界限&lt;/strong&gt;：减少了循环的开销&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其它操作没能改进&lt;/strong&gt;：&lt;strong&gt;数据的顺序依赖限制了性能的提升&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;提高并行性&lt;/h4&gt;
+&lt;h5&gt;循环展开二：实现程序并行&lt;/h5&gt;
+&lt;p&gt;分析&lt;strong&gt;combine5&lt;/strong&gt;的性能瓶颈：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将累计值放在一个单独的变量&lt;strong&gt;acc&lt;/strong&gt;中，使其在前面的计算完成之前，都不能计算&lt;strong&gt;acc&lt;/strong&gt;的新值&lt;/li&gt;
+&lt;li&gt;无法充分利用硬件资源（如流水线、多个算数运算单元等）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;解决办法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将一组合并运算&lt;strong&gt;分割成两个或更多的部分&lt;/strong&gt;，并在最后合并结果来提高 性能&lt;/li&gt;
+&lt;li&gt;前提：运算是可结合和可交换的&lt;/li&gt;
+&lt;li&gt;整数加法、乘法满足交换和结合律，浮点数加法、乘法不满足&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用两个变量分别计算奇元素和偶元素的累加结果（&lt;strong&gt;2 * 2&lt;/strong&gt;循环展开）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine6(vec_ptr v, data_t  *dest)
+ {
+  long i;
+  long length = vec_length(v);
+  long limit = length -1;
+  data_t *data = get_vec_start(v);
+  data_t acc0 = IDENT;
+  data_t acc1 = IDENT;
+  for (i = 0; i &amp;lt; limit; i+=2){
+    acc0 = acc0 OP data[i];   //偶元素
+    acc1 = acc1 OP data[i+1]; //奇元素
+  }
+  for(;i&amp;lt;length;i++)
+ 	acc0 = acc0 OP data[i];
+  *dest = acc0 OP acc1;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;新的汇编代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# i in %rdx, limit in %rbp, acc0 in %xmm0,acc1 in %xmm1 data address in %rax
+ .L35
+   vmulsd (%rax, %rdx,8), %xmm0, %xmm0
+   vmulsd 8(%rax, %rdx,8), %xmm1, %xmm1	// 可见这里多使用了一个寄存器
+   addq $2, %rdx
+   cmpq %rdx, %rbp
+   jg  .L35
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;同样有两个&lt;strong&gt;vmulsd&lt;/strong&gt;运算，但这些指令被编译成读写不同的寄存器，且**%xmm0、%xmm1&lt;strong&gt;之间没有&lt;/strong&gt;数据相关**。&lt;/li&gt;
+&lt;li&gt;处理器不再需要等待前一个加法或乘法操作完成，即可开始新的操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/compare_3.CC-Cdnxw_LrNjo.webp&quot; alt=&quot;compare_3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;所有的情况都得到了改进，打破了&lt;strong&gt;延迟界限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;k * k&lt;/strong&gt;循环：将循环展开&lt;strong&gt;k&lt;/strong&gt;次，以及并行累计&lt;strong&gt;k&lt;/strong&gt;个值（&lt;strong&gt;k&lt;/strong&gt;个&lt;strong&gt;for&lt;/strong&gt;循环，每个循环&lt;strong&gt;k&lt;/strong&gt;个&lt;strong&gt;acc&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;当&lt;strong&gt;k&lt;/strong&gt;足够大，程序在所有情况下几乎都能达到吞吐量界限&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/compare_4.DXtLrxLr_2dGDzz.webp&quot; alt=&quot;compare_4&quot; /&gt;&lt;/p&gt;
+&lt;h5&gt;重新结合变换&lt;/h5&gt;
+&lt;p&gt;改变合并执行的方式，以提高程序的性能（&lt;strong&gt;2 * 1a&lt;/strong&gt;循环展开）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void combine7(vec_ptr v, data_t  *dest){
+	…………
+	data_t acc = IDENT
+	for (i = 0; i &amp;lt; limit; i += 2){
+    	acc = acc OP (data[i] OP data[i + 1]);
+	…………
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;一些限制因素&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;数据流图中的关键路径指明了执行该程序所需时间的下界&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​	若程序中某条关键数据相关链，链上所有的延迟之和等于&lt;strong&gt;T&lt;/strong&gt;，则程序至少需要&lt;strong&gt;T&lt;/strong&gt;个周期&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;功能单元的吞吐量界限也是程序执行时间的一个下界&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​	程序共需要&lt;strong&gt;N&lt;/strong&gt;个某种运算的计算，而处理器只有&lt;strong&gt;C&lt;/strong&gt;个能执行这个操作的 功能单元，且功能单元的发射时间为&lt;strong&gt;I&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	则程序的执行时间至少为&lt;strong&gt;N*I/C&lt;/strong&gt;个周期&lt;/p&gt;
+&lt;h5&gt;寄存器溢出Spilling&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;X86-64&lt;/strong&gt;有&lt;strong&gt;16个&lt;/strong&gt;整数寄存器，&lt;strong&gt;16&lt;/strong&gt;个&lt;strong&gt;ymm&lt;/strong&gt;寄存器保存浮点数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若程序的并行度&lt;strong&gt;P&lt;/strong&gt;超过了可用寄存器的数量，会导致寄存器溢出&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将临时值存放在内存，运行时在堆栈上分配空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;程序必须从&lt;strong&gt;内存&lt;/strong&gt;中读取两个数值：累计变量的值和**data[i]**的值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算完成后再将结果保存回&lt;strong&gt;内存&lt;/strong&gt;中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;内存&lt;/strong&gt;的访问效率远低于&lt;strong&gt;寄存器&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;分支预测和错误处罚&lt;/h5&gt;
+&lt;h4&gt;理解内存性能&lt;/h4&gt;
+&lt;h5&gt;加载的性能&lt;/h5&gt;
+&lt;h5&gt;存储的性能&lt;/h5&gt;
+&lt;h5&gt;写读相关&lt;/h5&gt;
+&lt;h4&gt;应用：性能提高的技术&lt;/h4&gt;
+&lt;h4&gt;确认和消除性能瓶颈&lt;/h4&gt;
+&lt;h2&gt;5.5 章节小结&lt;/h2&gt;
+</content:encoded></item><item><title>Linux 文件权限</title><link>https://mizuki.mysqil.com/posts/linux/6_permissions/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/linux/6_permissions/</guid><description>Linux Journey - 学习文件权限管理、chmod 命令和权限模式</description><pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;权限&lt;/h1&gt;
+&lt;h2&gt;1. 文件权限&lt;/h2&gt;
+&lt;p&gt;在 Linux/Unix 系统中，每个文件和文件夹都包含一组&lt;strong&gt;权限设置&lt;/strong&gt;，用来决定谁可以访问和操作它。&lt;/p&gt;
+&lt;p&gt;对于这部分的具体内容，我们已经在用户管理中的用户与用户组详细介绍了&lt;/p&gt;
+&lt;p&gt;如果，你完全看得懂下面的内容，那么请继续阅读即可，否则，就应该去复习了&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;drwxr-xr-x 2 elo operator 4096 Dec  1 11:45 /home/elo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;2. 修改权限&lt;/h2&gt;
+&lt;p&gt;我们可以使用 &lt;code&gt;chmod&lt;/code&gt; 修改文件权限，&lt;code&gt;chmod&lt;/code&gt; 是 &lt;strong&gt;change mode&lt;/strong&gt;的缩写，其中&lt;strong&gt;mode&lt;/strong&gt;指的就是“文件权限模式”&lt;/p&gt;
+&lt;p&gt;我们知道，权限有用户的权限、组的权限和其他人的权限，有两种方法可以修改它们：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你只希望修改一部分的权限：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比如只给用户加执行权限，或者只给组加写权限），最推荐的还是&lt;strong&gt;用符号法&lt;/strong&gt;，因为它可以“叠加”或“去除”某项权限，而不会影响其它权限。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod u+x file    给用户增加执行权限
+chmod g-w file    去掉组的写权限
+chmod o+r file   给其他人增加阅读的权限
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样的写法是顾名思义的，只要认识，并且会使用如下的符号就可以了&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt; u&lt;/code&gt;：用户（user/owner）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt; g&lt;/code&gt;：组（group）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;o&lt;/code&gt;：其他人（others）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt; a&lt;/code&gt;：所有人（all）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt; +&lt;/code&gt;：添加权限&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-&lt;/code&gt;：去除权限&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;如果你希望同时修改所有权限：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一次性指定所有三组权限，那么推荐的还是&lt;strong&gt;数字法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod 755 file
+chmod 644 file 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;相比于符号法，数字法就没有那么顾名思义了，下面，让我们具体介绍其中的规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;每种权限是一个数字: r = 4, w = 2, x = 1&lt;/li&gt;
+&lt;li&gt;三个数字，例如上面的 &lt;code&gt;755&lt;/code&gt;，&lt;code&gt;644&lt;/code&gt;，从前往后分别代表&lt;strong&gt;用户、组、其它&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;其中的每个数字，组合权限用加法，例如：&lt;code&gt;rwx = 4+2+1 = 7&lt;/code&gt;，那么意味着它拥有读取，修改和执行的权限&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以我们就可以对如上的例子进行解释，例如 &lt;code&gt;chmod 755 file&lt;/code&gt;，那意味着给用户设置读写和执行的权限，给组和其他人设置读和执行的权限&lt;/p&gt;
+&lt;p&gt;随便改权限有可能让敏感文件被所有人修改，如果你在修改权限，请清楚这一点&lt;/p&gt;
+&lt;h3&gt;3. 所有权权限&lt;/h3&gt;
+&lt;p&gt;除了可以修改文件的权限之外，你还可以修改文件的&lt;strong&gt;所有者（用户）和用户组&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4&gt;修改文件的所有者（用户）&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo chown elo myfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以使用 &lt;code&gt;chown&lt;/code&gt;（change owner）来修改文件的所有者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：只有 root 用户才能更改文件的所有者。普通用户不能把文件的所有者改成别人。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4&gt;修改文件的组&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo chgrp operator myfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以使用 &lt;code&gt;chgrp&lt;/code&gt;（change group）来修改文件的所属组。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件的拥有者本人和 root 用户都可以更改文件的组&lt;/strong&gt;（前提是目标组也是该用户所属的组）。&lt;/p&gt;
+&lt;h4&gt;同时修改所有者和组&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo chown elo:operator myfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在用户名后加冒号（:）和组名，可以&lt;strong&gt;同时修改文件的拥有者和组&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;4. umask&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;umask&lt;/code&gt;，全称是 &lt;strong&gt;user file creation mask&lt;/strong&gt;，意思是&lt;strong&gt;用户文件创建权限掩码“&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它&lt;strong&gt;决定了新建文件或目录时，默认“去掉”哪些权限&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;前面我们学习了数字法修改权限，在 Linux 中，**新建文件的”理论最大权限“**一般是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;文件：666（rw-rw-rw-，所有人读写）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目录：777（rwxrwxrwx，所有人读写执行）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但是，当我们实际创建文件和目录的时候，权限通常不会那么开放，例如，你创建一个文件的时候，默认不希望其他人可以读写它，那么就可以套用一个&quot;umask&quot;，在创建文件的时候，自动取消部分权限&lt;/p&gt;
+&lt;p&gt;例如，我们可以将 umask 设置为 &lt;code&gt;022&lt;/code&gt;，那么：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;文件的最大权限是 666&lt;/p&gt;
+&lt;p&gt;666 - 022 = &lt;strong&gt;644&lt;/strong&gt;（rw-r--r--）&lt;/p&gt;
+&lt;p&gt;所以新建文件默认只有自己可读写，组和其他人只能读&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目录的最大权限是 777&lt;/p&gt;
+&lt;p&gt;777 - 022 = &lt;strong&gt;755&lt;/strong&gt;（rwxr-xr-x）&lt;/p&gt;
+&lt;p&gt;新建目录自己可读写执行，组和其他人只能读和执行（可以进入目录）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;5. SetuidS&lt;/h2&gt;
+&lt;p&gt;在用户管理的最后一个部分，我们提到了可以使用 &lt;code&gt;passwd&lt;/code&gt; 命令修改密码&lt;/p&gt;
+&lt;p&gt;作为一个普通用户，你当然可以使用 &lt;code&gt;passwd&lt;/code&gt; 命令修改自己的密码。但是密码，正如我们所知，密码是存储在 &lt;code&gt;/etc/shadow&lt;/code&gt; 中的，然而这个文件是不支持一个普通用户去修改的，所以你到底可不可以修改自己的密码呢？&lt;/p&gt;
+&lt;p&gt;我先来引入一个简单的例子：&lt;/p&gt;
+</content:encoded></item><item><title>Linux 用户管理</title><link>https://mizuki.mysqil.com/posts/linux/5_user_management/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/linux/5_user_management/</guid><description>Linux Journey - 学习用户与用户组管理、UID/GID 和权限控制</description><pubDate>Thu, 25 Sep 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;用户管理&lt;/h1&gt;
+&lt;h2&gt;1. 用户与用户组（Users and Groups）&lt;/h2&gt;
+&lt;p&gt;在任何传统的操作系统中，都会存在“用户”和“用户组”的概念，它们存在的唯一目的就是&lt;strong&gt;进行访问控制和权限管理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当系统运行一个进程，它是以该进程所属的用户的身份运行的。文件的访问权限和所有权也是基于用户身份判断的。你当然不希望 Elo 随意访问 Mo 的文件，反之亦然&lt;/p&gt;
+&lt;p&gt;每个用户都有一个专属的主目录，用于存储用户的个人文件，通常位于：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/home/example_username
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不同的 Linux 发行版中，路径位置可能略有不同&lt;/p&gt;
+&lt;p&gt;所以，系统是如何识别用户的？&lt;/p&gt;
+&lt;p&gt;系统使用 &lt;strong&gt;UID（用户 ID）&lt;/strong&gt; 来识别每一个用户&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户名只是为了方便人类使用和记忆&lt;/li&gt;
+&lt;li&gt;但是系统内部的识别是依靠 UID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同样地，系统使用 &lt;strong&gt;GID（组 ID）&lt;/strong&gt; 来识别用户组&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户组是一组用户的集合&lt;/li&gt;
+&lt;li&gt;系统可以为一个组统一设置权限&lt;/li&gt;
+&lt;li&gt;所有属于这个组的用户都继承这个权限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;除了人类用户以外，还有系统用户&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Linux 中，除了你创建的普通用户以外，还有一些特殊的用户存在于系统中，这些用户通常是**系统进程（daemon）**的运行身份，它们保持系统在后台稳定运行&lt;/p&gt;
+&lt;p&gt;所有用户中，最重要的系统用户是 &lt;code&gt;root&lt;/code&gt;，也叫超级用户（superuser）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;root&lt;/code&gt; 是系统中权限最大的用户，可以访问任何文件，启动或终止任何进程&lt;/li&gt;
+&lt;li&gt;正因为 &lt;code&gt;root&lt;/code&gt; 权限无限，所以&lt;strong&gt;不建议长期使用 root 身份操作系统&lt;/strong&gt;，如果操作失误，可能会破坏整个系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果需要以 &lt;code&gt;root&lt;/code&gt; 权限运行某个命令，在拥有使用 &lt;code&gt;sudo&lt;/code&gt; 的权限的情况下，可以使用：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo example_command
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;sudo&lt;/code&gt; 是 &lt;strong&gt;superuser do&lt;/strong&gt; 的缩写，意思是“以超级用户执行操作”&lt;/p&gt;
+&lt;p&gt;还记得 &lt;code&gt;ls -la&lt;/code&gt; 吗？ 通过 &lt;code&gt;-l&lt;/code&gt; , 我们可以查看更多的信息，现在我们使用此命令来查看 &lt;code&gt;/etc/shadow&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;也许你会看到这样的输出：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/ls_shadow.CiRL-iMJ_1n8JrP.webp&quot; alt=&quot;ls_shadow&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;它们的意思是：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;权限		 硬链接数	所有者	  所属组	大小    修改日期	   文件名
+-rw-r-----   1      root    shadow  1048  6月 13 22:53 /etc/shadow
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;目前的阶段，我们所关心的部分是权限、所有者和所属组三个部分&lt;/p&gt;
+&lt;p&gt;对于权限部分，可以分为四个部分：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;文件类型	所有者权限	所属组权限   其他人权限
+-			rw-			r--			---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;文件类型 &lt;code&gt;-&lt;/code&gt; ：意思是普通文件，如果是 &lt;code&gt;d&lt;/code&gt;，则代表一个目录&lt;/li&gt;
+&lt;li&gt;权限一共10位：&lt;strong&gt;1类型 + 3 × 权限段&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;对文件的意义：&lt;code&gt;r&lt;/code&gt; = 读，&lt;code&gt;w&lt;/code&gt; = 写，&lt;code&gt;x&lt;/code&gt; = 执行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因此，对于 &lt;code&gt;/etc/shadow&lt;/code&gt; 的权限解读，可以被理解为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;该文件为普通文件&lt;/li&gt;
+&lt;li&gt;如果访问者是 &lt;code&gt;root&lt;/code&gt;（文件所有者），则拥有对该文件的 读取和写入权限&lt;/li&gt;
+&lt;li&gt;如果是所属于 &lt;code&gt;shadow&lt;/code&gt; 组的用户，则拥有读的权限&lt;/li&gt;
+&lt;li&gt;如果都不属于，则属于其他人，没有任何权限&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果文件类型是&lt;code&gt;d&lt;/code&gt;，那么&lt;code&gt;r&lt;/code&gt;代表列出目录下的文件名（&lt;code&gt;ls&lt;/code&gt;）的权限、&lt;code&gt;w&lt;/code&gt; 代表创建/删除/重命名文件的权限、&lt;code&gt;x&lt;/code&gt; 代表进入目录（&lt;code&gt;cd&lt;/code&gt;），访问目录里的内容的权限&lt;/p&gt;
+&lt;p&gt;当用户访问文件时，系统会按顺序判断用户身份是否为&lt;strong&gt;所有者 → 所属组成员 → 其他人&lt;/strong&gt;，一旦匹配，就使用对应权限，不再继续判断&lt;/p&gt;
+&lt;p&gt;但是，&lt;code&gt;root&lt;/code&gt; 可以无视上述的权限访问顺序&lt;/p&gt;
+&lt;h2&gt;2. root&lt;/h2&gt;
+&lt;p&gt;前面已经够学习过获取超级用户权限的方法：使用 &lt;code&gt;sudo&lt;/code&gt; 命令&lt;/p&gt;
+&lt;p&gt;除此之外，你也可以使用 &lt;code&gt;su&lt;/code&gt; 命令来运行超级用户身份运行命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;su&lt;/code&gt; 是  “substitute user” 的缩写，表示切换用户&lt;/p&gt;
+&lt;p&gt;如果你不指定用户名，它会默认切换到 &lt;code&gt;root&lt;/code&gt;  用户&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ su
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果你知道目标用户的密码，你就可以通过 &lt;code&gt;su example_username&lt;/code&gt; 切换到任何用户&lt;/p&gt;
+&lt;p&gt;这种方法有一些缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一旦切换为了 &lt;code&gt;root&lt;/code&gt;，后面执行的每一个命令都有最高权限，稍有疏忽可能会导致严重问题&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;su&lt;/code&gt; 切换后执行的操作，不会记录在 &lt;code&gt;sudo&lt;/code&gt; 的日志内，&lt;strong&gt;无法具体追踪谁做了什么修改&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为，使用 &lt;code&gt;sudo&lt;/code&gt; ，是更安全、更规范的方式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那么，系统如何找到谁可以使用 &lt;code&gt;sudo&lt;/code&gt; ？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它通过一个配置文件管理：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该文件列出了哪些用户可以使用 sudo 命令，并指定了它们执行那些命令、是否需要密码的规则&lt;/p&gt;
+&lt;p&gt;你当然可以直接使用 &lt;code&gt;sudo nano /etc/sudoers&lt;/code&gt; 来编辑配置文件&lt;/p&gt;
+&lt;p&gt;但你&lt;strong&gt;更应该使用 &lt;code&gt;visudo&lt;/code&gt; 来编辑它&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo visudo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当你使用 &lt;code&gt;visudo&lt;/code&gt; 打开的时候，实际上编辑的是 &lt;code&gt;etc/sudoers.tmp&lt;/code&gt;，只有在保存并验证成功的时候它才会&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mv /etc/sudoers.tmp /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果你在编辑的过程中犯了错误，会显示错误信息，然后告诉你具体的选项，就像是这样：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/visudo.DzHAGHo0_1WkY6C.webp&quot; alt=&quot;visudo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;如果使用 &lt;code&gt;sudo nano /etc/sudoers&lt;/code&gt; 的话，直接修改原本的文件，如果发生错误，系统会&lt;strong&gt;拒绝所有 sudo 操作&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;3. /etc/password&lt;/h2&gt;
+&lt;p&gt;既然系统使用 UID 来标识用户，那么用户和 UID 的映射关系存储在哪里呢？&lt;/p&gt;
+&lt;p&gt;使用如下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以得到这样的结果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/passwd.DUYh2JOI_Z1CXrh0.webp&quot; alt=&quot;passwd&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;我们取第一行单独分析：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;用户名    密码字段   用户ID    组ID    GECOS      用户主目录      默认shell
+root	:	x	:	0	:	0	:	root	:	/root	:	/bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;补充解释：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;密码字段 &lt;code&gt;x&lt;/code&gt; 标识密码实际存储在 &lt;code&gt;/etc/shadow&lt;/code&gt; 中，&lt;code&gt;/etc/passwd&lt;/code&gt; 仅做占位和兼容（防止用户直接看到密码 hash）&lt;/li&gt;
+&lt;li&gt;root 用户的 UID 总是 0，普通用户从 1000 或 500 开始&lt;/li&gt;
+&lt;li&gt;root 的主组也是 0 ，可以在 &lt;code&gt;etc/group&lt;/code&gt; 文件中查找组名和组 ID&lt;/li&gt;
+&lt;li&gt;GECOS 段，名字的由来是历史问题。它是存放用户备注信息的标准字段，一般很少使用。但是如果使用的话，可能会是如下的样子，通常用逗号分隔：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;jack:x:1001:1001:Jack Ma,Room 303,555-1234,555-5678,Alibaba:/home/jack:/bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;用户主目录，即登陆后所在目录&lt;/li&gt;
+&lt;li&gt;用户登陆以后可以使用的 shell，如 &lt;code&gt;/bin/bash&lt;/code&gt;，如果是 &lt;code&gt;/usr/sbin/nologin&lt;/code&gt; ，代表该账户不能登陆系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;什么叫&lt;strong&gt;无法登陆账户&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;”无法登陆“一般指的是不能通过常规方式（如终端，ssh，su，login命令）获得shell环境&lt;/p&gt;
+&lt;p&gt;有两种实现方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Shell 字段被设置为 &lt;code&gt;/usr/sbin/nologin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/shadow&lt;/code&gt; 里的密码字段是 &lt;code&gt;*&lt;/code&gt;、&lt;code&gt;!&lt;/code&gt; 或 &lt;code&gt;!*&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以禁止密码登录系统服务账号，也可以禁止部分普通用户&lt;/p&gt;
+&lt;p&gt;**不推荐直接修改该文件，**以及后文提到的种种文件，&lt;strong&gt;强烈建议用专门的命令行工具&lt;/strong&gt;（如 &lt;code&gt;useradd&lt;/code&gt;、&lt;code&gt;userdel&lt;/code&gt; 等）来管理用户账户，既安全又可靠，我们将会在最后介绍&lt;/p&gt;
+</content:encoded></item><item><title>Linux 命令行基础</title><link>https://mizuki.mysqil.com/posts/linux/2_command_line/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/linux/2_command_line/</guid><description>Linux Journey - 学习 Shell 基础、命令行操作和常用命令</description><pubDate>Sat, 20 Sep 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;命令行&lt;/h1&gt;
+&lt;h2&gt;1. The Shell&lt;/h2&gt;
+&lt;p&gt;什么是 Shell ? Shell 本质上是一个程序，从键盘接收命令，然后发送给操作系统执行。&lt;/p&gt;
+&lt;p&gt;像一些图形用户界面的 “Terminal” 或 “Console&quot; 这样的程序，它们实际上是用来启动一个 shell 的工具&lt;/p&gt;
+&lt;p&gt;接下来，我们将使用 &lt;strong&gt;bash shell&lt;/strong&gt; （Bourne Again shell）&lt;/p&gt;
+&lt;p&gt;还有其它的 shell，但是我们不会涉及&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shell 提示符&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shell 提示符（shell prompt）可能会有所不同，但通常会遵守以下格式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;username@hostname:current_directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/shell_prompt.BVg8XQAj_1lou4s.webp&quot; alt=&quot;shell_prompt&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;请注意提示符最后的 &lt;code&gt;$&lt;/code&gt;符号&lt;/p&gt;
+&lt;p&gt;不同的 shell 会使用不同的提示符，但以 bash shell 为例，普通用户的提示符号通常是&lt;code&gt;$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在你输入命令的时候，不需要输入这个符号，它只是用于标识提示符的而已&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一条命令：echo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;echo&lt;/code&gt;  回声，顾名思义，**原样显示（回声在）**终端上&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/echo.D9noP4xY_1TW3Af.webp&quot; alt=&quot;echo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;同样地，我们可以试试&lt;code&gt; date&lt;/code&gt;（日期，显示当前的日期和时间），和 &lt;code&gt;whoami&lt;/code&gt;（我是谁，显示当前用户名），看看会输出什么？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/date_whoami.RVBfeueo_Z1Bedfc.webp&quot; alt=&quot;date_whoami&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;2. pwd (Print Working Directory)&lt;/h2&gt;
+&lt;p&gt;在 Linux 中，&lt;strong&gt;一切皆文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所有的文件都被组织在一个&lt;strong&gt;分层的目录树（hierarchical directory tree）中，这个目录的结构的起点叫做根目录（root directory）&lt;/strong&gt;，用一个斜杠 &lt;code&gt;/&lt;/code&gt; 来表示&lt;/p&gt;
+&lt;p&gt;根目录下面可以包含很多的文件夹和文件，而每个文件夹里又可以继续包含更多的文件夹和文件，就像一颗倒挂的树&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/
+|-- bin
+|   |-- file1
+|   |-- file2
+|-- etc
+|   |-- file3
+|   `-- directory1
+|       |-- file4
+|       `-- file5
+|-- home
+|-- var
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个结构的意思是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 是根目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/bin&lt;/code&gt; 的目录下有 &lt;code&gt;file1&lt;/code&gt; 和 &lt;code&gt;file2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc&lt;/code&gt; 下有 &lt;code&gt;file3&lt;/code&gt; 和一个子目录 &lt;code&gt;directory1&lt;/code&gt;，这个子目录中还有 &lt;code&gt;file4&lt;/code&gt; 和 &lt;code&gt;file5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/home&lt;/code&gt;、&lt;code&gt;/var&lt;/code&gt; 也是根目录下的文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中，这些文件和目录的名字称之为&lt;strong&gt;路径&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如，如果你有一个名为 &lt;code&gt;home&lt;/code&gt; 的文件夹，里面有一个子文件夹叫做 &lt;code&gt;elo&lt;/code&gt;，而在 &lt;code&gt;elo&lt;/code&gt; 里面又有一个子文件夹叫做 &lt;code&gt;Movies&lt;/code&gt;，那么这个路径会长这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/home/elo/Movies
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果我们希望在文件系统中来去自如，我们首先就需要知道&lt;strong&gt;当前所在的目录位置&lt;/strong&gt;，可以使用 &lt;code&gt;pwd&lt;/code&gt; 命令&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/pwd.CQfVvYCh_Z1tDiS.webp&quot; alt=&quot;pwd&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;3. cd (Change Directory)&lt;/h2&gt;
+&lt;p&gt;现在你已经知道“我在哪了”，现在我们试试看如何在&lt;strong&gt;文件系统中“走动”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;记住，我们在文件系统的“导航”是通过“路径”来实现的。而路径有两种方式：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 绝对路径（Absolute Path）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从&lt;strong&gt;根目录开始&lt;/strong&gt;写出的完整路径&lt;/li&gt;
+&lt;li&gt;根目录就像树的根，所有路径都从这里开始&lt;/li&gt;
+&lt;li&gt;只要路径以 &lt;code&gt;/&lt;/code&gt; 开头，那就是绝对路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd /home/elo/Desktop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;意思是：进入根目录 &lt;code&gt;/&lt;/code&gt; → 然后进入 &lt;code&gt;home&lt;/code&gt; → 然后进入 &lt;code&gt;elo&lt;/code&gt; → 然后进入 &lt;code&gt;Desktop&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 相对路径（Relative Path）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这是&lt;strong&gt;相对于你当前所在目录&lt;/strong&gt;来写的路径&lt;/li&gt;
+&lt;li&gt;不需要从 &lt;code&gt;/&lt;/code&gt; 开始，而是从当前位置出发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果你已经在：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/home/elo/Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;你想进入这个目录里的子目录叫做 &lt;code&gt;taxes&lt;/code&gt;，你不需要写完整路径 &lt;code&gt;/home/elo/Documents/taxes&lt;/code&gt;，你只要写：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd taxes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对于以上两种路径，例如，为了到达 &lt;code&gt;/home/elo/test/a/b&lt;/code&gt; 这个文件夹内，如果我们想使用绝对路径：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/absolute_path.D7K2bmn3_1Mz9NP.webp&quot; alt=&quot;absolute_path&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;假设我们已经在 &lt;code&gt;/home/elo/test/a&lt;/code&gt;，那么直接使用如下命令：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/relative_path.CAe3tg6m_Z18YTaY.webp&quot; alt=&quot;relative_path&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;不过，总是使用相对路径和绝对路径也是很累的，仍然有些快捷路径可以帮助我们导航：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;：当前目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;..&lt;/code&gt;：上一级目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt;：用户主目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt;：上次访问过的目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ cd .  # 留在当前目录
+$ cd ..	# 回到上一级目录
+$ cd ~  # 回到主目录(比如/home/elo)
+$ cd -  # 回到一个你刚才去过的目录
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/shortcut.Ch680ZIU_TS1Ur.webp&quot; alt=&quot;shortcut&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;4. ls(List Directory)&lt;/h2&gt;
+&lt;p&gt;现在我们已经在知道如何再文件系统中移动了，可是，&lt;strong&gt;我们如何知道当前目录下有哪些东西呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们可以使用一个很有用的命令： &lt;code&gt;ls&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;默认情况下，它会列出&lt;strong&gt;当前目录&lt;/strong&gt;下的目录和文件夹&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ls
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果想查看&lt;strong&gt;某个特定目录&lt;/strong&gt;里的内容，也可以在后面加上路径：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ls /home/elo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;命令参数（Command Options / Flags）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Linux 中，很多命令可以通过添加**参数（也叫选项、flag)**来扩展或改变行为，例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ls -l
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这些字母告诉命令要”怎么做“，或者”做的更详细“&lt;/p&gt;
+&lt;p&gt;例如刚刚的示例命令，&lt;code&gt;l&lt;/code&gt; 代表  &lt;strong&gt;long format（长格式）&lt;/strong&gt;，它会显示每个文件的详细信息&lt;/p&gt;
+&lt;p&gt;包括权限、链接数、拥有者，用户组，大小，时间戳，文件名&lt;/p&gt;
+&lt;p&gt;另外，在 linux 中，不是所有文件都是默认可见的，&lt;strong&gt;以 &lt;code&gt;.&lt;/code&gt; 开头的文件都是”隐藏文件“&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果希望查看隐藏文件，可以使用 &lt;code&gt;-a&lt;/code&gt;（a 代表 all）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/ls.CIAqCg_Y_Z2hzmQp.webp&quot; alt=&quot;ls_1&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;5. touch&lt;/h2&gt;
+&lt;p&gt;现在学习如何创建文件，可以使用如下简单的方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ touch filename
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该命令会创建一个名为 &lt;code&gt;filename&lt;/code&gt; 的空文件（如果该文件不存在的话）。&lt;/p&gt;
+&lt;p&gt;创建文件后，可以使用 &lt;code&gt;ls -l&lt;/code&gt; 查看文件的详细信息，在这些信息中，我们更关注的是它的&lt;strong&gt;时间戳&lt;/strong&gt;（即最后修改时间）&lt;/p&gt;
+&lt;p&gt;事实上，&lt;code&gt;touch&lt;/code&gt; 的本意是“轻轻触碰一下文件”，&lt;strong&gt;不会修改文件的内容&lt;/strong&gt;，它原本的用途是&lt;strong&gt;更新文件的时间戳&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;但当指定的文件不存在时，&lt;code&gt;touch&lt;/code&gt; 会&lt;strong&gt;自动创建一个新的空文件&lt;/strong&gt;，所以也常被用来创建文件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/touch.DvkpqqRf_2eI3EH.webp&quot; alt=&quot;touch&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;6. file&lt;/h2&gt;
+&lt;p&gt;与我们所熟悉的 Windows 系统不同，Windows 系统通过文件扩展名来判断文件的类型&lt;/p&gt;
+&lt;p&gt;在 Linux 系统中，文件名只是一个&lt;strong&gt;字符串标签&lt;/strong&gt;，Linux 主要通过&lt;strong&gt;文件的具体内容&lt;/strong&gt;来判断类型&lt;/p&gt;
+&lt;p&gt;我们可以使用 &lt;code&gt;file&lt;/code&gt; 命令来查看文件究竟是何种类型&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ file filename
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这很简单，但是在此我更想解释一下 Linux 系统识别文件的机制&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/touch.DvkpqqRf_2eI3EH.webp&quot; alt=&quot;touch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;魔术数（magic number）识别机制&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Linux 中，判断一个文件类型并不是只看扩展名，而是通过检查文件内容的前几个字节&lt;/p&gt;
+&lt;p&gt;这些字节叫做 &lt;strong&gt;魔术数&lt;/strong&gt;，它们是某种文件格式在开头的标志。
+例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PNG 文件以 &lt;code&gt;89 50 4E 47&lt;/code&gt; 开头（对应 &lt;code&gt;.PNG&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;JPG 文件以 &lt;code&gt;FF D8 FF&lt;/code&gt; 开头&lt;/li&gt;
+&lt;li&gt;PDF 文件以 &lt;code&gt;%PDF&lt;/code&gt;（&lt;code&gt;25 50 44 46&lt;/code&gt;）开头&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些魔术数是由文件格式规范定义的，具有唯一性。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/fake.C0DMU8Kz_1A5s3w.webp&quot; alt=&quot;fake&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;例如图中这个例子，虽然我们创建了一个名为 &lt;code&gt;fake.png&lt;/code&gt; 的文件，使用 &lt;code&gt;file&lt;/code&gt; 命令查看的时候，显示的类型却是一个 &lt;strong&gt;ASCII 字符编码的&lt;/strong&gt; 纯文本&lt;/p&gt;
+&lt;p&gt;事实上，文件扩展名 &lt;code&gt;.jpg&lt;/code&gt;、&lt;code&gt;.png&lt;/code&gt;、&lt;code&gt;.txt&lt;/code&gt; 在 Linux 中不是强制规定的，只是给人类看的&lt;/p&gt;
+&lt;p&gt;Linux 真正识别的是&lt;strong&gt;文件头部内容&lt;/strong&gt;，即之前所说的魔术数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/content.C80qIsCM_4QTjz.webp&quot; alt=&quot;content&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;使用特殊的命令查看该文件以后，可以得到 &lt;code&gt;fake.png&lt;/code&gt; 的具体内容，它的开头是：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;00000000  54 68 69 73 20 69 73 20  6e 6f 74 20 72 65 61 6c  |This is not real|
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这些字节没有任何魔术数结构，所以系统判断为 ASCII 编码的纯文本&lt;/p&gt;
+&lt;p&gt;当我们查看一个真正的 png 文件的时候，会看到这样的形式：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/png.CS0p0Svp_Z9PpCL.webp&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;该 png 文件的开头是：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中的 &lt;code&gt;89 50 4E 47&lt;/code&gt; 是标准的 PNG 魔术数，后续的 &lt;code&gt;IHDR&lt;/code&gt; 是图像头块，这是所有 PNG 必备结构&lt;/p&gt;
+&lt;p&gt;那么，是否存在一种情况，文本文件第一排的内容恰好和 PNG 文件的开头内容重合？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mizuki.mysqil.com/_astro/fake_png.DF9JcoFR_FKfpx.webp&quot; alt=&quot;fake_png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;可以看到它被识别为了 PNG，尽管我们知道它实际上不是&lt;/p&gt;
+&lt;p&gt;当 Linux 识别一个文件的时候，识别流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;优先检查魔术数（Magic Number）&lt;/strong&gt;：
+&lt;code&gt;file&lt;/code&gt; 首先会读取文件的前几个字节，查找是否匹配已知文件格式的魔术数（如 PNG、PDF、ZIP 等）。如果魔术数匹配，并且后续结构合理，立即判定为对应的格式文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;结构校验&lt;/strong&gt;：
+如果魔术数匹配但文件结构异常（如缺失关键块），&lt;code&gt;file&lt;/code&gt; 可能不会确认格式，而是退回为 &lt;code&gt;data&lt;/code&gt; 类型，表示“无法识别但可能是二进制”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;未命中魔术数时执行内容分析&lt;/strong&gt;：
+如果没有识别出魔术数，&lt;code&gt;file&lt;/code&gt; 会检查文件是否只包含可打印字符（ASCII 或 UTF-8）、是否有换行符、是否存在乱码等特征，以判断是否为文本文件，如 &lt;code&gt;ASCII text&lt;/code&gt;、&lt;code&gt;UTF-8 Unicode text&lt;/code&gt; 等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;最终默认类型为 &lt;code&gt;data&lt;/code&gt;&lt;/strong&gt;：
+若既没有魔术数，也无法判定为文本，&lt;code&gt;file&lt;/code&gt; 会将该文件归类为 &lt;code&gt;data&lt;/code&gt;，表示其为原始的二进制或未知内容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对着顺序再次查看之前的内容，就可以清晰的了解 Linux 是如何识别文件类型的了&lt;/p&gt;
 </content:encoded></item></channel></rss>
