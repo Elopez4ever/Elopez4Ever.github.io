@@ -517,12 +517,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
 		welcome: "欢迎来到这里!", // 欢迎词
-		touch: [
-			"在做什么?",
-			"辛苦了。",
-			"早点休息。",
-			"喜欢看我笑吗",
-		], // 触摸提示
+		touch: ["在做什么?", "辛苦了。", "早点休息。", "喜欢看我笑吗"], // 触摸提示
 		home: "回到主页", // 首页提示
 		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
 		close: "QWQ 下次见哦~", // 关闭提示
