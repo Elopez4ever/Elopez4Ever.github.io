@@ -1,3 +1,6 @@
+// 添加 export 语句使其成为模块
+export {};
+
 declare global {
 	interface HTMLElementTagNameMap {
 		"table-of-contents": HTMLElement & {
@@ -7,7 +10,12 @@ declare global {
 
 	interface Window {
 		// Define swup type directly since @swup/astro doesn't export AstroIntegration
-		swup: any;
+		swup: {
+			hooks: {
+				on: (event: string, callback: () => void) => void;
+			};
+			[key: string]: unknown;
+		};
 		pagefind: {
 			search: (query: string) => Promise<{
 				results: Array<{
